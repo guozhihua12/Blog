@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2a29248-605d-4555-9140-a58905225354" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/blog_demo7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/blog_demo8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/touxiang.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/QQ.png" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/QQ.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/github.png" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/github.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/web.png" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/web.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/wechat.png" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/wechat.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/zhihu.png" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/images/blog/zhihu.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/blog-content.html" afterPath="$PROJECT_DIR$/web/WEB-INF/static/blog-content.html" />
     </list>
@@ -62,8 +66,8 @@
       <file leaf-file-name="blog-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/blog-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.528302">
-              <caret line="123" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="1113" selection-end-column="7" />
+            <state vertical-scroll-proportion="-10.867925">
+              <caret line="630" column="144" selection-start-line="630" selection-start-column="70" selection-end-line="630" selection-end-column="144" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -80,8 +84,43 @@
       <file leaf-file-name="blog-content.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/blog-content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57063407">
-              <caret line="214" column="28" selection-start-line="214" selection-start-column="28" selection-end-line="214" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.5839822">
+              <caret line="441" column="55" selection-start-line="441" selection-start-column="55" selection-end-line="441" selection-end-column="55" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog-single-self-hosted-video.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/blog-single-self-hosted-video.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.76923">
+              <caret line="997" column="34" selection-start-line="989" selection-start-column="28" selection-end-line="997" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog-single-self-hosted-audio.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/blog-single-self-hosted-audio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.115385">
+              <caret line="996" column="34" selection-start-line="989" selection-start-column="28" selection-end-line="996" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog-single-image.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/blog-single-image.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.6538463">
+              <caret line="981" column="28" selection-start-line="981" selection-start-column="28" selection-end-line="994" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -426,6 +465,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -854,12 +904,12 @@
       <created>1461821642533</created>
       <option name="number" value="Default" />
       <updated>1461821642533</updated>
-      <workItem from="1461821647194" duration="13361000" />
+      <workItem from="1461821647194" duration="15194000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13361000" />
+    <option name="totallyTimeSpent" value="15194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1036,10 +1086,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/blog-single-image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6538463">
+          <caret line="981" column="28" selection-start-line="981" selection-start-column="28" selection-end-line="994" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/blog-single-self-hosted-audio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.115385">
+          <caret line="996" column="34" selection-start-line="989" selection-start-column="28" selection-end-line="996" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/blog-single-self-hosted-video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.76923">
+          <caret line="997" column="34" selection-start-line="989" selection-start-column="28" selection-end-line="997" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/blog-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.528302">
-          <caret line="123" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="1113" selection-end-column="7" />
+        <state vertical-scroll-proportion="-10.867925">
+          <caret line="630" column="144" selection-start-line="630" selection-start-column="70" selection-end-line="630" selection-end-column="144" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1054,9 +1128,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/blog-content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57063407">
-          <caret line="214" column="28" selection-start-line="214" selection-start-column="28" selection-end-line="214" selection-end-column="28" />
-          <folding />
+        <state vertical-scroll-proportion="0.5839822">
+          <caret line="441" column="55" selection-start-line="441" selection-start-column="55" selection-end-line="441" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#div#0;n#div#1;n#div#14;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
