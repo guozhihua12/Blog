@@ -188,7 +188,7 @@
                                 <a href="about-me.html"><span>个人简介</span></a>
                             </li>
                             <!--<li class="normal_menu mobile_menu_toggle">-->
-                                <!--<a href="blog-standard-sidebar-right.html"><span>站点</span></a>-->
+                            <!--<a href="blog-standard-sidebar-right.html"><span>站点</span></a>-->
                             <!--</li>-->
                             <li class="normal_menu mobile_menu_toggle">
                                 <a href="blog-standard-sidebar-right.html"><span>其他页面</span></a>
@@ -240,7 +240,7 @@
 									<span class="meta_part">
 										<a href="#">
                                             <i class="ico-clock7"></i>
-                                            <span>April 15, 2015</span>
+                                            <span>2014年12月06日</span>
                                         </a>
 									</span>
 									<span class="meta_part">
@@ -739,12 +739,161 @@
     <a href="#" class="hm_go_top">Top</a>
 </div>
 <!-- End wrapper -->
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/jquery.js"><\/script>')</script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/mediaelement-and-player.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="assets/requiredJS/require.min.js"></script>
+<script type="text/javascript" src="assets/requiredJS/config.js"></script>
+<script>
+    require(["template", "jquery", 'underscore', "plugins", "mediaelement_and_player", 'functions', "isotope", 'utils', 'text', 'text!commonTpl/head.tpl', 'text!commonTpl/nav.tpl'], function (template) {
+        //模拟JSON
+        var data = {
+            nav: [
+                {
+                    'name': '首页',
+                    'href': '',
+                    'child': []
+                },
+                {
+                    'name': '博客',
+                    'href': 'index.html',
+                    'child': [],
+                    'check':true
+                },
+                {
+                    'name': '简历',
+                    'href': '',
+                    'child': [],
+                    'check':false
+                },
+                {
+                    'name': '项目',
+                    'href': '',
+                    'child': [
+                        {
+                            'name': '全部项目',
+                            'href': '',
+                            'child': []
+                        },
+                        {
+                            'name': '前端开发',
+                            'href': '',
+                            'child': [
+                                {
+                                    'name': '页面设计',
+                                    'href': '',
+                                    'child': []
+                                },
+                                {
+                                    'name': '动态特效',
+                                    'href': '',
+                                    'child': []
+                                },
+                                {
+                                    'name': '框架组件',
+                                    'href': '',
+                                    'child': []
+                                }
+                            ]
+                        },
+                        {
+                            'name': '后端开发',
+                            'href': '',
+                            'child': [
+                                {
+                                    'name': 'Java',
+                                    'href': '',
+                                    'child': []
+                                },
+                                {
+                                    'name': 'Python',
+                                    'href': '',
+                                    'child': []
+                                }
+                            ]
+                        },
+                        {
+                            'name': '其他',
+                            'href': '',
+                            'child': []
+                        }
+                    ],
+                    'check':false
+                },
+                {
+                    'name': '相册',
+                    'href': '',
+                    'child': []
+                },
+                {
+                    'name': '联系方式',
+                    'href': '',
+                    'child': []
+                },
+                {
+                    'name': '个人简介',
+                    'href': '',
+                    'child': []
+                },
+                {
+                    'name': '其他页面',
+                    'href': '',
+                    'child': [
+                        {
+                            'name': '404',
+                            'href': '',
+                            'child': []
+                        },
+                        {
+                            'name': '升级公告',
+                            'href': '',
+                            'child': []
+                        },
+                        {
+                            'name': '即将到来',
+                            'href': '',
+                            'child': []
+                        },
+                    ]
+                },
+            ]
+        };
 
-<script type="text/javascript" src="assets/js/functions.js"></script>
+
+        var top = require('text!commonTpl/head.tpl'),
+                navTpl = require('text!commonTpl/nav.tpl'),
+                nav = data.nav,
+                navText="";
+        if (nav && nav.length > 0) {
+            _.each(nav, function (element, index, list) {
+                var item = {
+                    'name': element.name,
+                    'href':element.href||'javascript:;',
+                    'check':element.check,
+                    'child':element.child
+                };
+                navText+=getNav(item);
+            });
+            console.log(navText);
+            $('#navigation_bar-sticky-wrapper').append(navText);
+        };
+        //通过迭代的方式创建无限级的顶部菜单栏
+        function getNav(item){
+            if(item.child && item.child.length > 0){
+                var childText = "";
+                _.each(item.child,function(element){
+                   var childItem={
+                       'name':element.name,
+                       'href':element.href||'javascript:;',
+                       'check':element.check,
+                       'child':element.child
+                   }
+                    childText += getNav(childItem);
+                });
+            }
+            Jutils.extend(item,{'childText':childText},true);
+            var render = template.compile(navTpl);
+            var html = render(item);
+            return html;
+        }
+    })
+</script>
 </body>
 </html>

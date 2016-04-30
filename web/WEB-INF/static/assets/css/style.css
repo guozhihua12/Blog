@@ -11931,7 +11931,7 @@ to {
 	margin-bottom: 17px;
 	padding-bottom: 11px;
 	font-size: 13px;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 .hm_blog_full_list .blog_grid_con {
 	border: none;
