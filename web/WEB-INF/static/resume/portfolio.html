@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>瞿龙俊作品集</title>
+		<link rel="stylesheet" type="text/css" href="css/cssReset.css" />
+		<link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/portfolio.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			body {
+				height: 800px;
+				font-size: 16px;
+			}
+			header {
+				background: red;
+				width: 100%;
+				height: 10%;
+				text-align: center;
+				
+			}
+			.header{
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			header h1 {
+				font-size: 2em;
+				padding: 10px 0;
+			}
+			section {
+				background: yellow;
+				width: 100%;
+				height: 85%;
+			}
+			footer {
+				background: blue;
+				width: 100%;
+				height: 5%;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				var windowHeight = $(window).height();
+				$('body').css('height', windowHeight + 'px');
+				$(window).resize(function() {
+					var windowHeight = $(window).height();
+					$('body').css('height', windowHeight + 'px');
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header">
+				<h1>瞿龙俊的作品集</h1>
+				<h3>更新至 2015年09月08日</h3>
+			</div>
+		</header>
+		<section>
+
+		</section>
+		<footer>
+
+		</footer>
+	</body>
+
+</html>

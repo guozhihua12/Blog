@@ -1,0 +1,307 @@
+#wrapping {
+	width: 100%;
+	font-family: "微软雅黑,arial, helvetica, sans-serif";
+	font-size: 16px;
+}
+#container {
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+}
+#leftNav {
+	width: 15%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #6ecadc none repeat scroll 0 0;
+	height: 100%;
+}
+#rightNav {
+	width: 85%;
+	float: right;
+	height: 100%;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+.leftTop,
+.leftBottom {
+	width: 80%;
+	margin: 10% auto;
+	text-align: center;
+}
+.leftTop h1 {
+	font-size: 2.5em;
+	font-family: "隶书";
+	font-weight: 400;
+	letter-spacing: 0.3em;
+	color: white;
+}
+.leftTop img {
+	border: 1px solid white;
+	padding: 10%;
+	width: 80%;
+	margin: 10% auto;
+}
+.leftBottom {
+	text-align: left;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.leftBottom .selfInformation {
+	line-height: 1.5em;
+	margin-bottom: 10%;
+}
+.leftBottom .selfInformation h2 {
+	color: white;
+	font-weight: 800;
+	letter-spacing: 0.3em;
+	margin-bottom: 1%;
+}
+#rightNav .rightTop {
+	position: relative;
+	width: 100%;
+	padding: 2%;
+	background: rgba(0, 0, 0, 0.1);
+}
+#rightNav .rightTop span {
+	display: inline-block;
+	padding-right: 20px;
+}
+#rightNav .rightTop span label {
+	color: #6ecadc;
+}
+#rightNav .rightTop span a {
+	color: black;
+	padding-left: 5px;
+}
+#rightNav .rightContent .contentItem .itemHead {
+	width: 20%;
+	height: 10%;
+	font-family: '隶书';
+	padding: 5px 20px;
+	letter-spacing: 1em;
+	background: #6ECADC;
+}
+#rightNav .rightContent .contentItem h1 {
+	height: 20%;
+	font-size: 1.5em;
+}
+0#rightNav .rightContent .contentItem .head0 {
+	background: #6ECADC none repeat scroll 0 0;
+}
+#rightNav .rightContent .contentItem .head1 {
+	background: #e9a820 none repeat scroll 0 0;
+}
+#rightNav .rightContent .contentItem .head2 {
+	background: #3eb991 none repeat scroll 0 0;
+}
+#rightNav .rightContent .contentItem .head3 {
+	background: #9688aa none repeat scroll 0 0;
+}
+#rightNav .rightContent .contentItem .head4 {
+	background: #3da92f none repeat scroll 0 0;
+}
+#rightNav .rightContent .contentItem .head5 {
+	background: #cb7044 none repeat scroll 0 0;
+}
+#rightNav .rightContent .contentItem .head6 {
+	background: #f82264 none repeat scroll 0 0;
+}
+#rightNav .rightContent .contentItem .target ul {
+	padding-left: 1.5em;
+}
+#rightNav .rightContent .contentItem .itemContent {
+	padding: 2%;
+	width: 96%;
+	line-height: 1.5em;
+}
+#rightNav .rightContent .contentItem .education h2 {
+	display: inline;
+	font-family: "微软雅黑";
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: 0.3em;
+}
+#rightNav .rightContent .contentItem .education h3 {
+	font-family: "微软雅黑";
+	letter-spacing: 0.1em;
+	color: #999;
+}
+#rightNav .rightContent .contentItem .education .data {
+	color: #999;
+}
+#rightNav .rightContent .contentItem .education p {
+	text-indent: 2em;
+	margin-bottom: 20px;
+}
+#rightNav .rightContent .contentItem .selfSkill dl {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 10%;
+	line-height: 1.5em;
+	padding-left: 10px;
+}
+#rightNav .rightContent .contentItem .selfSkill dt {
+	font-weight: bold;
+}
+#rightNav .rightContent .contentItem .selfSkill dd {
+	text-indent: 2em;
+}
+#rightNav .rightContent .contentItem .selfSkill .skWrap {
+	display: inline-block;
+	margin: 0 5px 10px 5px;
+	text-align: center;
+}
+#rightNav .rightContent .contentItem .project dt,
+#rightNav .rightContent .contentItem .otherInfo dt {
+	font-weight: bold;
+}
+#rightNav .rightContent .contentItem .project dd,
+#rightNav .rightContent .contentItem .otherInfo dd {
+	padding: 0 2em;
+}
+#rightNav .rightContent .contentItem .project li {
+	display: inline-block;
+	padding-right: 20px;
+}
+#rightNav .rightContent .contentItem .project .projectInfo dl {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+#rightNav .rightContent .contentItem .project .projectInfo dt {
+	float: left;
+	width: 10%;
+}
+#rightNav .rightContent .contentItem .project .projectInfo dd {
+	float: left;
+	width: 90%;
+	padding: 0;
+}
+@media only screen and (min-width: 1081px) and (max-width: 1350px) {
+	.leftTop h1 {
+		font-size: 2em;
+	}
+}
+@media only screen and (min-width: 1081px) and (max-width: 1200px) {
+	#rightNav .rightContent .contentItem .itemHead h1 {
+		font-size: 1.1em;
+	}
+	#rightNav .rightContent .contentItem .education h2 {
+		font-size: 1.5em;
+	}
+}
+@media only screen and (min-width: 801px) and (max-width: 1080px) {
+	.leftTop h1 {
+		font-size: 1.5em;
+	}
+	#rightNav .rightContent .contentItem .itemHead {
+		width: 30%;
+	}
+	#rightNav .rightContent .contentItem .itemHead h1 {
+		font-size: 1em;
+	}
+	#rightNav .rightContent .contentItem .education h2 {
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+	.leftTop h1 {
+		font-size: 1.2em;
+	}
+	#leftNav {
+		width: 20%;
+	}
+	#rightNav {
+		width: 80%;
+	}
+	#rightNav .rightContent .contentItem .itemHead {
+		width: 40%;
+	}
+	#rightNav .rightContent .contentItem .itemHead h1 {
+		font-size: 1em;
+	}
+	#rightNav .rightContent .contentItem .education h2 {
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 700px) {
+	.leftTop h1 {
+		font-size: 1.2em;
+	}
+	#leftNav {
+		width: 20%;
+		position: static;
+		float: left;
+		height: 100%;
+	}
+	#rightNav {
+		width: 80%;
+		float: right;
+	}
+	#rightNav .rightContent .contentItem .itemHead {
+		width: 50%;
+	}
+	#rightNav .rightContent .contentItem .itemHead h1 {
+		font-size: 1em;
+	}
+	#rightNav .rightContent .contentItem .education h2 {
+		font-size: 1.2em;
+	}
+	#rightNav .rightTop span {
+		padding-right: 5px;
+	}
+}
+@media only screen and (min-width: 470px) and (max-width: 480px) {
+	.leftTop h1 {
+		font-size: 1.2em;
+	}
+	#leftNav {
+		width: 30%;
+	}
+	#rightNav {
+		width: 70%;
+	}
+	#rightNav .rightContent .contentItem .itemHead {
+		width: 100%;
+	}
+	#rightNav .rightContent .contentItem .itemHead h1 {
+		font-size: 1em;
+	}
+	#rightNav .rightContent .contentItem .education h2 {
+		font-size: 1.2em;
+	}
+	#rightNav .rightTop span {
+		width: 45%;
+	}
+}
+@media only screen and (min-width: 100px) and (max-width: 469px) {
+	.leftTop h1 {
+		font-size: 1.2em;
+	}
+	#leftNav {
+		width: 40%;
+	}
+	#rightNav {
+		width: 60%;
+	}
+	#rightNav .rightContent .contentItem .itemHead {
+		width: 100%;
+	}
+	#rightNav .rightContent .contentItem .itemHead h1 {
+		font-size: 1em;
+	}
+	#rightNav .rightContent .contentItem .education h2 {
+		font-size: 1.2em;
+	}
+	#rightNav .rightTop span {
+		width: 100%;
+		padding-bottom: 10px;
+	}
+}
