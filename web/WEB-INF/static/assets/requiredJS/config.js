@@ -5,6 +5,7 @@ requirejs.config({
         underscore:['http://www.css88.com/doc/underscore/underscore-min','underscore-min'],
         plugins: 'plugins',
         template:['template.min'],
+        //template_native:'template-native',
         mediaelement_and_player: 'mediaelement-and-player.min',
         isotope: 'isotope.pkgd.min',
         functions: 'functions',

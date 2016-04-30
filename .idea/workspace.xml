@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2a29248-605d-4555-9140-a58905225354" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/head.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/nav.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/isotope.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/json.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/mediaelement-and-player.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/require.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/template.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/text.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/underscore-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/template-native.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/static/json/head.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/css/style.css" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/head.tpl" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/head.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/nav.tpl" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/nav.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js" afterPath="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/static/index.html" afterPath="$PROJECT_DIR$/web/WEB-INF/static/index.html" />
     </list>
     <ignored path="Blog.iws" />
@@ -44,8 +34,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46760258">
-              <caret line="871" column="35" selection-start-line="871" selection-start-column="35" selection-end-line="871" selection-end-column="35" />
+            <state vertical-scroll-proportion="1.0831534">
+              <caret line="657" column="6" selection-start-line="657" selection-start-column="6" selection-end-line="657" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#5;n#aside#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#5;n#aside#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -53,56 +43,6 @@
                 <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#div#5;n#aside#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#4;n#div#0;n#div#5;n#aside#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/head.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.923077">
-              <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="85" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/nav.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="93" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/functions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3043" column="41" selection-start-line="3043" selection-start-column="41" selection-end-line="3043" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -159,10 +99,11 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/tools.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/utils.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/nav.tpl.html" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/head.tpl" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/utils.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js" />
         <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/nav.tpl" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/head.tpl" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/static/json/head.json" />
         <option value="$PROJECT_DIR$/web/WEB-INF/static/index.html" />
       </list>
     </option>
@@ -285,6 +226,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -846,12 +813,12 @@
       <created>1461821642533</created>
       <option name="number" value="Default" />
       <updated>1461821642533</updated>
-      <workItem from="1461821647194" duration="64549000" />
+      <workItem from="1461821647194" duration="69393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64549000" />
+    <option name="totallyTimeSpent" value="69393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -908,22 +875,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/portfolio-style3-3column-boxed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.436285">
-          <caret line="1098" column="14" selection-start-line="940" selection-start-column="4" selection-end-line="1098" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/blog-timeline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5172786">
-          <caret line="1334" column="31" selection-start-line="927" selection-start-column="4" selection-end-line="1334" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/template/portfolio-single-gallery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.153846">
@@ -1112,19 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/coming-soon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="188" column="34" selection-start-line="188" selection-start-column="34" selection-end-line="188" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/contact-me.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.0">
@@ -1297,48 +1235,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3392857">
           <caret line="3043" column="41" selection-start-line="3043" selection-start-column="41" selection-end-line="3043" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/template-native.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.60714287">
           <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/nav.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="93" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="93" />
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/json/head.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8898488">
+          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/coming-soon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7710583">
+          <caret line="229" column="88" selection-start-line="229" selection-start-column="33" selection-end-line="229" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#3;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/commonTpl/head.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.923077">
-          <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="85" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.50431967">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/assets/requiredJS/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17857143">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46760258">
-          <caret line="871" column="35" selection-start-line="871" selection-start-column="35" selection-end-line="871" selection-end-column="35" />
+        <state vertical-scroll-proportion="1.0831534">
+          <caret line="657" column="6" selection-start-line="657" selection-start-column="6" selection-end-line="657" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#5;n#aside#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#5;n#aside#0;n#div#1;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />

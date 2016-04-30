@@ -1,0 +1,113 @@
+{
+  "nav": [
+    {
+      "name": "首页",
+      "href": "coming-soon.html",
+      "child": []
+    },
+    {
+      "name": "博客",
+      "href": "index.html",
+      "child": [],
+      "check": true
+    },
+    {
+      "name": "简历",
+      "href": "resume/resume.html",
+      "child": [],
+      "check": false
+    },
+    {
+      "name": "项目",
+      "href": "project-list.html",
+      "child": [
+        {
+          "name": "全部项目",
+          "href": "project-list.html",
+          "child": []
+        },
+        {
+          "name": "前端开发",
+          "href": "project-list.html",
+          "child": [
+            {
+              "name": "页面设计",
+              "href": "project-list.html",
+              "child": []
+            },
+            {
+              "name": "动态特效",
+              "href": "project-list.html",
+              "child": []
+            },
+            {
+              "name": "框架组件",
+              "href": "project-list.html",
+              "child": []
+            }
+          ]
+        },
+        {
+          "name": "后端开发",
+          "href": "project-list.html",
+          "child": [
+            {
+              "name": "Java",
+              "href": "project-list.html",
+              "child": []
+            },
+            {
+              "name": "Python",
+              "href": "project-list.html",
+              "child": []
+            }
+          ]
+        },
+        {
+          "name": "其他",
+          "href": "project-list.html",
+          "child": []
+        }
+      ],
+      "check": false
+    },
+    {
+      "name": "相册",
+      "href": "media-photo-list.html",
+      "child": []
+    },
+    {
+      "name": "联系方式",
+      "href": "contact-me.html",
+      "child": []
+    },
+    {
+      "name": "个人简介",
+      "href": "about-me.html",
+      "child": []
+    },
+    {
+      "name": "其他页面",
+      "href": "404.html",
+      "child": [
+        {
+          "name": "404",
+          "href": "404.html",
+          "child": []
+        },
+        {
+          "name": "升级公告",
+          "href": "under-construction.html",
+          "child": []
+        },
+        {
+          "name": "即将到来",
+          "href": "coming-soon.html",
+          "child": []
+        }
+      ]
+    }
+  ],
+  "logoSrc":"assets/images/logo-dark.png",
+  "logoLink":"index.html"
+}
