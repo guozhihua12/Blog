@@ -10,7 +10,8 @@ requirejs.config({
         isotope: 'isotope.pkgd.min',
         functions: 'functions',
         utils:'utils',
-        text:'text'
+        text:'text',
+        loadHead:'module/loadHead'
     },
     shim: {
         plugins: {

@@ -79,9 +79,6 @@
                     <div class="hm_blog_list clearfix">
                         <div class="blog_grid_block clearfix">
                             <div class="feature_inner">
-                                <!-- <a href="#" class="blog_list_format">
-                                    <i class="ico-quote-right"></i>
-                                </a> -->
                                 <div class="feature_inner_corners">
                                     <div class="feature_inner_btns">
                                         <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
@@ -128,9 +125,6 @@
                         </div>
                         <div class="blog_grid_block clearfix">
                             <div class="feature_inner">
-                                <!-- <a href="#" class="blog_list_format">
-                                    <i class="ico-image4"></i>
-                                </a> -->
                                 <div class="feature_inner_corners">
                                     <div class="feature_inner_btns">
                                         <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
@@ -601,60 +595,8 @@
 <script type="text/javascript" src="assets/requiredJS/require.min.js"></script>
 <script type="text/javascript" src="assets/requiredJS/config.js"></script>
 <script>
-    require(["template", "jquery", 'underscore', "plugins", "mediaelement_and_player","functions", "isotope", 'utils', 'text', 'text!commonTpl/head.tpl', 'text!commonTpl/nav.tpl'], function (template) {
-        //加载头部
-        $.ajax( {
-            type : "GET",
-            url : "json/head.json",
-            success : function(data) {
-                var headTpl = require('text!commonTpl/head.tpl'),
-                        navTpl = require('text!commonTpl/nav.tpl'),
-                        nav = data.nav,
-                        navText = "";
-                if (nav && nav.length > 0) {
-                    _.each(nav, function (element, index, list) {
-                        var item = {
-                            'name': element.name,
-                            'href': element.href || 'javascript:;',
-                            'check': element.check,
-                            'child': element.child
-                        };
-                        navText += getNav(item);
-                    });
-                    var navData = {
-                        'navText': navText,
-                        'logoSrc':data.logoSrc,
-                        'logoLink':data.logoLink
-                    };
+    require(["template", "jquery", 'underscore',"plugins", "mediaelement_and_player", "isotope",'utils','loadHead',"functions"], function (template) {
 
-                    var render = template.compile(headTpl);
-                    var html = render(navData);
-                    document.getElementById('site_header').innerHTML = html;
-                };
-                //通过迭代的方式创建无限级的顶部菜单栏
-                function getNav(item) {
-                    if (item.child && item.child.length > 0) {
-                        var childText = "";
-                        _.each(item.child, function (element) {
-                            var childItem = {
-                                'name': element.name,
-                                'href': element.href || 'javascript:;',
-                                'check': element.check,
-                                'child': element.child
-                            };
-                            childText += getNav(childItem);
-                        });
-                    }
-                    Jutils.extend(item, {'childText': childText}, true);
-                    var render = template.compile(navTpl);
-                    var html = render(item);
-                    return html;
-                }
-            },
-            error : function() {
-                console.log("无法渲染head");
-            }
-        });
     })
 </script>
 </body>
