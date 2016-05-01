@@ -2,6 +2,46 @@
   "blog": [
     {
       "type": "text",
+      "title": "这是一个文本标题",
+      "summary": "This is a Summary",
+      "id": 1,
+      "author": "瞿龙俊",
+      "date": "2015-08-22",
+      "coverSrc": "assets/images/blog/blog_demo5.jpg",
+      "category": [
+        {
+          "id": 1,
+          "name": "前端"
+        },
+        {
+          "id": 2,
+          "name": "组件"
+        }
+      ],
+      "defaultCover": "assets/images/blog/blog_demo4.jpg"
+    },
+    {
+      "type": "cover",
+      "title": "这是一个封面文章",
+      "summary": "This is a Summary",
+      "id": 1,
+      "author": "瞿龙俊",
+      "date": "2015-08-21",
+      "category": [
+        {
+          "id": 1,
+          "name": "前端"
+        },
+        {
+          "id": 2,
+          "name": "组件"
+        }
+      ],
+      "customCover": "assets/images/blog/blog_demo5.jpg"
+    },
+    {
+      "type": "gallery",
+      "title": "这是一个相册文章",
       "summary": "This is a Summary",
       "id": 1,
       "author": "瞿龙俊",
@@ -16,10 +56,16 @@
           "id": 2,
           "name": "组件"
         }
+      ],
+      "imageSrc": [
+        "assets/images/project/project_demo1.jpg",
+        "assets/images/project/project_demo2.jpg",
+        "assets/images/project/project_demo3.jpg"
       ]
     },
     {
-      "type": "text",
+      "type": "video",
+      "title": "这是一个视频文章",
       "summary": "This is a Summary",
       "id": 1,
       "author": "瞿龙俊",
@@ -34,10 +80,32 @@
           "id": 2,
           "name": "组件"
         }
-      ]
+      ],
+      "videoSrc": "http://www.enar.ideal-theme.com/html5/files/v1.mp4"
+    },
+    {
+      "type": "audio",
+      "title": "这是一个音频文章",
+      "summary": "This is a Summary",
+      "id": 1,
+      "author": "瞿龙俊",
+      "date": "2015-08-21",
+      "coverSrc": "assets/images/blog/blog_demo5.jpg",
+      "category": [
+        {
+          "id": 1,
+          "name": "前端"
+        },
+        {
+          "id": 2,
+          "name": "组件"
+        }
+      ],
+      "audioSrc": "http://96.ierge.cn/12/186/372868.mp3"
     },
     {
       "type": "text",
+      "title": "这是一个文本标题",
       "summary": "This is a Summary",
       "id": 1,
       "author": "瞿龙俊",
@@ -52,10 +120,55 @@
           "id": 2,
           "name": "组件"
         }
+      ],
+      "defaultCover": "assets/images/blog/blog_demo4.jpg"
+    },
+    {
+      "type": "cover",
+      "title": "这是一个封面文章",
+      "summary": "This is a Summary",
+      "id": 1,
+      "author": "瞿龙俊",
+      "date": "2015-08-21",
+      "category": [
+        {
+          "id": 1,
+          "name": "前端"
+        },
+        {
+          "id": 2,
+          "name": "组件"
+        }
+      ],
+      "customCover": "assets/images/blog/blog_demo5.jpg"
+    },
+    {
+      "type": "gallery",
+      "title": "这是一个相册文章",
+      "summary": "This is a Summary",
+      "id": 1,
+      "author": "瞿龙俊",
+      "date": "2015-08-21",
+      "coverSrc": "assets/images/blog/blog_demo5.jpg",
+      "category": [
+        {
+          "id": 1,
+          "name": "前端"
+        },
+        {
+          "id": 2,
+          "name": "组件"
+        }
+      ],
+      "imageSrc": [
+        "assets/images/project/project_demo1.jpg",
+        "assets/images/project/project_demo2.jpg",
+        "assets/images/project/project_demo3.jpg"
       ]
     },
     {
-      "type": "text",
+      "type": "video",
+      "title": "这是一个视频文章",
       "summary": "This is a Summary",
       "id": 1,
       "author": "瞿龙俊",
@@ -70,10 +183,12 @@
           "id": 2,
           "name": "组件"
         }
-      ]
+      ],
+      "videoSrc": "http://www.enar.ideal-theme.com/html5/files/v1.mp4"
     },
     {
-      "type": "text",
+      "type": "audio",
+      "title": "这是一个音频文章",
       "summary": "This is a Summary",
       "id": 1,
       "author": "瞿龙俊",
@@ -88,7 +203,8 @@
           "id": 2,
           "name": "组件"
         }
-      ]
+      ],
+      "audioSrc": "http://96.ierge.cn/12/186/372868.mp3"
     }
   ]
 }

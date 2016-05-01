@@ -1,11 +1,11 @@
 (function($){
-   "use strict";
+	"use strict";
 	//----------> Site Preloader
 	$(window).load(function() {
-         $('#preloader').fadeOut('slow', function(){
-			  $(this).remove();
-		 });
-    });
+		$('#preloader').fadeOut('slow', function(){
+			$(this).remove();
+		});
+	});
 	$(document).ready(function(){
 		var site_dark = ( $("body").hasClass("dark") ? "yes" : "no" );
 		var site_dir = "ltr";
@@ -102,15 +102,15 @@
 		});
 
 		$("ul.sitemap li").each(function(index, element) {
-            $(this).has( "ul" ).addClass( "has_child_sitmap" );
+			$(this).has( "ul" ).addClass( "has_child_sitmap" );
 			if($(this).hasClass("has_child_sitmap")){
 				var num_child = $(this).find(" > ul > li").length;
 				$(this).append('<span class="sitemap_count">' + num_child +'</span>');
 			}
 
-        });
+		});
 		//-----------> Menu
-		$("#nav_menu").idealtheme({});
+		//$("#nav_menu").idealtheme({});
 
 		//----------> Owl Start
 		var image_menu_slide =  $(".image_menu_slide");
@@ -119,41 +119,41 @@
 		var side_menu_res_b = $("body").hasClass(header_on_side) ? 1 : 5;
 
 		image_menu_slide.owlCarousel({
-			 direction: site_dir,
-			 autoPlay : 3000,
-			 navigation:true,
-			 stopOnHover : true,
-			 itemsCustom : [
+			direction: site_dir,
+			autoPlay : 3000,
+			navigation:true,
+			stopOnHover : true,
+			itemsCustom : [
 				[0, 2],
 				[479, 3],
 				[768, 3],
 				[979, side_menu_res_a],
 				[1199, side_menu_res_b],
-			 ],
-			 itemsDesktop: false,
-			 itemsDesktopSmall: false,
-			 itemsTablet: false,
-			 itemsTabletSmall: false,
-			 itemsMobile: false,
-			 navigationText: [
+			],
+			itemsDesktop: false,
+			itemsDesktopSmall: false,
+			itemsTablet: false,
+			itemsTabletSmall: false,
+			itemsMobile: false,
+			navigationText: [
 				"<i class='menu_img_prev ico-navigate-before'></i>",
 				"<i class='menu_img_next ico-navigate-next'></i>"
 			],
 		});
 
 		$(".has_sub_img").owlCarousel({
-			 direction: site_dir,
-			 singleItem:true,
-			 autoPlay : 3000,
-			 itemsDesktop: false,
-			 itemsDesktopSmall: false,
-			 itemsTablet: false,
-			 itemsTabletSmall: false,
-			 itemsMobile: false,
-			 autoHeight : false,
-			 stopOnHover : true,
-			 navigation:true,
-			 navigationText: [
+			direction: site_dir,
+			singleItem:true,
+			autoPlay : 3000,
+			itemsDesktop: false,
+			itemsDesktopSmall: false,
+			itemsTablet: false,
+			itemsTabletSmall: false,
+			itemsMobile: false,
+			autoHeight : false,
+			stopOnHover : true,
+			navigation:true,
+			navigationText: [
 				"<i class='menu_img_prev ico-caret-left'></i>",
 				"<i class='menu_img_next ico-caret-right'></i>"
 			],
@@ -300,7 +300,7 @@
 		//--------------------------------------> Shop Sliddes
 		var shop_slide_sideboxed_a = 4;
 		if( $("body").hasClass("site_boxed") && $("body").hasClass("header_on_side") ){
-			 shop_slide_sideboxed_a = 3;
+			shop_slide_sideboxed_a = 3;
 		}
 
 		$(".shop_slider").owlCarousel({
@@ -396,7 +396,7 @@
 		//--------------------------------------> Single Page (Shop)
 		$(".thumbs_gall_slider_con").each(function(index, element) {
 			var gall_con = $(this);
-            var sync1 = $(gall_con).find(".thumbs_gall_slider_larg");
+			var sync1 = $(gall_con).find(".thumbs_gall_slider_larg");
 			var sync2 = $(gall_con).find(".gall_thumbs");
 			var transition_style = $(sync1).attr("data-transition");
 
@@ -530,7 +530,7 @@
 					sync2.trigger("owl.goTo", num-1);
 				}
 			}
-        });
+		});
 
 		$(".content_slider").owlCarousel({
 			direction: site_dir,
@@ -555,7 +555,7 @@
 			autoPlay : 3000,
 			autoHeight : false,
 			items:1,
-            itemsDesktop: false,
+			itemsDesktop: false,
 			itemsDesktopSmall: false,
 			itemsTablet: false,
 			itemsTabletSmall: false,
@@ -601,7 +601,7 @@
 			slideSpeed : 900,
 			autoPlay : 3000,
 			autoHeight : true,
-            items:1,
+			items:1,
 			itemsDesktop: false,
 			itemsDesktopSmall: false,
 			itemsTablet: false,
@@ -705,18 +705,18 @@
 				owl.find('.owl-item').eq(o_d.currentItem).addClass('active').siblings().removeClass('active');
 				owl.find('.owl-item:not(.active) .owl_slider_con > span').removeClass('transform_owl');
 				owl.find('.owl-item.active .owl_slider_con > span').each(function(index, element) {
-                    setTimeout(function() {
-							owl.find('.owl-item.active .owl_slider_con > span').eq(index).addClass('transform_owl');
+					setTimeout(function() {
+						owl.find('.owl-item.active .owl_slider_con > span').eq(index).addClass('transform_owl');
 					}, ((index+1)*200) );
-                });
+				});
 
 			}else{
 				owl.find('.owl-item').eq(0).addClass('active').siblings().removeClass('active');
 				owl.find('.owl-item.active .owl_slider_con > span').each(function(index, element) {
-                    setTimeout(function() {
-							owl.find('.owl-item.active .owl_slider_con > span').eq(index).addClass('transform_owl');
+					setTimeout(function() {
+						owl.find('.owl-item.active .owl_slider_con > span').eq(index).addClass('transform_owl');
 					}, ((index+1)*200) );
-                });
+				});
 			}
 		}
 		//----------> Owl End
@@ -735,11 +735,11 @@
 		}
 		//-----------> Tree Features
 		$(".tree_features li").each(function(index, element) {
-            var bg_color = $(this).attr("data-bgcolor");
+			var bg_color = $(this).attr("data-bgcolor");
 			$(this).append("<span class='tree_curv'></span>");
 			$(this).css({"background-color" : bg_color});
 			$(this).find(".tree_curv").css({"background-color" : bg_color});
-        });
+		});
 		//----------------------------------> Four Boxes Slider
 		if (typeof BoxesFx !== 'undefined' && $.isFunction(BoxesFx)) {
 			var boxesfx_gall = new BoxesFx( document.getElementById( 'boxgallery' ) );
@@ -772,25 +772,25 @@
 		//----------------------------------> Camera Slider
 		if ( $.isFunction($.fn.camera) ) {
 			$("#camera_wrap_1").each(function(){
-					var c1 = $(this);
-					c1.camera({
-						thumbnails: true,
-					});
+				var c1 = $(this);
+				c1.camera({
+					thumbnails: true,
+				});
 			});
 
 			$("#camera_wrap_2").each(function(){
-					var c2 = $(this);
-					c2.camera({
-						height: '550px',
-						loader: 'bar',
-						loaderColor:"#1CCDCA",
-						loaderBgColor:"none",
-						loaderOpacity:0.7,
-						loaderPadding:0,
-						loaderStroke:5,
-						pagination: false,
-						thumbnails: true
-					});
+				var c2 = $(this);
+				c2.camera({
+					height: '550px',
+					loader: 'bar',
+					loaderColor:"#1CCDCA",
+					loaderBgColor:"none",
+					loaderOpacity:0.7,
+					loaderPadding:0,
+					loaderStroke:5,
+					pagination: false,
+					thumbnails: true
+				});
 			});
 		}
 		//----------------------------------> Flex Slider
@@ -820,7 +820,7 @@
 				animationSpeed: 800,
 				pauseOnHover: true,
 				asNavFor: '#flex_carousel'
-			 }).flexsliderManualDirectionControls({
+			}).flexsliderManualDirectionControls({
 				previousElementSelector: ".flex_previous",
 				nextElementSelector: ".flex_next",
 				disabledStateClassName: "flex_disabled"
@@ -839,9 +839,9 @@
 				pauseOnHover: true,
 				sync: "#flex_thumbs",
 				start: function(slider){
-				  //$('body').removeClass('loading');
+					//$('body').removeClass('loading');
 				}
-			 }).flexsliderManualDirectionControls({
+			}).flexsliderManualDirectionControls({
 				previousElementSelector: ".flex_previous",
 				nextElementSelector: ".flex_next",
 				disabledStateClassName: "flex_disabled"
@@ -860,14 +860,14 @@
 				slideshowSpeed: 3000,
 				animationSpeed: 800,
 				pauseOnHover: false,
-			 });
+			});
 		}
 
 		//----------------------------------> Back To Top
 		var to_top_offset = 300,
-		to_top_offset_opacity = 1200,
-		scroll_top_duration = 900,
-		$back_to_top = $('.hm_go_top');
+			to_top_offset_opacity = 1200,
+			scroll_top_duration = 900,
+			$back_to_top = $('.hm_go_top');
 		$(window).scroll(function(){
 			if($(this).scrollTop() > to_top_offset ){
 				$back_to_top.addClass('hm_go_is-visible');
@@ -882,8 +882,8 @@
 		$back_to_top.on('click', function(event){
 			event.preventDefault();
 			$('body,html').animate({
-				scrollTop: 0,
-				//easing : "easeOutElastic"
+					scrollTop: 0,
+					//easing : "easeOutElastic"
 				}, {queue:false, duration: scroll_top_duration, easing:"easeInOutExpo"}
 			);
 		});
@@ -899,7 +899,7 @@
 		//----------------------------------> main_title icon
 		$(".content_section:not(.bg_gray)").each(function(index, element) {
 			var color = '';
-            var section_bg = $(this).css('backgroundColor');
+			var section_bg = $(this).css('backgroundColor');
 			var parts = section_bg.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
 			if ( parts !== null ){
 				delete(parts[0]);
@@ -912,14 +912,14 @@
 				$(this).find(".main_title .line .dot").css({"background-color" : color});
 			}
 
-        });
+		});
 		//----------------------------------> Gialog Lightbox
 		$("[data-dialog]").each(function(index, element) {
-            var dialog_btn = element,
+			var dialog_btn = element,
 				dialog_name = document.getElementById( dialog_btn.getAttribute( 'data-dialog' ) ),
-			    my_dlg = new DialogFx( dialog_name );
-				dialog_btn.addEventListener( 'click', my_dlg.toggle.bind(my_dlg) );
-        });
+				my_dlg = new DialogFx( dialog_name );
+			dialog_btn.addEventListener( 'click', my_dlg.toggle.bind(my_dlg) );
+		});
 
 		//----------------------------------> Magnific Popup Lightbox
 		if ( $.isFunction($.fn.magnificPopup) ) {
@@ -992,7 +992,7 @@
 				retina: {
 					ratio: 1,
 					replaceSrc: function(item, ratio) {
-					  return item.src.replace(/\.\w+$/, function(m) { return '@2x' + m; });
+						return item.src.replace(/\.\w+$/, function(m) { return '@2x' + m; });
 					}
 				}
 
@@ -1062,8 +1062,8 @@
 		//----------------------------------> Responsive Resize
 		var hm_screen_last_width = hm_screen_width();
 		$(window).resize(function() {
-			  hm_screen_last_width = hm_screen_width();
-			  hm_google_map_with_text();
+			hm_screen_last_width = hm_screen_width();
+			hm_google_map_with_text();
 		});
 		function hm_screen_width(){
 			return document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
@@ -1081,8 +1081,8 @@
 		hm_google_map_with_text();
 		function hm_google_map_with_text(){
 			$(".col-md-4 .google_map, .col-md-6 .google_map, .col-md-3 .google_map, .col-md-9 .google_map").each(function(index, element) {
-				  var widthy = $(this).innerWidth();
-				  $(this).height(widthy/2);
+				var widthy = $(this).innerWidth();
+				$(this).height(widthy/2);
 			});
 		}
 
@@ -1200,7 +1200,7 @@
 
 				var delay = ($this.attr("data-progress-delay") ? $this.attr("data-progress-delay") : 1);
 				var animation_type = ($this.attr("data-progress-animation") ? $this.attr("data-progress-animation") : "easeOutBounce");
-			    var bg_color = ($this.attr("data-progress-color") ? $this.attr("data-progress-color") : "");
+				var bg_color = ($this.attr("data-progress-color") ? $this.attr("data-progress-color") : "");
 				$this.find(".fill").css({"background" : bg_color});
 
 				if(delay > 1) $this.css("animation-delay", delay + "ms");
@@ -1212,19 +1212,19 @@
 					}
 
 					$this.find(".fill").animate({
-							width: $this.attr("data-progress-val")+'%',
-						}, 1500, animation_type, function() {
-                            if(site_dir == "ltr"){
-								$this.find(".title").animate({
-									opacity: 1,
-									left: 0
-								}, 1500, animation_type);
-							}else{
-								$this.find(".title").animate({
-									opacity: 1,
-									right: 0
-								}, 1500, animation_type);
-							}
+						width: $this.attr("data-progress-val")+'%',
+					}, 1500, animation_type, function() {
+						if(site_dir == "ltr"){
+							$this.find(".title").animate({
+								opacity: 1,
+								left: 0
+							}, 1500, animation_type);
+						}else{
+							$this.find(".title").animate({
+								opacity: 1,
+								right: 0
+							}, 1500, animation_type);
+						}
 					});
 
 					$this.find(".value .num").countTo({
@@ -1246,301 +1246,301 @@
 
 
 			//if ( $.isFunction($.fn.ProgressBar) ) {
-				$(this).appear(function() {
-					var hm_delay = ($(this).attr("data-delay") ? $(this).attr("data-delay") : 1);
-					var hm_percenty = $(this).attr("data-percentag") ? $(this).attr("data-percentag") : 100;
-					var hm_startColor = $(this).attr("data-start-color") ? $(this).attr("data-start-color") : '#1CCDCA';
-					var hm_endColor = $(this).attr("data-end-color") ? $(this).attr("data-end-color") : '#1CCDCA';
-					var hm_animation = $(this).attr("data-animation") ? $(this).attr("data-animation") : 'easeInOut';
-					var hm_days_nums = $(this).attr("data-event") ? $(this).attr("data-event") : "";
+			$(this).appear(function() {
+				var hm_delay = ($(this).attr("data-delay") ? $(this).attr("data-delay") : 1);
+				var hm_percenty = $(this).attr("data-percentag") ? $(this).attr("data-percentag") : 100;
+				var hm_startColor = $(this).attr("data-start-color") ? $(this).attr("data-start-color") : '#1CCDCA';
+				var hm_endColor = $(this).attr("data-end-color") ? $(this).attr("data-end-color") : '#1CCDCA';
+				var hm_animation = $(this).attr("data-animation") ? $(this).attr("data-animation") : 'easeInOut';
+				var hm_days_nums = $(this).attr("data-event") ? $(this).attr("data-event") : "";
 
-					//-------> Days
-					function showDays(firstDate,secondDate){
-						  var startDay = new Date(firstDate);
-						  var endDay = new Date(secondDate);
-						  var millisecondsPerDay = 1000 * 60 * 60 * 24;
-						  var millisBetween = startDay.getTime() - endDay.getTime();
-						  var days = millisBetween / millisecondsPerDay;
-						  return Math.floor(days);
-					}
-					var tdate = new Date();
-					var dd = tdate.getDate(); //yields day
-					var MM = tdate.getMonth(); //yields month
-					var yyyy = tdate.getFullYear(); //yields year
-					var today_is = ( MM+1) + "/" + dd + "/" + yyyy;
-					var days = showDays(hm_days_nums,today_is);
-					//------->
+				//-------> Days
+				function showDays(firstDate,secondDate){
+					var startDay = new Date(firstDate);
+					var endDay = new Date(secondDate);
+					var millisecondsPerDay = 1000 * 60 * 60 * 24;
+					var millisBetween = startDay.getTime() - endDay.getTime();
+					var days = millisBetween / millisecondsPerDay;
+					return Math.floor(days);
+				}
+				var tdate = new Date();
+				var dd = tdate.getDate(); //yields day
+				var MM = tdate.getMonth(); //yields month
+				var yyyy = tdate.getFullYear(); //yields year
+				var today_is = ( MM+1) + "/" + dd + "/" + yyyy;
+				var days = showDays(hm_days_nums,today_is);
+				//------->
 
-					var hm_percenty_color = '#666';
-					var hm_progress_type = '';
-					var circle;
-					var iii;
-					//-------->
-					if($(this).hasClass("square") && $(this).closest(".white_section").length !== 0){
-						hm_percenty_color = '#fff';
-					}else if(site_dark == "yes" && $(this).hasClass("style1") && $(this).closest(".white_section").length !== 0){
-						hm_percenty_color = '#666';
-					}else if(site_dark == "no" && $(this).hasClass("style1") && $(this).closest(".white_section").length !== 0){
-						hm_percenty_color = '#666';
-					}else if(site_dark == "yes" || $(this).hasClass("square") || $(this).closest(".white_section").length !== 0 ){
-						hm_percenty_color = '#fff';
+				var hm_percenty_color = '#666';
+				var hm_progress_type = '';
+				var circle;
+				var iii;
+				//-------->
+				if($(this).hasClass("square") && $(this).closest(".white_section").length !== 0){
+					hm_percenty_color = '#fff';
+				}else if(site_dark == "yes" && $(this).hasClass("style1") && $(this).closest(".white_section").length !== 0){
+					hm_percenty_color = '#666';
+				}else if(site_dark == "no" && $(this).hasClass("style1") && $(this).closest(".white_section").length !== 0){
+					hm_percenty_color = '#666';
+				}else if(site_dark == "yes" || $(this).hasClass("square") || $(this).closest(".white_section").length !== 0 ){
+					hm_percenty_color = '#fff';
 
-					}else {
-						hm_percenty_color = '#666';
-					}
+				}else {
+					hm_percenty_color = '#666';
+				}
 
-					//-------->
-					if($(this).hasClass("path")){
-						var scene = document.getElementsByTagName('object');
-						var lengh_heart = scene.length;
-						var path = new ProgressBar.Path(scene[0].contentDocument.querySelector('.heart-path'), {
-							duration: 2000,
-							easing: 'easeInOut',
-							step: function(state, path) {
+				//-------->
+				if($(this).hasClass("path")){
+					var scene = document.getElementsByTagName('object');
+					var lengh_heart = scene.length;
+					var path = new ProgressBar.Path(scene[0].contentDocument.querySelector('.heart-path'), {
+						duration: 2000,
+						easing: 'easeInOut',
+						step: function(state, path) {
 
-							}
-						});
+						}
+					});
 
-						var $path_val = $this_this.find('.path_val .num');
-						$path_val.countTo({
-							from: 0,
-							to: hm_percenty,
-							speed: 2000,
-						});
-						path.animate(hm_percenty / 100);
+					var $path_val = $this_this.find('.path_val .num');
+					$path_val.countTo({
+						from: 0,
+						to: hm_percenty,
+						speed: 2000,
+					});
+					path.animate(hm_percenty / 100);
 
-					}else if($(this).hasClass("square")){
-							circle = new ProgressBar.Square(element , {
-							color: hm_startColor,
-							trailColor: 'rgba(0,0,0,.07)',
-							strokeWidth: 3.5,
-							duration: 2000,
-							easing: hm_animation,
+				}else if($(this).hasClass("square")){
+					circle = new ProgressBar.Square(element , {
+						color: hm_startColor,
+						trailColor: 'rgba(0,0,0,.07)',
+						strokeWidth: 3.5,
+						duration: 2000,
+						easing: hm_animation,
 
-							from: { color: hm_startColor, width: 3.5 },
-							to: { color: hm_endColor, width: 3.5 },
-							text: {
-								value: '0',
-								color: hm_percenty_color,
-							},
-							step: function(state, circle) {
-								circle.setText((circle.value() * 100).toFixed(0) + " %");
-								circle.path.setAttribute('stroke', state.color);
-								circle.path.setAttribute('stroke-width', state.width);
-							}
-
-						});
-					}else if( $this_this.hasClass("seconds") ){
-						    circle = new ProgressBar.Circle(element , {
-							color: hm_startColor,
-							trailColor: 'rgba(255,255,255,.1)',
-							strokeWidth: 10,
-							trailWidth: 2,
-							duration: 200,
-							easing: hm_animation,
-
-							from: { color: hm_startColor, width: 2 },
-							to: { color: hm_endColor, width: 2 },
-							text: {
-								value: ' ',
-								color: hm_percenty_color,
-							},
-							step: function(state, circle) {
-								circle.path.setAttribute('stroke', state.color);
-								circle.path.setAttribute('stroke-width', state.width);
-							}
-
-						});
-						setInterval(function() {
-							var second = new Date().getSeconds();
-							var second_minus = 60 - second;
-							circle.animate(second_minus / 60, function() {
-								if (second === 0){
-									second = 60;
-									circle.setText(second_minus);
-								}else{
-									circle.setText(second_minus);
-								}
-
-							});
-						}, 1000);
-					}else if( $this_this.hasClass("minutes") ){
-						    circle = new ProgressBar.Circle(element , {
-							color: hm_startColor,
-							trailColor: 'rgba(255,255,255,.1)',
-							strokeWidth: 10,
-							trailWidth: 2,
-							duration: 800,
-							easing: hm_animation,
-
-							from: { color: hm_startColor, width:2 },
-							to: { color: hm_endColor, width: 2 },
-							text: {
-								value: ' ',
-								color: hm_percenty_color,
-							},
-							step: function(state, circle) {
-								circle.path.setAttribute('stroke', state.color);
-								circle.path.setAttribute('stroke-width', state.width);
-							}
-
-						});
-						iii = 0;
-						setInterval(function() {
-							var minutes = new Date().getMinutes();
-							var minutes_minus = 60 - minutes;
-
-							var $path_val = $this_this.find('.progressbar-text');
-							if(iii === 0){
-								$path_val.countTo({
-									from: 0,
-									to: minutes_minus,
-									speed: 800,
-								});
-							}
-							iii = 1;
-
-							circle.animate(minutes_minus / 60, function() {
-								if (minutes === 0){
-									minutes = 60;
-									circle.setText(minutes_minus);
-								}else{
-									circle.setText(minutes_minus);
-								}
-							});
-						}, 1000);
-					}else if( $this_this.hasClass("hours") ){
-							circle = new ProgressBar.Circle(element , {
-							color: hm_startColor,
-							trailColor: 'rgba(255,255,255,.1)',
-							strokeWidth: 10,
-							trailWidth: 2,
-							duration: 800,
-							easing: hm_animation,
-
-							from: { color: hm_startColor, width: 2 },
-							to: { color: hm_endColor, width: 2 },
-							text: {
-								value: ' ',
-								color: hm_percenty_color,
-							},
-							step: function(state, circle) {
-								circle.path.setAttribute('stroke', state.color);
-								circle.path.setAttribute('stroke-width', state.width);
-							}
-
-						});
-						iii = 0;
-						setInterval(function() {
-							var hours = new Date().getHours();
-							var hours_minus = 24 - hours;
-
-							var $path_val = $this_this.find('.progressbar-text');
-							if(iii === 0){
-								$path_val.countTo({
-									from: 0,
-									to: hours_minus,
-									speed: 800,
-								});
-							}
-							iii = 1;
-							circle.animate(hours_minus / 24, function() {
-								if (hours === 0){
-									hours = 24;
-									circle.setText(hours_minus);
-								}else{
-									circle.setText(hours_minus);
-								}
-							});
-						}, 1000);
-					}else if( $this_this.hasClass("days") ){
-							circle = new ProgressBar.Circle(element , {
-							color: hm_startColor,
-							trailColor: 'rgba(255,255,255,.1)',
-							strokeWidth: 10,
-							trailWidth: 2,
-							duration: 800,
-							easing: hm_animation,
-
-							from: { color: hm_startColor, width: 2 },
-							to: { color: hm_endColor, width: 2 },
-							text: {
-								value: "0",
-								color: hm_percenty_color,
-							},
-							step: function(state, circle) {
-								circle.path.setAttribute('stroke', state.color);
-								circle.path.setAttribute('stroke-width', state.width);
-							}
-
-						});
-						iii = 0;
-						setInterval(function() {
-							var $path_val = $this_this.find('.progressbar-text');
-							if(iii === 0){
-								$path_val.countTo({
-									from: 0,
-									to: days,
-									speed: 800,
-								});
-							}
-							iii = 1;
-
-							circle.animate(days / 365, function() {
-								circle.setText(days);
-							});
-						}, 1000);
-					}else{
-							circle = new ProgressBar.Circle(element , {
-							color: hm_startColor,
-							trailColor: 'rgba(0,0,0,.07)',
-							strokeWidth: 10,
-							trailWidth: 3,
-							duration: 2000,
-							easing: hm_animation,
-
-							from: { color: hm_startColor, width: 3 },
-							to: { color: hm_endColor, width: 3 },
-							text: {
-								value: '0',
-								color: hm_percenty_color,
-							},
-							step: function(state, circle) {
-								circle.setText((circle.value() * 100).toFixed(0) + " %");
-								circle.path.setAttribute('stroke', state.color);
-								circle.path.setAttribute('stroke-width', state.width);
-							}
-
-						});
-					}
-
-					setTimeout(function() {
-						$this_this.animate({
-									opacity: 1,
-						}, 1000 );
-
-						$this_this.find(".progressbar-text").animate({
-									opacity: 1,
-						}, hm_delay);
-						if($this_this.hasClass("path")){
-
-						}else if ($this_this.hasClass("seconds") || $this_this.hasClass("minutes") || $this_this.hasClass("hours") || $this_this.hasClass("days") ){
-
-						} else{
-							circle.animate(hm_percenty / 100, function() {
-
-							});
+						from: { color: hm_startColor, width: 3.5 },
+						to: { color: hm_endColor, width: 3.5 },
+						text: {
+							value: '0',
+							color: hm_percenty_color,
+						},
+						step: function(state, circle) {
+							circle.setText((circle.value() * 100).toFixed(0) + " %");
+							circle.path.setAttribute('stroke', state.color);
+							circle.path.setAttribute('stroke-width', state.width);
 						}
 
+					});
+				}else if( $this_this.hasClass("seconds") ){
+					circle = new ProgressBar.Circle(element , {
+						color: hm_startColor,
+						trailColor: 'rgba(255,255,255,.1)',
+						strokeWidth: 10,
+						trailWidth: 2,
+						duration: 200,
+						easing: hm_animation,
+
+						from: { color: hm_startColor, width: 2 },
+						to: { color: hm_endColor, width: 2 },
+						text: {
+							value: ' ',
+							color: hm_percenty_color,
+						},
+						step: function(state, circle) {
+							circle.path.setAttribute('stroke', state.color);
+							circle.path.setAttribute('stroke-width', state.width);
+						}
+
+					});
+					setInterval(function() {
+						var second = new Date().getSeconds();
+						var second_minus = 60 - second;
+						circle.animate(second_minus / 60, function() {
+							if (second === 0){
+								second = 60;
+								circle.setText(second_minus);
+							}else{
+								circle.setText(second_minus);
+							}
+
+						});
+					}, 1000);
+				}else if( $this_this.hasClass("minutes") ){
+					circle = new ProgressBar.Circle(element , {
+						color: hm_startColor,
+						trailColor: 'rgba(255,255,255,.1)',
+						strokeWidth: 10,
+						trailWidth: 2,
+						duration: 800,
+						easing: hm_animation,
+
+						from: { color: hm_startColor, width:2 },
+						to: { color: hm_endColor, width: 2 },
+						text: {
+							value: ' ',
+							color: hm_percenty_color,
+						},
+						step: function(state, circle) {
+							circle.path.setAttribute('stroke', state.color);
+							circle.path.setAttribute('stroke-width', state.width);
+						}
+
+					});
+					iii = 0;
+					setInterval(function() {
+						var minutes = new Date().getMinutes();
+						var minutes_minus = 60 - minutes;
+
+						var $path_val = $this_this.find('.progressbar-text');
+						if(iii === 0){
+							$path_val.countTo({
+								from: 0,
+								to: minutes_minus,
+								speed: 800,
+							});
+						}
+						iii = 1;
+
+						circle.animate(minutes_minus / 60, function() {
+							if (minutes === 0){
+								minutes = 60;
+								circle.setText(minutes_minus);
+							}else{
+								circle.setText(minutes_minus);
+							}
+						});
+					}, 1000);
+				}else if( $this_this.hasClass("hours") ){
+					circle = new ProgressBar.Circle(element , {
+						color: hm_startColor,
+						trailColor: 'rgba(255,255,255,.1)',
+						strokeWidth: 10,
+						trailWidth: 2,
+						duration: 800,
+						easing: hm_animation,
+
+						from: { color: hm_startColor, width: 2 },
+						to: { color: hm_endColor, width: 2 },
+						text: {
+							value: ' ',
+							color: hm_percenty_color,
+						},
+						step: function(state, circle) {
+							circle.path.setAttribute('stroke', state.color);
+							circle.path.setAttribute('stroke-width', state.width);
+						}
+
+					});
+					iii = 0;
+					setInterval(function() {
+						var hours = new Date().getHours();
+						var hours_minus = 24 - hours;
+
+						var $path_val = $this_this.find('.progressbar-text');
+						if(iii === 0){
+							$path_val.countTo({
+								from: 0,
+								to: hours_minus,
+								speed: 800,
+							});
+						}
+						iii = 1;
+						circle.animate(hours_minus / 24, function() {
+							if (hours === 0){
+								hours = 24;
+								circle.setText(hours_minus);
+							}else{
+								circle.setText(hours_minus);
+							}
+						});
+					}, 1000);
+				}else if( $this_this.hasClass("days") ){
+					circle = new ProgressBar.Circle(element , {
+						color: hm_startColor,
+						trailColor: 'rgba(255,255,255,.1)',
+						strokeWidth: 10,
+						trailWidth: 2,
+						duration: 800,
+						easing: hm_animation,
+
+						from: { color: hm_startColor, width: 2 },
+						to: { color: hm_endColor, width: 2 },
+						text: {
+							value: "0",
+							color: hm_percenty_color,
+						},
+						step: function(state, circle) {
+							circle.path.setAttribute('stroke', state.color);
+							circle.path.setAttribute('stroke-width', state.width);
+						}
+
+					});
+					iii = 0;
+					setInterval(function() {
+						var $path_val = $this_this.find('.progressbar-text');
+						if(iii === 0){
+							$path_val.countTo({
+								from: 0,
+								to: days,
+								speed: 800,
+							});
+						}
+						iii = 1;
+
+						circle.animate(days / 365, function() {
+							circle.setText(days);
+						});
+					}, 1000);
+				}else{
+					circle = new ProgressBar.Circle(element , {
+						color: hm_startColor,
+						trailColor: 'rgba(0,0,0,.07)',
+						strokeWidth: 10,
+						trailWidth: 3,
+						duration: 2000,
+						easing: hm_animation,
+
+						from: { color: hm_startColor, width: 3 },
+						to: { color: hm_endColor, width: 3 },
+						text: {
+							value: '0',
+							color: hm_percenty_color,
+						},
+						step: function(state, circle) {
+							circle.setText((circle.value() * 100).toFixed(0) + " %");
+							circle.path.setAttribute('stroke', state.color);
+							circle.path.setAttribute('stroke-width', state.width);
+						}
+
+					});
+				}
+
+				setTimeout(function() {
+					$this_this.animate({
+						opacity: 1,
+					}, 1000 );
+
+					$this_this.find(".progressbar-text").animate({
+						opacity: 1,
 					}, hm_delay);
-				});
+					if($this_this.hasClass("path")){
+
+					}else if ($this_this.hasClass("seconds") || $this_this.hasClass("minutes") || $this_this.hasClass("hours") || $this_this.hasClass("days") ){
+
+					} else{
+						circle.animate(hm_percenty / 100, function() {
+
+						});
+					}
+
+				}, hm_delay);
+			});
 			//}
 		});
 
 		//---------------------------------------------> Team Boxes 3
 		$('.team_block3').each(function() {
 			var num = 0;
-            $('.team-col').each(function(index) {
+			$('.team-col').each(function(index) {
 				var bg_color = $(this).attr("data-color");
 				num += 1;
 				if(num == 3 || num == 4){
@@ -1555,14 +1555,14 @@
 					$(this).find(".arrow").css({ "background" : bg_color});
 				}
 			});
-        });
+		});
 
 		//---------------------------------------------> Youtube Background Video
 		if ( $.isFunction($.fn.YTPlayer) ) {
 			$(".youtube_bg_video").each(function(index, element) {
 				var $vid_vid = $(this);
 				var $vid_controlls = $vid_vid.parent().find('.play_video_btn');
-                $vid_vid.YTPlayer();
+				$vid_vid.YTPlayer();
 
 				$($vid_controlls).on('click', function(event){
 					event.preventDefault();
@@ -1578,7 +1578,7 @@
 					}
 				});
 
-            });
+			});
 		}
 		//---------------------------------------------> HTML5 Video Background
 		$('.html_video_background').each(function(index, element) {
@@ -1589,9 +1589,9 @@
 			var controll_pos = $(this).parent().find(".video_frame_bl");
 			var resize_to = $(this).parent();
 
-            $(this).videobackground({
+			$(this).videobackground({
 				videoSource: [
-				    [mp4, 'video/mp4'],
+					[mp4, 'video/mp4'],
 					[webm, 'video/webm'],
 					[ogg, 'video/ogg']
 				],
@@ -1609,13 +1609,13 @@
 				],
 				resizeTo: '.html_video_background'
 			});
-        });
+		});
 
 		//---------------------------------------------> Cart Rating
 		$('.your_rate').each(function(index, element) {
-            var score = $(this).find('.outline_stars').data('rate');
+			var score = $(this).find('.outline_stars').data('rate');
 			$(this).find('.outline_stars').css({width : score+'%'});
-        });
+		});
 
 		//---------------------------------------------> Price Filters
 		if ( $.isFunction($.fn.noUiSlider) ) {
@@ -1629,12 +1629,12 @@
 					'max': 1000
 				},
 				format: {
-				  to: function ( value ) {
-					return value + ',-';
-				  },
-				  from: function ( value ) {
-					return value.replace(',-', '');
-				  }
+					to: function ( value ) {
+						return value + ',-';
+					},
+					from: function ( value ) {
+						return value.replace(',-', '');
+					}
 				}
 			});
 			$('#shop_price_slider').Link('lower').to($('#shop_price_slider_lower'), null, wNumb({
@@ -1648,7 +1648,7 @@
 			$('#shop_price_slider').Link('upper').to($('#max_price'), null, wNumb({}));
 		}
 
-	    //---------------------------------------------> Animated
+		//---------------------------------------------> Animated
 		$('.animated').appear(function() {
 			var elem = $(this);
 			var animation = elem.data('animation');
@@ -1698,10 +1698,10 @@
 				newVal = parseFloat(oldValue) + 1;
 			} else {
 				if (oldValue > 1) {
-			  		newVal = parseFloat(oldValue) - 1;
+					newVal = parseFloat(oldValue) - 1;
 
 				} else {
-			  		newVal = 1;
+					newVal = 1;
 				}
 			}
 			$button.siblings('.input-text').val(newVal);
@@ -1709,15 +1709,15 @@
 
 		$('.comment-form-rating .stars a').on("click", function() {
 			var data_rel = $(this).attr("data-rate");
-        	$(this).addClass('active').siblings().removeClass('active');
+			$(this).addClass('active').siblings().removeClass('active');
 			$("select#rating").val(data_rel);
 			return false;
-        });
+		});
 
 		$('a.remove').on("click", function() {
-        	$(this).closest('tr').fadeOut();
+			$(this).closest('tr').fadeOut();
 			return false;
-        });
+		});
 		//=====> End Single Product
 
 		$(window).resize(function() {
@@ -1730,9 +1730,9 @@
 				var all_width = $allparent.width();
 				var all_lis = 0;
 				$allparent.find(".tabs-navi > li").each(function(index, element) {
-                    var li_width = $(this).outerWidth();
+					var li_width = $(this).outerWidth();
 					all_lis += li_width;
-                });
+				});
 				if(all_lis >= all_width){
 					$allparent.addClass("tabs_mobile");
 				}else{
@@ -1744,9 +1744,9 @@
 				var all_width = $allparent.width();
 				var all_lis = 0;
 				$allparent.find("#filter-by > li").each(function(index, element) {
-                    var li_width = $(this).outerWidth();
+					var li_width = $(this).outerWidth();
 					all_lis += li_width;
-                });
+				});
 				if(all_lis >= all_width){
 					$allparent.addClass("filter_by_mobile");
 				}else{
@@ -1762,7 +1762,7 @@
 			var all_width = allparent.width();
 
 			var tabItems = allparent.find('.tabs-navi a'),
-			tabContentWrapper = allparent.find('.tabs-body');
+				tabContentWrapper = allparent.find('.tabs-body');
 
 			tabItems.on('click', function(event){
 				event.preventDefault();
@@ -1771,7 +1771,7 @@
 				var parentlist = selectedItem.parent();
 
 				if(parentlist.index() === 0){
-				    selectedItem.parent().siblings("li").removeClass('prev_selected');
+					selectedItem.parent().siblings("li").removeClass('prev_selected');
 				}else{
 					selectedItem.parent().prev().addClass('prev_selected').siblings("li").removeClass('prev_selected');
 				}
@@ -1824,7 +1824,7 @@
 
 					var col_width = main_parent.hasClass("masonry_porto") ? 1 : 0;
 
-                    main_parent.find("#filter-by li a").each(function(index, element) {
+					main_parent.find("#filter-by li a").each(function(index, element) {
 						var get_class = $(this).attr("data-option-value");
 						var lenghty = main_parent.find(".hm_filter_wrapper_con > "+get_class).length;
 						$(this).find(".num").html(lenghty);
@@ -1866,13 +1866,13 @@
 					}
 
 					if (!main_parent.hasClass('content_filter')) { //-------------->
-					    if (main_parent.hasClass('masonry_porto')) {
+						if (main_parent.hasClass('masonry_porto')) {
 							$container.isotope({
 								itemSelector : '.filter_item_block',
 								layoutMode: 'masonry',
 								resizable: false, // disable normal resizing
 								masonry: {
-								  columnWidth: $container.width() / col_width_mobile,
+									columnWidth: $container.width() / col_width_mobile,
 								},
 								getSortData : {
 									name: '.name',
@@ -1892,9 +1892,9 @@
 								}else{
 									col_width_mobile = 1;
 								}
-								  $container.isotope({
+								$container.isotope({
 									masonry: { columnWidth: $container.width() / col_width_mobile }
-								  });
+								});
 							});
 						}else{
 							$container.isotope({
@@ -1902,7 +1902,7 @@
 								layoutMode: 'masonry',
 								resizable: false, // disable normal resizing
 								masonry: {
-								  columnWidth: col_width,
+									columnWidth: col_width,
 								},
 								getSortData : {
 									name: '.name',
@@ -1914,7 +1914,7 @@
 						}
 
 						var $optionSets = main_parent.find('#options .option-set'),
-						$optionLinks = $optionSets.find('a');
+							$optionLinks = $optionSets.find('a');
 
 						$optionLinks.click(function(){
 							var $this = $(this);
@@ -1928,8 +1928,8 @@
 
 							// make option object dynamically, i.e. { filter: '.my-filter-class' }
 							var options = {},
-							key = $optionSet.attr('data-option-key'),
-							value = $this.attr('data-option-value');
+								key = $optionSet.attr('data-option-key'),
+								value = $this.attr('data-option-value');
 							// parse 'false' as false boolean
 							value = value === 'false' ? false : value;
 							options[ key ] = value;
@@ -1944,48 +1944,48 @@
 							return false;
 						});
 					} else { //------------------------------------------------------------->
-					      filtered_parent.find('.content_filter_item').each(function(index, element) {
-							  var filtered_parent_item = $(this);
-							  var item_height = filtered_parent_item.find('.enar_accordion').outerHeight();
+						filtered_parent.find('.content_filter_item').each(function(index, element) {
+							var filtered_parent_item = $(this);
+							var item_height = filtered_parent_item.find('.enar_accordion').outerHeight();
 
-							  filtered_parent_item.animate({
-								   height : item_height+10+'px',
-							  }, 300 );
-						  });
+							filtered_parent_item.animate({
+								height : item_height+10+'px',
+							}, 300 );
+						});
 
-						  filter_buttons.find('li a').click(function(event){
-							  var i_sel = $(this).attr('data-option-value');
-							  event.preventDefault();
+						filter_buttons.find('li a').click(function(event){
+							var i_sel = $(this).attr('data-option-value');
+							event.preventDefault();
 
-							  if (!$(this).hasClass('selected')) {
-								  filter_buttons.find('li a').removeClass('selected');
-								  $(this).addClass('selected');
+							if (!$(this).hasClass('selected')) {
+								filter_buttons.find('li a').removeClass('selected');
+								$(this).addClass('selected');
 
-								  filtered_parent.children().not(i_sel).each(function(index, element) {
-									  var this_occy = $(this);
-									  var child_occ = this_occy.find(".enar_occ_container");
+								filtered_parent.children().not(i_sel).each(function(index, element) {
+									var this_occy = $(this);
+									var child_occ = this_occy.find(".enar_occ_container");
 
-									  this_occy.animate({ height : 0 }).addClass('content_hidden');
+									this_occy.animate({ height : 0 }).addClass('content_hidden');
 
-									  child_occ.removeClass("occ_expanded");
-									  child_occ.find(".enar_occ_content").stop(true, true).animate({
-										   height : '0px',
-									  }, 300 );
+									child_occ.removeClass("occ_expanded");
+									child_occ.find(".enar_occ_content").stop(true, true).animate({
+										height : '0px',
+									}, 300 );
 
-                                  });
+								});
 
-								  filtered_parent.children(i_sel).each(function(index, element) {
-									  var this_occy = $(this);
-									  var heighty = $(this).find(".enar_accordion").outerHeight()+ 10;
-									  this_occy.animate({ height : heighty+'px' }).removeClass('content_hidden');
-                                  });
+								filtered_parent.children(i_sel).each(function(index, element) {
+									var this_occy = $(this);
+									var heighty = $(this).find(".enar_accordion").outerHeight()+ 10;
+									this_occy.animate({ height : heighty+'px' }).removeClass('content_hidden');
+								});
 
-							  }
+							}
 						});
 					} //------------------------------------------------------------->
 
 
-                });
+				});
 				//=====> Each
 			});
 
@@ -1993,7 +1993,7 @@
 
 		//=====> Top Cart
 		$('.top_add_card').on('click', function(event){
-		    var parent = $(this).parent();
+			var parent = $(this).parent();
 			event.preventDefault();
 			event.stopPropagation();
 
@@ -2008,381 +2008,381 @@
 					e.stopPropagation();
 				});
 				$(document).on("click touchstart", function(e){
-				   $('.top_cart_con').fadeOut();
-				   parent.removeClass('active');
+					$('.top_cart_con').fadeOut();
+					parent.removeClass('active');
 				});
 			});
 		});
 	});
 
-    //========> Menu
-	$.fn.idealtheme = function(options){
-		var whatTheLastWidth = getScreenWidth();
-		var ifisdescktop = false;
-		var MqL = 1170;
-
-		var settings = {
-			 duration: 300,
-			 delayOpen: 0,
-			 menuType: "horizontal", // horizontal - vertical
-			 position: "right", // right - left
-			 parentArrow: true,
-			 hideClickOut: true,
-			 submenuTrigger: "hover",
-			 backText: "Back to ",
-			 clickToltipText: "Click",
-		};
-		$.extend( settings, options );
-		var nav_con = $(this);
-		var $nav_con_parent = nav_con.parent("#main_nav");
-		var menu = $(this).find('#navy');
-
-		//=====> Mega Menu Top Space
-		function megaMenuTop(){
-			$(menu).find('.has_mega_menu').each(function() {
-                var top_space = $(this).parent('li').outerHeight();
-				$(this).find(' > .mega_menu').css({"top" : top_space+"px", "width" : "100%"});
-            });
-		}
-		megaMenuTop();
-
-		//=====> Vertical and Horizontal
-		if(settings.menuType == "vertical"){
-			$(menu).addClass("vertical_menu");
-			if(settings.position == "right"){
-				$(menu).addClass("position_right");
-			}else{
-				$(menu).addClass("position_left");
-			}
-		}else{
-			$(menu).addClass("horizontal_menu");
-		}
-
-		//=====> Add Arrows To Parent li
-		if(settings.parentArrow === true){
-			$(menu).find("li.normal_menu li, li.has_image_menu").each(function(){
-				if($(this).children("ul").length > 0){
-					$(this).children("a").append("<span class='parent_arrow normal_menu_arrow'></span>");
-				}
-			});
-
-			$(menu).find("ul.mega_menu li ul li, .tab_menu_list > li").each(function(){
-				if($(this).children("ul").length > 0){
-					$(this).children("a").append("<span class='parent_arrow mega_arrow'></span>");
-				}
-			});
-		}
-
-		function TopSearchFunc(){
-			$(".top_search").each(function(index, element) {
-				var top_search = $(this);
-				top_search.submit(function(event){
-					event.stopPropagation();
-					if(top_search.hasClass("small_top_search")){
-						top_search.removeClass("small_top_search");
-						top_search.addClass("large_top_search");
-						if(getScreenWidth() <= 315 ){
-							top_search.siblings("#top_cart").animate({opacity: 0});
-						}
-						top_search.siblings("#nav_menu:not(.mobile_menu), .logo_container").animate({opacity: 0});
-						return false;
-					}
-
-				});
-				$(top_search).on("click touchstart", function(e){
-					e.stopPropagation();
-				});
-				$(document).on("click touchstart", function(e){
-					if(top_search.hasClass("large_top_search")){
-						top_search.removeClass("large_top_search");
-						top_search.addClass("small_top_search");
-						if(getScreenWidth() <= 315 ){
-							top_search.siblings("#top_cart").animate({opacity: 1});
-						}
-						top_search.siblings("#nav_menu:not(.mobile_menu), .logo_container").animate({opacity: 1});
-					}
-				});
-			});
-			if(getScreenWidth() < 1190){
-				$("#navigation_bar").find(".top_search").addClass("small_top_search");
-			}else{
-				$("#navigation_bar").find(".top_search").removeClass("small_top_search");
-			}
-		}
-		var top_search_func = new TopSearchFunc();
-
-		$(window).resize(function() {
-			top_search_func = new TopSearchFunc();
-			megaMenuTop();
-			if( whatTheLastWidth > 992 && getScreenWidth() <= 992 && $("body").hasClass("header_on_side")){
-				$(menu).slideUp();
-			}
-			if( whatTheLastWidth <= 992 && getScreenWidth() > 992 && $("body").hasClass("header_on_side")){
-				$(menu).slideDown();
-			}
-
-			if(whatTheLastWidth <= 992 && getScreenWidth() > 992 && !$("body").hasClass("header_on_side") ){
-				resizeTabsMenu();
-				removeTrigger();
-                playMenuEvents();
-			}
-			if(whatTheLastWidth > 992 && getScreenWidth() <= 992){
-				releaseTrigger();
-				playMobileEvents();
-				resizeTabsMenu();
-				$(menu).slideUp();
-			}
-			whatTheLastWidth = getScreenWidth();
-			return false;
-		});
-
-		//======> After Refresh
-		function ActionAfterRefresh(){
-			if(getScreenWidth() <= 992 || $("body").hasClass("header_on_side") ){
-				releaseTrigger();
-				playMobileEvents();
-				resizeTabsMenu();
-
-			} else {
-				resizeTabsMenu();
-				removeTrigger();
-                playMenuEvents();
-			}
-		}
-
-		var action_after_ref = new ActionAfterRefresh();
-
-		//======> Mobile Menu
-		function playMobileEvents(){
-			$(".nav_trigger").removeClass("nav-is-visible");
-			$(menu).find("li, a").unbind();
-			if($(nav_con).hasClass("mobile_menu")){
-				$(nav_con).find("li.normal_menu").each(function(){
-					if($(this).children("ul").length > 0){
-						$(this).children("a").not(':has(.parent_arrow)').append("<span class='parent_arrow normal_menu_arrow'></span>");
-					}
-				});
-			}
-			megaMenuEvents();
-
-			$(menu).find("li:not(.has-children):not(.go-back)").each(function(){
-				$(this).removeClass("opened_menu");
-				if($(this).children("ul").length > 0){
-					var $li_li_li = $(this);
-					$(this).children("a").on("click", function(event){
-						var curr_act = $(this);
-
-						if(!$(this).parent().hasClass("opened_menu")){
-							$(this).parent().addClass("opened_menu");
-							$(this).parent().siblings("li").removeClass("opened_menu");
-							if($(this).parent().hasClass("tab_menu_item")){
-								$(this).parent().addClass("active");
-								$(this).parent().siblings("li").removeClass("active");
-							}
-							$(this).siblings("ul").slideDown(settings.duration);
-							$(this).parent("li").siblings("li").children("ul").slideUp(settings.duration);
-							setTimeout(function(){
-								var curr_position = curr_act.offset().top;
-								$('body,html').animate({
-									//scrollTop: curr_position ,
-									}, {queue:false, duration: 900, easing:"easeInOutExpo"}
-								);
-							}, settings.duration);
-
-							return false;
-						}
-						else{
-							$(this).parent().removeClass("opened_menu");
-							$(this).siblings("ul").slideUp(settings.duration);
-							if($li_li_li.hasClass("mobile_menu_toggle") || $li_li_li.hasClass("tab_menu_item")){
-								return false;
-							}
-						}
-					});
-				}
-			});
-		}
-
-		function megaMenuEvents(){
-			$(menu).find('li.has_mega_menu ul').removeClass("moves-out");
-			$(menu).find('.go-back, .mega_toltip').remove();
-			$(menu).find('li.has_mega_menu > ul').hover(function() {
-
-				$(this).find(".mega_menu_in ul").each(function(index, element) {
-					var $mega_ul = $(this);
-                    var its_height = 0;
-
-					$mega_ul.children('li').each(function(index, element) {
-						var ul_li_num = $(this).innerHeight();
-						its_height += ul_li_num;
-					});
-					$mega_ul.attr("data-height", its_height);
-                });
-			});
-			$(menu).find('ul.mega_menu li li').each(function(index, element) {
-                var $mega_element = $(this);
-				if($mega_element.children('ul').length > 0){
-					$mega_element.addClass("has-children");
-					$mega_element.children('ul').addClass("is-hidden");
-				}
-			});
-			$(menu).find('ul.mega_menu li.has-children').children('ul').each(function(index, element) {
-				var $mega_ul = $(this);
-				var its_height = 0;
-				$mega_ul.children('li').each(function(index, element) {
-					var ul_li_num = $(this).innerHeight();
-					its_height += ul_li_num;
-				});
-                $mega_ul.attr("data-height", its_height);
-
-				var $mega_link = $mega_ul.parent('li').children('a');
-				var $mega_title = $mega_ul.parent('li').children('a').text();
-				$("<span class='mega_toltip'>" + settings.clickToltipText +"</span>").prependTo($mega_link);
-
-				if(!$mega_link.find('.go-back').length){
-					$("<li class='go-back'><a href='#'>" + settings.backText + $mega_title +"</a></li>").prependTo($mega_ul);
-				}
-
-			});
-
-			$(menu).find('ul.mega_menu li.has-children').children('a').on('click', function(event){
-                event.preventDefault();
-				var selected = $(this);
-
-				if( selected.next('ul').hasClass('is-hidden') ) {
-					var ul_height = parseInt(selected.next('ul').attr("data-height"));
-					var link_height = parseInt(selected.innerHeight());
-					var all_height = ul_height + link_height;
-
-					selected.addClass('selected').next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('moves-out');
-					selected.closest('.mega_menu_in').animate({height: all_height});
-
-					selected.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selected');
-					//====> if is mobile
-					if(selected.closest('#nav_menu').hasClass("mobile_menu")){
-						selected.parent('.has-children').removeClass("mega_parent_hidden").prevAll('li').slideUp(settings.duration);
-					}
-
-				}
-
-			});
-
-			//submenu items - go back link
-			$('.go-back').on('click', function(){
-				var link_height = parseInt($(this).parent("ul").parent("li").parent("ul").attr("data-height"));
-
-				$(this).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('moves-out');
-				$(this).closest('.mega_menu_in').animate({height: link_height});
-				//====> if is mobile
-				if($(this).closest('#nav_menu').hasClass("mobile_menu")){
-					$(this).parent('ul').parent('li').removeClass("mega_parent_hidden").prevAll('li').slideDown(settings.duration);
-				}
-
-                return false;
-			});
-		}
-
-
-		//======> Desktop Menu
-		function playMenuEvents(){
-			$(menu).children('li').children('ul').hide(0);
-			$(menu).find("li, a").unbind();
-			$(menu).slideDown(settings.duration);
-			$(menu).find('ul.tab_menu_list').each(function(index, element) {
-				var tab_link = $(this).children('li').children('a');
-				$("<span class='mega_toltip'>" + settings.clickToltipText +"</span>").prependTo(tab_link);
-                $(this).children('li').on('mouseover', function(){
-					if(!$(this).hasClass('active')){
-						$(this).children('ul').stop().fadeIn();
-						$(this).siblings().children('ul').stop().fadeOut();
-						$(this).addClass('active');
-						$(this).siblings().removeClass('active');
-					}
-				});
-			});
-
-			megaMenuEvents();
-
-			$(menu).find('li.normal_menu, > li').hover(function() {
-				var li_link = $(this).children('a');
-				$(this).children('ul').stop().fadeIn(settings.duration);
-			}, function() {
-				$(this).children('ul').stop().fadeOut(settings.duration);
-			});
-		}
-
-		//======> Trigger Button Mobile Menu
-		function releaseTrigger(){
-			$(nav_con).find(".nav_trigger").unbind();
-			$(nav_con).addClass('mobile_menu');
-			$nav_con_parent.addClass('has_mobile_menu');
-
-			$(nav_con).find('.nav_trigger').each(function(index, element) {
-				var $trigger_mob = $(this);
-                $trigger_mob.on('click touchstart', function(e){
-					e.preventDefault();
-					if($(this).hasClass('nav-is-visible')){
-						$(this).removeClass('nav-is-visible');
-						$(menu).slideUp(settings.duration);
-
-					}else{
-						$(this).addClass('nav-is-visible');
-						$(document).unbind("click");
-						$(document).unbind("touchstart");
-						$(menu).slideDown(settings.duration, function(){
-							$(menu).on("click touchstart", function(event){
-								event.stopPropagation();
-							});
-							$(document).on('click touchstart', function(event){
-								if($trigger_mob.hasClass('nav-is-visible') && getScreenWidth() <= 992){
-									$trigger_mob.removeClass('nav-is-visible');
-									$(menu).slideUp(settings.duration);
-								}
-							});
-
-						});
-					}
-				});
-
-            });
-
-		}
-
-		//=====> get tabs menu height
-		function resizeTabsMenu(){
-			function thisHeight(){
-				return $(this).outerHeight();
-			}
-		    $.fn.sandbox = function(fn) {
-				var element = $(this).clone(), result;
-				element.css({visibility: 'hidden', display: 'block'}).insertAfter(this);
-				element.attr('style', element.attr('style').replace('block', 'block !important'));
-				var thisULMax = Math.max.apply(Math, $(element).find("ul:not(.image_menu)").map(thisHeight));
-				result = fn.apply(element);
-				element.remove();
-				return thisULMax;
-			};
-		    $(".tab_menu").each(function() {
-				$(this).css({"height" : "inherit"});
-				if(!$(nav_con).hasClass("mobile_menu")){
-					var height = $(this).sandbox(function(){ return this.height(); });
-					$(this).height(height);
-				}
-
-			});
-		}
-		resizeTabsMenu();
-		//=====> End get tabs menu height
-
-		function removeTrigger(){
-			$(nav_con).removeClass('mobile_menu');
-			$nav_con_parent.removeClass('has_mobile_menu');
-		}
-
-		//----------> sticky menu
-		enar_sticky();
-
-	};
+	//========> Menu
+	//$.fn.idealtheme = function(options){
+	//	var whatTheLastWidth = getScreenWidth();
+	//	var ifisdescktop = false;
+	//	var MqL = 1170;
+    //
+	//	var settings = {
+	//		duration: 300,
+	//		delayOpen: 0,
+	//		menuType: "horizontal", // horizontal - vertical
+	//		position: "right", // right - left
+	//		parentArrow: true,
+	//		hideClickOut: true,
+	//		submenuTrigger: "hover",
+	//		backText: "Back to ",
+	//		clickToltipText: "Click",
+	//	};
+	//	$.extend( settings, options );
+	//	var nav_con = $(this);
+	//	var $nav_con_parent = nav_con.parent("#main_nav");
+	//	var menu = $(this).find('#navy');
+    //
+	//	//=====> Mega Menu Top Space
+	//	function megaMenuTop(){
+	//		$(menu).find('.has_mega_menu').each(function() {
+	//			var top_space = $(this).parent('li').outerHeight();
+	//			$(this).find(' > .mega_menu').css({"top" : top_space+"px", "width" : "100%"});
+	//		});
+	//	}
+	//	megaMenuTop();
+    //
+	//	//=====> Vertical and Horizontal
+	//	if(settings.menuType == "vertical"){
+	//		$(menu).addClass("vertical_menu");
+	//		if(settings.position == "right"){
+	//			$(menu).addClass("position_right");
+	//		}else{
+	//			$(menu).addClass("position_left");
+	//		}
+	//	}else{
+	//		$(menu).addClass("horizontal_menu");
+	//	}
+    //
+	//	//=====> Add Arrows To Parent li
+	//	if(settings.parentArrow === true){
+	//		$(menu).find("li.normal_menu li, li.has_image_menu").each(function(){
+	//			if($(this).children("ul").length > 0){
+	//				$(this).children("a").append("<span class='parent_arrow normal_menu_arrow'></span>");
+	//			}
+	//		});
+    //
+	//		$(menu).find("ul.mega_menu li ul li, .tab_menu_list > li").each(function(){
+	//			if($(this).children("ul").length > 0){
+	//				$(this).children("a").append("<span class='parent_arrow mega_arrow'></span>");
+	//			}
+	//		});
+	//	}
+    //
+	//	function TopSearchFunc(){
+	//		$(".top_search").each(function(index, element) {
+	//			var top_search = $(this);
+	//			top_search.submit(function(event){
+	//				event.stopPropagation();
+	//				if(top_search.hasClass("small_top_search")){
+	//					top_search.removeClass("small_top_search");
+	//					top_search.addClass("large_top_search");
+	//					if(getScreenWidth() <= 315 ){
+	//						top_search.siblings("#top_cart").animate({opacity: 0});
+	//					}
+	//					top_search.siblings("#nav_menu:not(.mobile_menu), .logo_container").animate({opacity: 0});
+	//					return false;
+	//				}
+    //
+	//			});
+	//			$(top_search).on("click touchstart", function(e){
+	//				e.stopPropagation();
+	//			});
+	//			$(document).on("click touchstart", function(e){
+	//				if(top_search.hasClass("large_top_search")){
+	//					top_search.removeClass("large_top_search");
+	//					top_search.addClass("small_top_search");
+	//					if(getScreenWidth() <= 315 ){
+	//						top_search.siblings("#top_cart").animate({opacity: 1});
+	//					}
+	//					top_search.siblings("#nav_menu:not(.mobile_menu), .logo_container").animate({opacity: 1});
+	//				}
+	//			});
+	//		});
+	//		if(getScreenWidth() < 1190){
+	//			$("#navigation_bar").find(".top_search").addClass("small_top_search");
+	//		}else{
+	//			$("#navigation_bar").find(".top_search").removeClass("small_top_search");
+	//		}
+	//	}
+	//	var top_search_func = new TopSearchFunc();
+    //
+	//	$(window).resize(function() {
+	//		top_search_func = new TopSearchFunc();
+	//		megaMenuTop();
+	//		if( whatTheLastWidth > 992 && getScreenWidth() <= 992 && $("body").hasClass("header_on_side")){
+	//			$(menu).slideUp();
+	//		}
+	//		if( whatTheLastWidth <= 992 && getScreenWidth() > 992 && $("body").hasClass("header_on_side")){
+	//			$(menu).slideDown();
+	//		}
+    //
+	//		if(whatTheLastWidth <= 992 && getScreenWidth() > 992 && !$("body").hasClass("header_on_side") ){
+	//			resizeTabsMenu();
+	//			removeTrigger();
+	//			playMenuEvents();
+	//		}
+	//		if(whatTheLastWidth > 992 && getScreenWidth() <= 992){
+	//			releaseTrigger();
+	//			playMobileEvents();
+	//			resizeTabsMenu();
+	//			$(menu).slideUp();
+	//		}
+	//		whatTheLastWidth = getScreenWidth();
+	//		return false;
+	//	});
+    //
+	//	//======> After Refresh
+	//	function ActionAfterRefresh(){
+	//		if(getScreenWidth() <= 992 || $("body").hasClass("header_on_side") ){
+	//			releaseTrigger();
+	//			playMobileEvents();
+	//			resizeTabsMenu();
+    //
+	//		} else {
+	//			resizeTabsMenu();
+	//			removeTrigger();
+	//			playMenuEvents();
+	//		}
+	//	}
+    //
+	//	var action_after_ref = new ActionAfterRefresh();
+    //
+	//	//======> Mobile Menu
+	//	function playMobileEvents(){
+	//		$(".nav_trigger").removeClass("nav-is-visible");
+	//		$(menu).find("li, a").unbind();
+	//		if($(nav_con).hasClass("mobile_menu")){
+	//			$(nav_con).find("li.normal_menu").each(function(){
+	//				if($(this).children("ul").length > 0){
+	//					$(this).children("a").not(':has(.parent_arrow)').append("<span class='parent_arrow normal_menu_arrow'></span>");
+	//				}
+	//			});
+	//		}
+	//		megaMenuEvents();
+    //
+	//		$(menu).find("li:not(.has-children):not(.go-back)").each(function(){
+	//			$(this).removeClass("opened_menu");
+	//			if($(this).children("ul").length > 0){
+	//				var $li_li_li = $(this);
+	//				$(this).children("a").on("click", function(event){
+	//					var curr_act = $(this);
+    //
+	//					if(!$(this).parent().hasClass("opened_menu")){
+	//						$(this).parent().addClass("opened_menu");
+	//						$(this).parent().siblings("li").removeClass("opened_menu");
+	//						if($(this).parent().hasClass("tab_menu_item")){
+	//							$(this).parent().addClass("active");
+	//							$(this).parent().siblings("li").removeClass("active");
+	//						}
+	//						$(this).siblings("ul").slideDown(settings.duration);
+	//						$(this).parent("li").siblings("li").children("ul").slideUp(settings.duration);
+	//						setTimeout(function(){
+	//							var curr_position = curr_act.offset().top;
+	//							$('body,html').animate({
+	//									//scrollTop: curr_position ,
+	//								}, {queue:false, duration: 900, easing:"easeInOutExpo"}
+	//							);
+	//						}, settings.duration);
+    //
+	//						return false;
+	//					}
+	//					else{
+	//						$(this).parent().removeClass("opened_menu");
+	//						$(this).siblings("ul").slideUp(settings.duration);
+	//						if($li_li_li.hasClass("mobile_menu_toggle") || $li_li_li.hasClass("tab_menu_item")){
+	//							return false;
+	//						}
+	//					}
+	//				});
+	//			}
+	//		});
+	//	}
+    //
+	//	function megaMenuEvents(){
+	//		$(menu).find('li.has_mega_menu ul').removeClass("moves-out");
+	//		$(menu).find('.go-back, .mega_toltip').remove();
+	//		$(menu).find('li.has_mega_menu > ul').hover(function() {
+    //
+	//			$(this).find(".mega_menu_in ul").each(function(index, element) {
+	//				var $mega_ul = $(this);
+	//				var its_height = 0;
+    //
+	//				$mega_ul.children('li').each(function(index, element) {
+	//					var ul_li_num = $(this).innerHeight();
+	//					its_height += ul_li_num;
+	//				});
+	//				$mega_ul.attr("data-height", its_height);
+	//			});
+	//		});
+	//		$(menu).find('ul.mega_menu li li').each(function(index, element) {
+	//			var $mega_element = $(this);
+	//			if($mega_element.children('ul').length > 0){
+	//				$mega_element.addClass("has-children");
+	//				$mega_element.children('ul').addClass("is-hidden");
+	//			}
+	//		});
+	//		$(menu).find('ul.mega_menu li.has-children').children('ul').each(function(index, element) {
+	//			var $mega_ul = $(this);
+	//			var its_height = 0;
+	//			$mega_ul.children('li').each(function(index, element) {
+	//				var ul_li_num = $(this).innerHeight();
+	//				its_height += ul_li_num;
+	//			});
+	//			$mega_ul.attr("data-height", its_height);
+    //
+	//			var $mega_link = $mega_ul.parent('li').children('a');
+	//			var $mega_title = $mega_ul.parent('li').children('a').text();
+	//			$("<span class='mega_toltip'>" + settings.clickToltipText +"</span>").prependTo($mega_link);
+    //
+	//			if(!$mega_link.find('.go-back').length){
+	//				$("<li class='go-back'><a href='#'>" + settings.backText + $mega_title +"</a></li>").prependTo($mega_ul);
+	//			}
+    //
+	//		});
+    //
+	//		$(menu).find('ul.mega_menu li.has-children').children('a').on('click', function(event){
+	//			event.preventDefault();
+	//			var selected = $(this);
+    //
+	//			if( selected.next('ul').hasClass('is-hidden') ) {
+	//				var ul_height = parseInt(selected.next('ul').attr("data-height"));
+	//				var link_height = parseInt(selected.innerHeight());
+	//				var all_height = ul_height + link_height;
+    //
+	//				selected.addClass('selected').next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('moves-out');
+	//				selected.closest('.mega_menu_in').animate({height: all_height});
+    //
+	//				selected.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selected');
+	//				//====> if is mobile
+	//				if(selected.closest('#nav_menu').hasClass("mobile_menu")){
+	//					selected.parent('.has-children').removeClass("mega_parent_hidden").prevAll('li').slideUp(settings.duration);
+	//				}
+    //
+	//			}
+    //
+	//		});
+    //
+	//		//submenu items - go back link
+	//		$('.go-back').on('click', function(){
+	//			var link_height = parseInt($(this).parent("ul").parent("li").parent("ul").attr("data-height"));
+    //
+	//			$(this).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('moves-out');
+	//			$(this).closest('.mega_menu_in').animate({height: link_height});
+	//			//====> if is mobile
+	//			if($(this).closest('#nav_menu').hasClass("mobile_menu")){
+	//				$(this).parent('ul').parent('li').removeClass("mega_parent_hidden").prevAll('li').slideDown(settings.duration);
+	//			}
+    //
+	//			return false;
+	//		});
+	//	}
+    //
+    //
+	//	//======> Desktop Menu
+	//	function playMenuEvents(){
+	//		$(menu).children('li').children('ul').hide(0);
+	//		$(menu).find("li, a").unbind();
+	//		$(menu).slideDown(settings.duration);
+	//		$(menu).find('ul.tab_menu_list').each(function(index, element) {
+	//			var tab_link = $(this).children('li').children('a');
+	//			$("<span class='mega_toltip'>" + settings.clickToltipText +"</span>").prependTo(tab_link);
+	//			$(this).children('li').on('mouseover', function(){
+	//				if(!$(this).hasClass('active')){
+	//					$(this).children('ul').stop().fadeIn();
+	//					$(this).siblings().children('ul').stop().fadeOut();
+	//					$(this).addClass('active');
+	//					$(this).siblings().removeClass('active');
+	//				}
+	//			});
+	//		});
+    //
+	//		megaMenuEvents();
+    //
+	//		$(menu).find('li.normal_menu, > li').hover(function() {
+	//			var li_link = $(this).children('a');
+	//			$(this).children('ul').stop().fadeIn(settings.duration);
+	//		}, function() {
+	//			$(this).children('ul').stop().fadeOut(settings.duration);
+	//		});
+	//	}
+    //
+	//	//======> Trigger Button Mobile Menu
+	//	function releaseTrigger(){
+	//		$(nav_con).find(".nav_trigger").unbind();
+	//		$(nav_con).addClass('mobile_menu');
+	//		$nav_con_parent.addClass('has_mobile_menu');
+    //
+	//		$(nav_con).find('.nav_trigger').each(function(index, element) {
+	//			var $trigger_mob = $(this);
+	//			$trigger_mob.on('click touchstart', function(e){
+	//				e.preventDefault();
+	//				if($(this).hasClass('nav-is-visible')){
+	//					$(this).removeClass('nav-is-visible');
+	//					$(menu).slideUp(settings.duration);
+    //
+	//				}else{
+	//					$(this).addClass('nav-is-visible');
+	//					$(document).unbind("click");
+	//					$(document).unbind("touchstart");
+	//					$(menu).slideDown(settings.duration, function(){
+	//						$(menu).on("click touchstart", function(event){
+	//							event.stopPropagation();
+	//						});
+	//						$(document).on('click touchstart', function(event){
+	//							if($trigger_mob.hasClass('nav-is-visible') && getScreenWidth() <= 992){
+	//								$trigger_mob.removeClass('nav-is-visible');
+	//								$(menu).slideUp(settings.duration);
+	//							}
+	//						});
+    //
+	//					});
+	//				}
+	//			});
+    //
+	//		});
+    //
+	//	}
+    //
+	//	//=====> get tabs menu height
+	//	function resizeTabsMenu(){
+	//		function thisHeight(){
+	//			return $(this).outerHeight();
+	//		}
+	//		$.fn.sandbox = function(fn) {
+	//			var element = $(this).clone(), result;
+	//			element.css({visibility: 'hidden', display: 'block'}).insertAfter(this);
+	//			element.attr('style', element.attr('style').replace('block', 'block !important'));
+	//			var thisULMax = Math.max.apply(Math, $(element).find("ul:not(.image_menu)").map(thisHeight));
+	//			result = fn.apply(element);
+	//			element.remove();
+	//			return thisULMax;
+	//		};
+	//		$(".tab_menu").each(function() {
+	//			$(this).css({"height" : "inherit"});
+	//			if(!$(nav_con).hasClass("mobile_menu")){
+	//				var height = $(this).sandbox(function(){ return this.height(); });
+	//				$(this).height(height);
+	//			}
+    //
+	//		});
+	//	}
+	//	resizeTabsMenu();
+	//	//=====> End get tabs menu height
+    //
+	//	function removeTrigger(){
+	//		$(nav_con).removeClass('mobile_menu');
+	//		$nav_con_parent.removeClass('has_mobile_menu');
+	//	}
+    //
+	//	//----------> sticky menu
+	//	enar_sticky();
+    //
+	//};
 
 	var offset_header = "";
 	get_header_offset();
@@ -2406,7 +2406,7 @@
 	//-----------------> My Acoordion
 	function ideal_accordion(resize_occ){
 		$(".enar_accordion").each(function(index, element) {
-            var its_type = $(this).attr("data-type");
+			var its_type = $(this).attr("data-type");
 			var its_item = $(this).find(".enar_occ_container");
 			var its_item_lenth = its_item.length;
 
@@ -2414,14 +2414,14 @@
 				var item_item = $(this);
 				var item_item_title = $(this).find(".enar_occ_title");
 				var item_title_height = $(this).find(".enar_occ_title").outerHeight();
-                var item_expanded = item_item.attr("data-expanded");  //false - true
+				var item_expanded = item_item.attr("data-expanded");  //false - true
 				var item_item_content = $(this).find(".enar_occ_content");
 				var item_item_height = item_item_content.find(".acc_content").outerHeight();
 
 				if(item_expanded == "true"){//occ_expanded
 					item_item.addClass("occ_expanded");
 					item_item_content.stop(true, true).animate({
-					   height : item_item_height+'px',
+						height : item_item_height+'px',
 					}, 300 );
 				}
 				item_item_title.unbind();
@@ -2429,33 +2429,33 @@
 					if(item_item.hasClass("occ_expanded")){
 						item_item.removeClass("occ_expanded");
 						item_item_content.stop(true, true).animate({
-						   height : '0px',
-					  	}, 300 );
+							height : '0px',
+						}, 300 );
 						item_item_content.closest('.content_filter_item').stop(true, true).animate({
-						   height : item_title_height+10+'px',
-					  	}, 300 );
+							height : item_title_height+10+'px',
+						}, 300 );
 
 					}else{
 						item_item.addClass("occ_expanded");
 						item_item_content.stop(true, true).animate({
-						   height : item_item_height+'px',
-					  	}, 300 );
+							height : item_item_height+'px',
+						}, 300 );
 						item_item_content.closest('.content_filter_item').stop(true, true).animate({
-						   height : item_item_height+item_title_height+10+'px',
-					  	}, 300 );
+							height : item_item_height+item_title_height+10+'px',
+						}, 300 );
 						//--------> Accordion Type
 						if(its_type == "accordion"){
 							item_item.siblings().removeClass("occ_expanded");
 							item_item.siblings().find(".enar_occ_content").stop(true, true).animate({
-							   height : '0px',
+								height : '0px',
 							}, 300 );
 						}
 					}
 				});
 
-            });
+			});
 
-        });
+		});
 	}
 	//----------> sticky menu
 	function enar_sticky(){
@@ -2483,593 +2483,594 @@
 	//-------------------------------> Revolution Slider - Fullscreen
 	if ( $.isFunction($.fn.revolution) ) {
 		$('.tp-banner-fullscreen').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
-				hideTimerBar:"on",
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
-				spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview4",
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
+			hideTimerBar:"on",
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
+			spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview4",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-				parallax:"scroll",
-				parallaxBgFreeze:"on",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"on",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
-				fullWidth:"off",
-				fullScreen:"on",
+			shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
+			fullWidth:"off",
+			fullScreen:"on",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
+			shuffle:"off",
 
-				autoHeight:"off",
-				forceFullWidth:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: offset_header
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: offset_header
 		});
 		//-------------------------------> Revolution Slider - Fullwidth
 		$('.tp-banner-fullwidth').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
-				hideTimerBar:"off",
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
-				spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview4",
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
+			hideTimerBar:"off",
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
+			spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview4",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-				parallax:"scroll",
-				parallaxBgFreeze:"off",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"off",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
-				fullWidth:"off",
-				fullScreen:"on",
+			shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
+			fullWidth:"off",
+			fullScreen:"on",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
+			shuffle:"off",
 
-				autoHeight:"off",
-				forceFullWidth:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: ""
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: ""
 		});
 
 		//-------------------------------> Revolution Slider - Boxedwidth
 		$('.tp-banner-boxedwidth').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
 
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
 
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview1",
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview1",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-										parallax:"scroll",
-				parallaxBgFreeze:"off",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"off",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0,
-				fullWidth:"on",
-				fullScreen:"off",
+			shadow:0,
+			fullWidth:"on",
+			fullScreen:"off",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
+			shuffle:"off",
 
-				autoHeight:"off",
-				forceFullWidth:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
 
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: ""
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: ""
 		});
 		//-------------------------------> Revolution Slider - boxed full screen
 		$('.tp-banner-boxedfullscreen').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
 
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
 
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview1",
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview1",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-										parallax:"scroll",
-				parallaxBgFreeze:"on",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"on",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0,
-				fullWidth:"on",
-				fullScreen:"on",
+			shadow:0,
+			fullWidth:"on",
+			fullScreen:"on",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
-				autoHeight:"off",
-				forceFullWidth:"off",
+			shuffle:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: offset_header
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: offset_header
 		});
 
 		//-------------------------------> Revolution Slider - Panzoom fullscreen
 		$('.tp-banner-panzoom-fullscreen').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
 
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
 
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview4",
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview4",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-										parallax:"scroll",
-				parallaxBgFreeze:"on",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"on",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0,
-				fullWidth:"off",
-				fullScreen:"on",
+			shadow:0,
+			fullWidth:"off",
+			fullScreen:"on",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
+			shuffle:"off",
 
-				autoHeight:"off",
-				forceFullWidth:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: offset_header
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: offset_header
 		});
 
 		//-------------------------------> Revolution Slider - Panzoom fullwidth
 		$('.tp-banner-panzoom-fullwidth').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
 
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
 
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview4",
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview4",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-				parallax:"scroll",
-				parallaxBgFreeze:"off",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"off",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0,
-				fullWidth:"off",
-				fullScreen:"off",
+			shadow:0,
+			fullWidth:"off",
+			fullScreen:"off",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
+			shuffle:"off",
 
-				autoHeight:"off",
-				forceFullWidth:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: offset_header
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: offset_header
 		});
 
 		//-------------------------------> Revolution Slider - HTML5 fullwidth
 		$('.tp-banner-video-fullwidth').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
-				hideTimerBar:"off",
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
-				spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview4",
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
+			hideTimerBar:"off",
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
+			spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview4",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-				parallax:"scroll",
-				parallaxBgFreeze:"off",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"off",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
-				fullWidth:"on",
-				fullScreen:"off",
+			shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
+			fullWidth:"on",
+			fullScreen:"off",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
+			shuffle:"off",
 
-				autoHeight:"off",
-				forceFullWidth:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: offset_header
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: offset_header
 		});
 
 		//-------------------------------> Revolution Slider - HTML5 fullscreen
 		$('.tp-banner-video-fullscreen').show().revolution({
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1170,
-				startheight:700,
-				hideThumbs:200,
-				hideTimerBar:"off",
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
-				spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
-				navigationType:"bullet",
-				navigationArrows:"solo",
-				navigationStyle:"preview4",
+			dottedOverlay:"none",
+			delay:16000,
+			startwidth:1170,
+			startheight:700,
+			hideThumbs:200,
+			hideTimerBar:"off",
+			thumbWidth:100,
+			thumbHeight:50,
+			thumbAmount:5,
+			spinned:"spinner4", //"spinner1" , "spinner2", "spinner3" , "spinner4", "spinner5"
+			navigationType:"bullet",
+			navigationArrows:"solo",
+			navigationStyle:"preview4",
 
-				touchenabled:"on",
-				onHoverStop:"on",
-				lazyLoad:"on",
+			touchenabled:"on",
+			onHoverStop:"on",
+			lazyLoad:"on",
 
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
+			swipe_velocity: 0.7,
+			swipe_min_touches: 1,
+			swipe_max_touches: 1,
+			drag_block_vertical: false,
 
-				parallax:"scroll",
-				parallaxBgFreeze:"off",
-				parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
+			parallax:"scroll",
+			parallaxBgFreeze:"off",
+			parallaxLevels:[10,20,30,40,50,60,70,80,90,100],
 
-				keyboardNavigation:"off",
+			keyboardNavigation:"off",
 
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
+			navigationHAlign:"center",
+			navigationVAlign:"bottom",
+			navigationHOffset:0,
+			navigationVOffset:20,
 
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
+			soloArrowLeftHalign:"left",
+			soloArrowLeftValign:"center",
+			soloArrowLeftHOffset:20,
+			soloArrowLeftVOffset:0,
 
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
+			soloArrowRightHalign:"right",
+			soloArrowRightValign:"center",
+			soloArrowRightHOffset:20,
+			soloArrowRightVOffset:0,
 
-				shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
-				fullWidth:"on",
-				fullScreen:"on",
+			shadow:0, //0,1,2,3  (0 == no Shadow, 1,2,3 - Different Shadow Types)
+			fullWidth:"on",
+			fullScreen:"on",
 
-				spinner:"spinner4",
+			spinner:"spinner4",
 
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
 
-				shuffle:"off",
+			shuffle:"off",
 
-				autoHeight:"off",
-				forceFullWidth:"off",
+			autoHeight:"off",
+			forceFullWidth:"off",
 
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
+			hideThumbsOnMobile:"off",
+			hideNavDelayOnMobile:1500,
+			hideBulletsOnMobile:"off",
+			hideArrowsOnMobile:"off",
+			hideThumbsUnderResolution:0,
 
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
-				fullScreenOffsetContainer: offset_header
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			startWithSlide:0,
+			fullScreenOffsetContainer: offset_header
 		});
 	};
+
 })(window.jQuery);

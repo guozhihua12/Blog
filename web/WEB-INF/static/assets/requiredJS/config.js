@@ -11,7 +11,9 @@ requirejs.config({
         functions: 'functions',
         utils:'utils',
         text:'text',
-        loadHead:'module/loadHead'
+        renderUtils:"renderUtils",
+        loadHead:'module/loadHead',
+        loadBlogList:"module/loadIBlogList"
     },
     shim: {
         plugins: {
@@ -31,7 +33,7 @@ requirejs.config({
             exports: 'utils'
         },
         functions: {
-            deps: ['jquery'],
+            deps: ['jquery','loadHead'],
             exports: 'functions'
         }
     }
