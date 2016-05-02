@@ -5,12 +5,14 @@ require(["template"
     , 'utils'
     , 'text'
     , 'text!commonTpl/blog_item.tpl'
-    , 'text!commonTpl/page.tpl'
     , 'text!commonTpl/tag_cloud.tpl'
     , 'text!commonTpl/category_item.tpl'
-    , 'text!commonTpl/dateCategory_item.tpl'], function (template) {
+    , 'text!commonTpl/toggleList_item.tpl'
+    , 'text!commonTpl/footer.tpl'
+    , 'text!commonTpl/social.tpl'
+    , 'text!commonTpl/hot_blog.tpl'], function (template) {
     var renderUtils = {
-        renderBlogList: function (data,idTag) {
+        renderBlogList: function (data, idTag) {
             var itemTpl = require('text!commonTpl/blog_item.tpl'),
                 htmlText = "";
             if (data && data.length > 0) {
@@ -22,7 +24,7 @@ require(["template"
             document.getElementById(idTag).innerHTML = htmlText;
             renderUtils.bindEvent();
         },
-        renderTagCloud: function (data,idTag) {
+        renderTagCloud: function (data, idTag) {
             var tagTpl = require('text!commonTpl/tag_cloud.tpl'),
                 htmlText = "";
             if (data && data.length > 0) {
@@ -45,14 +47,45 @@ require(["template"
             }
         },
         renderToggleList: function (data, idTag) {
-            var dateTpl=require('text!commonTpl/dateCategory_item.tpl'),
-                htmlText="";
-            if(data && data.length>0){
-                _.each(data,function(item,index){
-                    console.log(item);
+            var toggleTpl = require('text!commonTpl/toggleList_item.tpl'),
+                htmlText = "";
+            if (data && data.length > 0) {
+                _.each(data, function (item, index) {
+                    var render = template.compile(toggleTpl);
+                    htmlText += render(item);
                 });
+                document.getElementById(idTag).innerHTML = htmlText;
             }
         },
+        renderFooter: function (idTag) {
+            var footerTpl = require('text!commonTpl/footer.tpl'),
+                render = template.compile(footerTpl);
+            document.getElementById(idTag).innerHTML = render({});
+        },
+        renderSocial: function (data, idTag) {
+            var socialTpl = require('text!commonTpl/social.tpl'),
+                htmlText = "";
+            if (data && data.length > 0) {
+                _.each(data, function (element, index) {
+                    var render = template.compile(socialTpl);
+                    htmlText += render(element);
+                })
+            }
+            document.getElementById(idTag).innerHTML = htmlText;
+        },
+        renderHotBlog: function (data, idTag) {
+            var hotBlogTpl = require('text!commonTpl/hot_blog.tpl'),
+                htmlText="";
+            if(data && data.length>0){
+                _.each(data,function(element,index){
+                    var render=template.compile(hotBlogTpl);
+                    htmlText += render(element);
+                });
+                document.getElementById(idTag).innerHTML=htmlText;
+            }
+        },
+
+
         bindEvent: function () {
             "use strict";
             //----------> Site Preloader

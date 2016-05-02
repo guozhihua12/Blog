@@ -6,6 +6,8 @@
       "summary": "欢迎使用我的博客,您可以在文章中插入任何您想要的多媒体类型:音频、视频、图片、相册等等,当发布时,系统会分析当前文章内容,并自动分类该文章,如果当前文章不属于下面任何一种,则该文章为标准文章,会给当前文章设置默认显示页.",
       "id": 1,
       "author": "瞿龙俊",
+      "reader":200,
+      "comment":12,
       "date": "2015-08-22",
       "coverSrc": "assets/images/blog/blog_demo5.jpg",
       "category": [
@@ -26,6 +28,8 @@
       "summary": "这是一篇不含有图片的文章,如果用户没有设置封面,则在博客列表中会在左侧显示默认封面,如果用户设置了封面,则显示用户所设置的封面.",
       "id": 2,
       "author": "瞿龙俊",
+      "reader":300,
+      "comment":20,
       "date": "2015-08-21",
       "category": [
         {
@@ -45,6 +49,8 @@
       "summary": "如果用户在文章中插入了一张或者多张图片,则会在博客文章列表左侧显示当前文章中插入的图片.",
       "id": 3,
       "author": "瞿龙俊",
+      "reader":42,
+      "comment":1,
       "date": "2015-08-21",
       "coverSrc": "assets/images/blog/blog_demo5.jpg",
       "category": [
@@ -69,6 +75,8 @@
       "summary": "这是一篇视频文章,如果当前文章内部含有至少一个视频,则会在博客文章列表左侧显示文章所插入的第一个视频.可以直接在封面上进行播放",
       "id": 4,
       "author": "瞿龙俊",
+      "reader":50,
+      "comment":10,
       "date": "2015-08-21",
       "coverSrc": "assets/images/blog/blog_demo5.jpg",
       "category": [
@@ -81,7 +89,8 @@
           "name": "组件"
         }
       ],
-      "videoSrc": "http://www.enar.ideal-theme.com/html5/files/v1.mp4"
+      "videoSrc": "http://www.enar.ideal-theme.com/html5/files/v1.mp4",
+      "videoBg":"assets/images/project/project_demo3.jpg"
     },
     {
       "type": "audio",
@@ -89,6 +98,8 @@
       "summary": "这是一篇音频文章,如果当前文章内部含有至少一个音频,则会在博客文章列表左侧显示文章所插入的第一个音频.可以直接在封面上进行播放",
       "id": 5,
       "author": "瞿龙俊",
+      "reader":80,
+      "comment":8,
       "date": "2015-08-21",
       "coverSrc": "assets/images/blog/blog_demo5.jpg",
       "category": [
@@ -101,7 +112,8 @@
           "name": "组件"
         }
       ],
-      "audioSrc": "http://96.ierge.cn/12/186/372868.mp3"
+      "audioSrc": "http://96.ierge.cn/12/186/372868.mp3",
+      "audioBg":"assets/images/project/project_demo5.jpg"
     }
   ],
   "category": [
@@ -178,13 +190,16 @@
       "title": "2016年",
       "items": [
         {
-          "name": "1月"
+          "name": "1月",
+          "prop": "2016-01"
         },
         {
-          "name": "2月"
+          "name": "2月",
+          "prop": "2016-02"
         },
         {
-          "name": "3月"
+          "name": "3月",
+          "prop": "2016-03"
         }
       ]
     },
@@ -192,19 +207,24 @@
       "title": "2015年",
       "items": [
         {
-          "name": "1月"
+          "name": "1月",
+          "prop": "2015-01"
         },
         {
-          "name": "2月"
+          "name": "2月",
+          "prop": "2015-02"
         },
         {
-          "name": "3月"
+          "name": "3月",
+          "prop": "2015-03"
         },
         {
-          "name": "4月"
+          "name": "4月",
+          "prop": "2015-04"
         },
         {
-          "name": "5月"
+          "name": "5月",
+          "prop": "2015-05"
         }
       ]
     },
@@ -221,6 +241,67 @@
           "name": "3月"
         }
       ]
+    }
+  ],
+  "social": [
+    {
+      "href": "",
+      "cover": "assets/images/blog/github.png"
+    },
+    {
+      "href": "",
+      "cover": "assets/images/blog/QQ.png"
+    },
+    {
+      "href": "",
+      "cover": "assets/images/blog/wechat.png"
+    },
+    {
+      "href": "",
+      "cover": "assets/images/blog/web.png"
+    },
+    {
+      "href": "",
+      "cover": "assets/images/blog/zhihu.png"
+    }
+  ],
+  "hot_blog": [
+    {
+      "id": 1,
+      "type":"text",
+      "defaultCover": "assets/images/blog/blog_demo4.jpg",
+      "title": "关于xxxxxxx的使用教程",
+      "date": "2015-08-12",
+      "reader": 32,
+      "comment": 20
+    },
+    {
+      "id": 1,
+      "title": "关于xxxxxxx的使用教程",
+      "date": "2015-08-13",
+      "reader": 32,
+      "comment": 20
+    },
+    {
+      "id": 1,
+      "title": "关于xxxxxxx的使用教程",
+      "date": "2015-08-14",
+      "reader": 32,
+      "comment": 20
+    },
+    {
+      "id": 1,
+      "title": "关于xxxxxxx的使用教程",
+      "date": "2015-08-15",
+      "reader": 32,
+      "comment": 20
+    },
+    {
+      "id": 1,
+      "title": "关于xxxxxxx的使用教程",
+      "date": "2015-08-16",
+      "reader": 32,
+      "comment": 20
     }
   ]
 }

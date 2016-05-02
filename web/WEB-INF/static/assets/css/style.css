@@ -12495,11 +12495,12 @@ to {
 	color: #999;
 	display: block;
 	font-size: 12px;
-	margin: 5px 0;
+	/*margin: 5px 0;*/
+	margin-top: 5px;
 }
 .post_date i {
-	font-size: 15px;
-	margin-right: 6px;
+	font-size: 12px;
+	margin:0 6px;
 }
 .post_comment {
 	font-size: 13px;

@@ -1,0 +1,1 @@
+<a href="{{href}}" target="_blank" ><img style="width: 18px;height: 18px;" src="{{cover}}"></a>

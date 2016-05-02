@@ -14,7 +14,8 @@ requirejs.config({
         paging:'paging',
         renderUtils:"renderUtils",
         loadHead:'module/loadHead',
-        loadBlogList:"module/loadIBlogList"
+        loadBlogList:"module/loadIBlogList",
+        sweetAlert:"sweet-alert.min"
     },
     shim: {
         plugins: {
@@ -40,6 +41,14 @@ requirejs.config({
         paging:{
             deps:['jquery'],
             exports:'paging'
+        },
+        messenger:{
+            deps:['jquery'],
+            exports:'messenger'
+        },
+        messenger_theme:{
+            deps:['messenger'],
+            exports:'messenger_theme'
         }
     }
 });
