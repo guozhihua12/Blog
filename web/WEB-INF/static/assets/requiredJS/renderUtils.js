@@ -1,16 +1,57 @@
-require(["template", "jquery", 'underscore', 'utils', 'text', 'text!commonTpl/blog_item.tpl','text!commonTpl/demo.tpl'], function (template) {
+require(["template"
+    , "template_native"
+    , "jquery"
+    , 'underscore'
+    , 'utils'
+    , 'text'
+    , 'text!commonTpl/blog_item.tpl'
+    , 'text!commonTpl/page.tpl'
+    , 'text!commonTpl/tag_cloud.tpl'
+    , 'text!commonTpl/category_item.tpl'
+    , 'text!commonTpl/dateCategory_item.tpl'], function (template) {
     var renderUtils = {
-        renderBlogList: function (data) {
+        renderBlogList: function (data,idTag) {
             var itemTpl = require('text!commonTpl/blog_item.tpl'),
-                blogList = data.blog, htmlText = "";
-            if (blogList && blogList.length > 0) {
-                _.each(blogList, function (element, index, list) {
+                htmlText = "";
+            if (data && data.length > 0) {
+                _.each(data, function (element, index, list) {
                     var render = template.compile(itemTpl);
                     htmlText += render(element);
                 });
             }
-            document.getElementById('blogContent').innerHTML = htmlText;
+            document.getElementById(idTag).innerHTML = htmlText;
             renderUtils.bindEvent();
+        },
+        renderTagCloud: function (data,idTag) {
+            var tagTpl = require('text!commonTpl/tag_cloud.tpl'),
+                htmlText = "";
+            if (data && data.length > 0) {
+                _.each(data, function (tag) {
+                    var render = template.compile(tagTpl);
+                    htmlText += render(tag);
+                });
+                document.getElementById(idTag).innerHTML = htmlText;
+            }
+        },
+        renderCategory: function (data, idTag) {
+            var categoryTpl = require('text!commonTpl/category_item.tpl'),
+                htmlText = "";
+            if (data && data.length > 0) {
+                _.each(data, function (category) {
+                    var render = template.compile(categoryTpl);
+                    htmlText += render(category);
+                });
+                document.getElementById(idTag).innerHTML = htmlText;
+            }
+        },
+        renderToggleList: function (data, idTag) {
+            var dateTpl=require('text!commonTpl/dateCategory_item.tpl'),
+                htmlText="";
+            if(data && data.length>0){
+                _.each(data,function(item,index){
+                    console.log(item);
+                });
+            }
         },
         bindEvent: function () {
             "use strict";

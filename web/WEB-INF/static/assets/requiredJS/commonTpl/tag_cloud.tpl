@@ -1,0 +1,1 @@
+<a href="javascript:;" data-id="{{id}}"><span class="tag">{{name}}</span><span class="num">{{num}}</span></a>

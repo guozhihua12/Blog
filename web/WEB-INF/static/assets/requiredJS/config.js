@@ -5,12 +5,13 @@ requirejs.config({
         underscore:['http://www.css88.com/doc/underscore/underscore-min','underscore-min'],
         plugins: 'plugins',
         template:['template.min'],
-        //template_native:'template-native',
+        template_native:'template-native',
         mediaelement_and_player: 'mediaelement-and-player.min',
         isotope: 'isotope.pkgd.min',
         functions: 'functions',
         utils:'utils',
         text:'text',
+        paging:'paging',
         renderUtils:"renderUtils",
         loadHead:'module/loadHead',
         loadBlogList:"module/loadIBlogList"
@@ -35,6 +36,10 @@ requirejs.config({
         functions: {
             deps: ['jquery','loadHead'],
             exports: 'functions'
+        },
+        paging:{
+            deps:['jquery'],
+            exports:'paging'
         }
     }
 });

@@ -3,7 +3,7 @@
     {
       "type": "text",
       "title": "这是一个文本标题",
-      "summary": "This is a Summary",
+      "summary": "欢迎使用我的博客,您可以在文章中插入任何您想要的多媒体类型:音频、视频、图片、相册等等,当发布时,系统会分析当前文章内容,并自动分类该文章,如果当前文章不属于下面任何一种,则该文章为标准文章,会给当前文章设置默认显示页.",
       "id": 1,
       "author": "瞿龙俊",
       "date": "2015-08-22",
@@ -23,8 +23,8 @@
     {
       "type": "cover",
       "title": "这是一个封面文章",
-      "summary": "This is a Summary",
-      "id": 1,
+      "summary": "这是一篇不含有图片的文章,如果用户没有设置封面,则在博客列表中会在左侧显示默认封面,如果用户设置了封面,则显示用户所设置的封面.",
+      "id": 2,
       "author": "瞿龙俊",
       "date": "2015-08-21",
       "category": [
@@ -42,8 +42,8 @@
     {
       "type": "gallery",
       "title": "这是一个相册文章",
-      "summary": "This is a Summary",
-      "id": 1,
+      "summary": "如果用户在文章中插入了一张或者多张图片,则会在博客文章列表左侧显示当前文章中插入的图片.",
+      "id": 3,
       "author": "瞿龙俊",
       "date": "2015-08-21",
       "coverSrc": "assets/images/blog/blog_demo5.jpg",
@@ -66,8 +66,8 @@
     {
       "type": "video",
       "title": "这是一个视频文章",
-      "summary": "This is a Summary",
-      "id": 1,
+      "summary": "这是一篇视频文章,如果当前文章内部含有至少一个视频,则会在博客文章列表左侧显示文章所插入的第一个视频.可以直接在封面上进行播放",
+      "id": 4,
       "author": "瞿龙俊",
       "date": "2015-08-21",
       "coverSrc": "assets/images/blog/blog_demo5.jpg",
@@ -86,8 +86,8 @@
     {
       "type": "audio",
       "title": "这是一个音频文章",
-      "summary": "This is a Summary",
-      "id": 1,
+      "summary": "这是一篇音频文章,如果当前文章内部含有至少一个音频,则会在博客文章列表左侧显示文章所插入的第一个音频.可以直接在封面上进行播放",
+      "id": 5,
       "author": "瞿龙俊",
       "date": "2015-08-21",
       "coverSrc": "assets/images/blog/blog_demo5.jpg",
@@ -102,109 +102,125 @@
         }
       ],
       "audioSrc": "http://96.ierge.cn/12/186/372868.mp3"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "技术文章",
+      "num": 10
     },
     {
-      "type": "text",
-      "title": "这是一个文本标题",
-      "summary": "This is a Summary",
-      "id": 1,
-      "author": "瞿龙俊",
-      "date": "2015-08-21",
-      "coverSrc": "assets/images/blog/blog_demo5.jpg",
-      "category": [
-        {
-          "id": 1,
-          "name": "前端"
-        },
-        {
-          "id": 2,
-          "name": "组件"
-        }
-      ],
-      "defaultCover": "assets/images/blog/blog_demo4.jpg"
+      "id": 2,
+      "name": "科研论文",
+      "num": 15
     },
     {
-      "type": "cover",
-      "title": "这是一个封面文章",
-      "summary": "This is a Summary",
-      "id": 1,
-      "author": "瞿龙俊",
-      "date": "2015-08-21",
-      "category": [
-        {
-          "id": 1,
-          "name": "前端"
-        },
-        {
-          "id": 2,
-          "name": "组件"
-        }
-      ],
-      "customCover": "assets/images/blog/blog_demo5.jpg"
+      "id": 3,
+      "name": "软件推荐",
+      "num": 20
     },
     {
-      "type": "gallery",
-      "title": "这是一个相册文章",
-      "summary": "This is a Summary",
+      "id": 4,
+      "name": "数据库",
+      "num": 25
+    },
+    {
+      "id": 5,
+      "name": "服务器",
+      "num": 30
+    }
+  ],
+  "page": {
+    "pageCount": 20,
+    "initPage": 1,
+    "showCount": 10
+  },
+  "tags": [
+    {
       "id": 1,
-      "author": "瞿龙俊",
-      "date": "2015-08-21",
-      "coverSrc": "assets/images/blog/blog_demo5.jpg",
-      "category": [
+      "name": "响应式网页",
+      "num": 20
+    },
+    {
+      "id": 2,
+      "name": "创造性",
+      "num": 10
+    },
+    {
+      "id": 4,
+      "name": "JQuery",
+      "num": 45
+    },
+    {
+      "id": 3,
+      "name": "CSS3",
+      "num": 15
+    },
+    {
+      "id": 7,
+      "name": "插件",
+      "num": 45
+    },
+    {
+      "id": 5,
+      "name": "组件与框架",
+      "num": 10
+    },
+    {
+      "id": 6,
+      "name": "Java",
+      "num": 9
+    }
+  ],
+  "date_category": [
+    {
+      "title": "2016年",
+      "items": [
         {
-          "id": 1,
-          "name": "前端"
+          "name": "1月"
         },
         {
-          "id": 2,
-          "name": "组件"
+          "name": "2月"
+        },
+        {
+          "name": "3月"
         }
-      ],
-      "imageSrc": [
-        "assets/images/project/project_demo1.jpg",
-        "assets/images/project/project_demo2.jpg",
-        "assets/images/project/project_demo3.jpg"
       ]
     },
     {
-      "type": "video",
-      "title": "这是一个视频文章",
-      "summary": "This is a Summary",
-      "id": 1,
-      "author": "瞿龙俊",
-      "date": "2015-08-21",
-      "coverSrc": "assets/images/blog/blog_demo5.jpg",
-      "category": [
+      "title": "2015年",
+      "items": [
         {
-          "id": 1,
-          "name": "前端"
+          "name": "1月"
         },
         {
-          "id": 2,
-          "name": "组件"
+          "name": "2月"
+        },
+        {
+          "name": "3月"
+        },
+        {
+          "name": "4月"
+        },
+        {
+          "name": "5月"
         }
-      ],
-      "videoSrc": "http://www.enar.ideal-theme.com/html5/files/v1.mp4"
+      ]
     },
     {
-      "type": "audio",
-      "title": "这是一个音频文章",
-      "summary": "This is a Summary",
-      "id": 1,
-      "author": "瞿龙俊",
-      "date": "2015-08-21",
-      "coverSrc": "assets/images/blog/blog_demo5.jpg",
-      "category": [
+      "title": "2014年",
+      "items": [
         {
-          "id": 1,
-          "name": "前端"
+          "name": "1月"
         },
         {
-          "id": 2,
-          "name": "组件"
+          "name": "2月"
+        },
+        {
+          "name": "3月"
         }
-      ],
-      "audioSrc": "http://96.ierge.cn/12/186/372868.mp3"
+      ]
     }
   ]
 }
