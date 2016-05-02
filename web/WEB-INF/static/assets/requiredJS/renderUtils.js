@@ -10,7 +10,10 @@ require(["template"
     , 'text!commonTpl/toggleList_item.tpl'
     , 'text!commonTpl/footer.tpl'
     , 'text!commonTpl/social.tpl'
-    , 'text!commonTpl/hot_blog.tpl'], function (template) {
+    , 'text!commonTpl/hot_blog.tpl'
+    , 'text!commonTpl/blog_detail.tpl'
+    , 'text!commonTpl/reply.tpl'
+    ,'text!commonTpl/comment.tpl'], function (template) {
     var renderUtils = {
         renderBlogList: function (data, idTag) {
             var itemTpl = require('text!commonTpl/blog_item.tpl'),
@@ -75,17 +78,48 @@ require(["template"
         },
         renderHotBlog: function (data, idTag) {
             var hotBlogTpl = require('text!commonTpl/hot_blog.tpl'),
-                htmlText="";
-            if(data && data.length>0){
-                _.each(data,function(element,index){
-                    var render=template.compile(hotBlogTpl);
+                htmlText = "";
+            if (data && data.length > 0) {
+                _.each(data, function (element, index) {
+                    var render = template.compile(hotBlogTpl);
                     htmlText += render(element);
                 });
-                document.getElementById(idTag).innerHTML=htmlText;
+                document.getElementById(idTag).innerHTML = htmlText;
             }
         },
+        renderBlogDetails: function (data, idTag) {
+            var detailsTpl = require('text!commonTpl/blog_detail.tpl');
+            var render = template.compile(detailsTpl),
+                htmlText = render(data);
+            document.getElementById(idTag).innerHTML = htmlText;
+        },
+        renderBlogComment: function (data, idTag) {
+            var commentList = data.comment,
+                replyTpl = require('text!commonTpl/reply.tpl'),
+                commentTpl = require('text!commonTpl/comment.tpl'),
+                htmlText="";
+            _.each(commentList, function (comment, index) {
+                //htmlText += getChild(comment);
+                console.log(getChild(comment));
 
+            });
+           //$('#'+idTag).append(htmlText);
+            function getChild(item) {
+                var reply = item.reply,
+                    value = "";
+                if (reply && reply.length > 0) {
+                    _.each(reply, function (element) {
+                        value += getChild(element);
+                    });
 
+                }
+                Jutils.extend(item, {"child": value}, true);
+                var render = template.compile(replyTpl),
+                    htmlText = render(item);
+                return htmlText;
+            }
+
+        },
         bindEvent: function () {
             "use strict";
             //----------> Site Preloader
