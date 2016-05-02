@@ -1,840 +1,411 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 7 ]>
+<html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 <head>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
-	<title>Blog List Sidebar Left | Enar</title>
-	<meta name="author" content="" />
-	<meta name="description" content="" />
+    <!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
+    <title>Blog List Sidebar Left | Enar</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
 
-	<!-- Don't forget to set your site up: http://google.com/webmasters -->
-	<meta name="google-site-verification" content="" />
-	<meta name="Copyright" content="" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Don't forget to set your site up: http://google.com/webmasters -->
+    <meta name="google-site-verification" content=""/>
+    <meta name="Copyright" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
-	<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png" />
-	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png" />
+    <!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png"/>
 
-	<!-- concatenate and minify for production -->
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="assets/css/mediaelementplayer.css" />
-	<link rel="stylesheet" href="assets/css/animate.min.css" type="text/css" media="all" />
+    <!-- concatenate and minify for production -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="assets/css/mediaelementplayer.css"/>
+    <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css" media="all"/>
 
-	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="assets/css/icon-fonts.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="assets/css/icon-fonts.css" type="text/css" media="all"/>
 
 
-	<link href='http://fonts.useso.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.useso.com/css?family=Lato:300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Lato:300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+          rel='stylesheet' type='text/css'>
 </head>
 
 <!-- Class ( site_boxed - dark - preloader1 - preloader2 - preloader3 - light_header - dark_sup_menu - menu_button_mode - transparent_header - header_on_side ) -->
 <body class="preloader3 light_header">
 <div id="preloader">
-	<div class="spinner">
-		<div class="sk-dot1"></div><div class="sk-dot2"></div>
-		<div class="rect3"></div><div class="rect4"></div>
-		<div class="rect5"></div>
-	</div>
+    <div class="spinner">
+        <div class="sk-dot1"></div>
+        <div class="sk-dot2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
 </div>
 
 <div id="main_wrapper">
-	<header id="site_header">
-		<div class="topbar"><!-- class ( topbar_colored  ) -->
-			<div class="content clearfix">
+    <header id="site_header">
 
-				<div class="top_details clearfix f_left">
-					<div class="languages-select languages-drop">
-						<span><i class="ico-globe4"></i><span>欢迎您</span></span>
-					</div>
-					<span class="top_login">
-						<i class="icon ico-key3"></i><a class="popup-with-move-anim" href="#login-popup">登录</a>
-					</span>
-					<div class="zoom-anim-dialog small-dialog mfp-hide login_popup" id="login-popup">
-						<form class="login_form_colored">
-							<div class="lfc_user_row">
-								<span class="lfc_header">登录</span>
-							</div>
-							<div class="lfc_user_row">
-								<label for="login_user_name">
-									<span class="lfc_alert"></span>
-									<i class="lfc_icon ico-user5"></i>
-									<input type="text" name="login_user_name" id="login_user_name">
-								</label>
-							</div>
-							<div class="lfc_user_row">
-								<label for="login_password">
-									<span class="lfc_alert"></span>
-									<i class="lfc_icon ico-key3"></i>
-									<input type="password" name="login_password" id="login_password">
-								</label>
-							</div>
-							<div class="lfc_user_row clearfix">
-								<div class="my_col_half">
-									<label for="rememberme">
-										<span class="remember-box">
-											<input type="checkbox" id="rememberme" name="rememberme">
-											<span>记住密码</span>
-										</span>
-									</label>
-								</div>
-								<div class="my_col_half clearfix">
-									<button type="submit" name="login" class="send_button f_right upper">
-										Sign in
-									</button>
-								</div>
-							</div>
-							<a class="lfc_forget_pass" href="#">忘记密码?</a>
-						</form>
-					</div>
-				</div>
+    </header>
+    <!-- Our Blog Grids -->
+    <section class="content_section">
+        <div class="content">
+            <div class="internal_post_con">
+                <div class="hm_blog_full_list hm_blog_list clearfix">
+                    <!-- Post Container -->
+                    <div id="post-1"
+                         class="post-1 post type-post status-publish format-gallery has-post-thumbnail category-media tag-photos clearfix">
+                        <!--<div class="post_title_con">-->
+                            <!--<h6 class="title"><a href="#">这里是文章的标题</a></h6>-->
+							<!--<span class="meta">-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-clock7"></i>-->
+                                        <!--<span>2016年05月21日</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-comment-o"></i>-->
+                                        <!--<span>34条评论</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<i class="ico-folder-open-o"></i>-->
+									<!--<span>-->
+										<!--<a href="#">前端开发</a>, <a href="#">组件架构</a>-->
+									<!--</span>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-user5"></i>-->
+                                        <!--<span>瞿龙俊</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+							<!--</span>-->
+                        <!--</div>-->
+
+                        <!--<div class="blog_grid_con">-->
+
+                            <!--<p>这里是文章的正文部分,文章使用Makedown语言进行编写,下面我将依次展示不同的文章多媒体内容.</p>-->
+                        <!--</div>-->
+                        <!-- Next / Prev and Social Share-->
+                        <!--<div class="post_next_prev_con clearfix">-->
+                            <!--&lt;!&ndash; Next and Prev Post&ndash;&gt;-->
+                            <!--<div class="post_next_prev clearfix">-->
+                                <!--<a href="#"><i class="ico-arrow-back"></i><span class="t">上一篇</span></a>-->
+                                <!--&lt;!&ndash;<a href="#" class="th_icon" title="All Posts"><i class="ico-apps"></i></a> &ndash;&gt;-->
+                                <!--<a href="#"><span class="t">下一篇</span><i class="ico-arrow-forward"></i></a>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; End Next and Prev Post&ndash;&gt;-->
+                        <!--</div>-->
+                        <!-- End Next / Prev and Social Share-->
+
+                        <!-- Tags -->
+                        <!--<div class="small_title">-->
+							<!--<span class="small_title_con">-->
+								<!--<span class="s_icon"><i class="ico-tag4"></i></span>-->
+								<!--<span class="s_text">标签</span>-->
+							<!--</span>-->
+                        <!--</div>-->
+                        <!--<div class="tags_con">-->
+                            <!--&lt;!&ndash; <h6>Tags:</h6> &ndash;&gt;-->
+                            <!--<a href="#" rel="tag">前端</a>-->
+                            <!--<a href="#" rel="tag">HTML</a>-->
+                            <!--<a href="#" rel="tag">框架技术</a>-->
+                            <!--<a href="#" rel="tag">Audio</a>-->
+                            <!--<a href="#" rel="tag">组件</a>-->
+                        <!--</div>-->
+                        <!-- End Tags -->
+
+                        <!-- About the author -->
+                        <!--<div class="about_auther">-->
+                            <!--<div class="small_title">-->
+								<!--<span class="small_title_con">-->
+									<!--<span class="s_icon"><i class="ico-user5"></i></span>-->
+									<!--<span class="s_text">关于作者</span>-->
+								<!--</span>-->
+                            <!--</div>-->
+
+                            <!--<div class="about_auther_con clearfix">-->
+								<!--<span class="avatar_img">-->
+									<!--<img alt="client name" src="assets/images/blog/touxiang.jpg">-->
+								<!--</span>-->
+                                <!--<div class="about_auther_details">-->
+                                    <!--<a href="#" class="auther_link">瞿龙俊</a>-->
+									<!--<span class="desc">这里是关于瞿龙俊的个人介绍,可以在后台管理系统中对其进行详细设置.这里是关于瞿龙俊的个人介绍,可以在后台管理系统中对其进行详细设置.这里是关于瞿龙俊的个人介绍,可以在后台管理系统中对其进行详细设置.-->
+									<!--</span>-->
+                                    <!--<div class="social_media clearfix">-->
+                                        <!--<a href="#" target="_blank" class="twitter">-->
+                                            <!--<img style="width: 15px;height: 15px;" src="assets/images/blog/github.png">-->
+                                        <!--</a>-->
+                                        <!--<a href="#" target="_blank" class="facebook">-->
+                                            <!--<img style="width: 20px;height: 20px;" src="assets/images/blog/QQ.png">-->
+                                        <!--</a>-->
+                                        <!--<a href="#" target="_blank" class="googleplus">-->
+                                            <!--<img style="width: 20px;height: 20px;" src="assets/images/blog/wechat.png">-->
+                                        <!--</a>-->
+                                        <!--<a href="#" target="_blank" class="linkedin">-->
+                                            <!--<img style="width: 20px;height: 20px;" src="assets/images/blog/zhihu.png">-->
+                                        <!--</a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!-- End About the author -->
+                    </div>
+                    <!-- End Post Container -->
 
 
-			</div>
-			<!-- End content -->
-			<span class="top_expande not_expanded">
-				<i class="no_exp ico-angle-double-down"></i>
-				<i class="exp ico-angle-double-up"></i>
-			</span>
-		</div>
-		<!-- End topbar -->
-
-		<div id="navigation_bar">
-			<div class="content">
-				<div id="logo">
-					<a href="index.html">
-						<img class="logo_dark" src="assets/images/logo-dark.png" alt="Enar Logo">
-						<img class="logo_light" src="assets/images/logo-light.png" alt="Enar Logo">
-					</a>
-				</div>
-				<!-- Top Search -->
-				<form class="top_search clearfix small_top_search">
-					<div class="top_search_con">
-						<input type="text" class="s" placeholder="搜索全部 ...">
-						<span class="top_search_icon"><i class="ico-search4"></i></span>
-						<input type="submit" class="top_search_submit" >
-					</div>
-				</form>
-				<!-- End Top Search -->
-				<nav id="main_nav">
-					<div id="nav_menu">
-						<span class="mobile_menu_trigger">
-						    <a href="#" class="nav_trigger"><span></span></a>
-						</span>
-						<ul id="navy" class="clearfix">
-							<li class="normal_menu mobile_menu_toggle">
-								<a href="coming-soon.html"><span>首页</span></a>
-							</li>
-							<li class="normal_menu mobile_menu_toggle current_page_item">
-								<a href="index.html"><span>博客</span></a>
-							</li>
-							<li class="normal_menu mobile_menu_toggle">
-								<a href="resume/resume.html" target="_blank"><span>简历</span></a>
-							</li>
-							<li class="normal_menu mobile_menu_toggle">
-								<a href="project-list.html"><span>项目</span></a>
-								<ul>
-									<li class="normal_menu"><a href="project-list.html">全部项目</a></li>
-									<li class="normal_menu"><a href="project-list.html">前端开发</a>
-										<ul>
-											<li class="normal_menu"><a href="project-list.html">页面设计</a></li>
-											<li class="normal_menu"><a href="project-list.html">动态特效</a></li>
-											<li class="normal_menu"><a href="project-list.html">框架组件</a></li>
-										</ul>
-									</li>
-									<li class="normal_menu"><a href="project-list.html">后端开发</a>
-										<ul>
-											<li class="normal_menu"><a href="project-list.html">Java</a></li>
-											<li class="normal_menu"><a href="project-list.html">Python</a></li>
-										</ul>
-									</li>
-									<li class="normal_menu"><a href="index4.html">其他</a></li>
-
-								</ul>
-							</li>
-							<li class="normal_menu mobile_menu_toggle">
-								<a href="media-photo-list.html"><span>相册</span></a>
-							</li>
-							<li class="normal_menu mobile_menu_toggle">
-								<a href="contact-me.html"><span>联系方式</span></a>
-							</li>
-							<li class="normal_menu mobile_menu_toggle">
-								<a href="about-me.html"><span>个人简介</span></a>
-							</li>
-							<!--<li class="normal_menu mobile_menu_toggle">-->
-							<!--<a href="blog-standard-sidebar-right.html"><span>站点</span></a>-->
-							<!--</li>-->
-							<li class="normal_menu mobile_menu_toggle">
-								<a href="blog-standard-sidebar-right.html"><span>其他页面</span></a>
-								<ul>
-									<li class="normal_menu"><a href="404.html">404</a></li>
-									<li class="normal_menu"><a href="under-construction.html">升级公告</a></li>
-									<li class="normal_menu"><a href="coming-soon.html">即将到来</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</nav>
-				<!-- End Nav -->
-
-				<div class="clear"></div>
-			</div>
-		</div>
-	</header>
-	<!-- Our Blog Grids -->
-	<section class="content_section">
-		<div class="content">
-			<div class="internal_post_con">
-				<div class="hm_blog_full_list hm_blog_list clearfix">
-
-					<!-- Post Container -->
-					<div id="post-1" class="post-1 post type-post status-publish format-gallery has-post-thumbnail category-media tag-photos clearfix">
-						<div class="post_title_con">
-							<h6 class="title"><a href="#">这里是文章的标题</a></h6>
-							<span class="meta">
-								<span class="meta_part">
-									<a href="#">
-										<i class="ico-clock7"></i>
-										<span>2016年05月21日</span>
-									</a>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-										<i class="ico-comment-o"></i>
-										<span>34条评论</span>
-									</a>
-								</span>
-								<span class="meta_part">
-									<i class="ico-folder-open-o"></i>
-									<span>
-										<a href="#">前端开发</a>, <a href="#">组件架构</a>
-									</span>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-										<i class="ico-user5"></i>
-										<span>瞿龙俊</span>
-									</a>
-								</span>
-							</span>
-						</div>
-
-						<div class="blog_grid_con">
-
-							<p>这里是文章的正文部分,文章使用Makedown语言进行编写,下面我将依次展示不同的文章多媒体内容.</p>
-							<blockquote>
-								<i class="ico-quote"></i>
-								<span class="quote_text">这里是引用块内容,在引用体的内部,所有文字都会被缩进,并且会在左侧出现一个双引号,表示当前段落被引用.</span>
-							</blockquote>
-							<p>下面为相册显示状态:.</p>
-						</div>
-						<div class="post_format_con">
-							<span>
-								<a href="#">
-									<i class="ico-gallery"></i>
-								</a>
-							</span>
-						</div>
-						<div class="feature_inner">
-							<div class="feature_inner_corners">
-								<div class="porto_galla">
-									<a href="assets/images/blog/blog_demo7.jpg" class="feature_inner_ling">
-										<img src="assets/images/blog/blog_demo7.jpg" alt="Post Title">
-									</a>
-									<a href="assets/images/blog/blog_demo5.jpg" class="feature_inner_ling">
-										<img src="assets/images/blog/blog_demo5.jpg" alt="Post Title">
-									</a>
-									<a href="assets/images/blog/blog_demo4.jpg" class="feature_inner_ling">
-										<img src="assets/images/blog/blog_demo4.jpg" alt="Post Title">
-									</a>
-									<a href="assets/images/blog/blog_demo8.jpg" class="feature_inner_ling">
-										<img src="assets/images/blog/blog_demo8.jpg" alt="Post Title">
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="blog_grid_con">
-							<p>下面为图片显示状态:.</p>
-						</div>
-						<div class="post_format_con">
-								<span>
-									<a href="#">
-										<i class="ico-image4"></i>
-									</a>
-								</span>
-						</div>
-						<div class="feature_inner">
-							<div class="feature_inner_corners">
-								<a href="assets/images/blog/blog_demo7.jpg" class="feature_inner_ling" data-rel="magnific-popup">
-									<img src="assets/images/blog/blog_demo7.jpg" alt="Post Title">
-								</a>
-							</div>
-						</div>
-						<div class="blog_grid_con">
-							<p>下面为音频显示状态:.</p>
-						</div>
-						<div class="feature_inner">
-							<div class="self_hosted_container">
-								<audio class="hosted_audio" id="audio_player_1" width="100%" preload="metadata" controls="controls">
-									<source src="http://96.ierge.cn/12/186/372868.mp3" type="audio/mp3" />
-								</audio>
-							</div>
-						</div>
-						<div class="blog_grid_con">
-							<p>下面为视频显示状态:.</p>
-						</div>
-						<div class="feature_inner">
-							<div class="self_hosted_container">
-								<video class="hosted_video" id="video_player_1" width="100%" height="100%" poster="images/video-boster.jpg" preload="metadata" controls="controls" style="width:100%;height:100%;">
-									<source src="http://www.enar.ideal-theme.com/html5/files/v1.mp4" type="video/mp4" />
-									<source src="http://www.enar.ideal-theme.com/html5/files/christmas_snow.ogv" type="video/ogg" />
-									<source src="http://www.enar.ideal-theme.com/html5/files/christmas_snow.webm" type="video/webm" />
-								</video>
-							</div>
-						</div>
-						<!-- Next / Prev and Social Share-->
-						<div class="post_next_prev_con clearfix">
-							<!-- Next and Prev Post-->
-							<div class="post_next_prev clearfix">
-								<a href="#"><i class="ico-arrow-back"></i><span class="t">上一篇</span></a>
-								<!--<a href="#" class="th_icon" title="All Posts"><i class="ico-apps"></i></a> -->
-								<a href="#"><span class="t">下一篇</span><i class="ico-arrow-forward"></i></a>
-							</div>
-							<!-- End Next and Prev Post-->
-
-							<!-- Social Share-->
-							<!--<div class="single_pro_row">-->
-								<!--<div id="share_on_socials">-->
-									<!--&lt;!&ndash; <h6>Share:</h6> &ndash;&gt;-->
-									<!--<a class="facebook" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http://www.yourlink.com&amp;p[title]=your-post-title&amp;p[summary]=your-content-here&amp;p[images[0]=http://www.yourlink.com/image.jpg" target="_blank"><i class="ico-facebook4"></i></a>-->
-									<!--<a class="twitter" href="http://twitter.com/home?status=your-post-title+http://www.yourlink.com" target="_blank"><i class="ico-twitter4"></i></a>-->
-									<!--<a class="googleplus" href="https://plus.google.com/share?url=http://www.yourlink.com" target="_blank"><i class="ico-google-plus"></i></a>-->
-									<!--<a class="pinterest" href="http://pinterest.com/pin/create/bookmarklet/?media=http://www.yourlink.com/image.jpg&amp;url=http://www.yourlink.com&amp;is_video=false&amp;description=your-post-title" target="_blank"><i class="ico-pinterest-p"></i></a>-->
-									<!--<a class="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.yourlink.com&amp;title=your-post-title&amp;source=http://www.yourlink.com" target="_blank"><i class="ico-linkedin3"></i></a>-->
-								<!--</div>-->
-							<!--</div>-->
-							<!-- End Social Share-->
-						</div>
-						<!-- End Next / Prev and Social Share-->
-
-						<!-- Tags -->
-						<div class="small_title">
-							<span class="small_title_con">
-								<span class="s_icon"><i class="ico-tag4"></i></span>
-								<span class="s_text">标签</span>
-							</span>
-						</div>
-						<div class="tags_con">
-							<!-- <h6>Tags:</h6> -->
-							<a href="#" rel="tag">前端</a>
-							<a href="#" rel="tag">HTML</a>
-							<a href="#" rel="tag">框架技术</a>
-							<a href="#" rel="tag">Audio</a>
-							<a href="#" rel="tag">组件</a>
-						</div>
-						<!-- End Tags -->
-
-						<!-- About the author -->
-						<div class="about_auther">
-							<div class="small_title">
-								<span class="small_title_con">
-									<span class="s_icon"><i class="ico-user5"></i></span>
-									<span class="s_text">关于作者</span>
-								</span>
-							</div>
-
-							<div class="about_auther_con clearfix">
-								<span class="avatar_img">
-									<img alt="client name" src="assets/images/blog/touxiang.jpg">
-								</span>
-								<div class="about_auther_details">
-									<a href="#" class="auther_link">瞿龙俊</a>
-									<span class="desc">这里是关于瞿龙俊的个人介绍,可以在后台管理系统中对其进行详细设置.这里是关于瞿龙俊的个人介绍,可以在后台管理系统中对其进行详细设置.这里是关于瞿龙俊的个人介绍,可以在后台管理系统中对其进行详细设置.
-									</span>
-									<div class="social_media clearfix">
-										<a href="#" target="_blank" class="twitter">
-											<img style="width: 15px;height: 15px;" src="assets/images/blog/github.png">
-										</a>
-										<a href="#" target="_blank" class="facebook">
-											<img style="width: 20px;height: 20px;" src="assets/images/blog/QQ.png">
-										</a>
-										<a href="#" target="_blank" class="googleplus">
-											<img style="width: 20px;height: 20px;" src="assets/images/blog/wechat.png">
-										</a>
-										<a href="#" target="_blank" class="linkedin">
-											<img style="width: 20px;height: 20px;" src="assets/images/blog/zhihu.png">
-										</a>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<!-- End About the author -->
-					</div>
-					<!-- End Post Container -->
-
-					<!-- Related Posts -->
-					<div class="related_posts">
-						<div class="small_title">
-							<span class="small_title_con">
-								<span class="s_icon"><i class="ico-laptop4"></i></span>
-								<span class="s_text">猜你喜欢</span>
-							</span>
-						</div>
-
-						<div class="related_posts_con">
-							<div class="related_posts_slide">
-								<div class="related_img_con">
-									<a href="#" class="related_img">
-										<img alt="" src="assets/images/blog/blog_demo1.jpg">
-										<span><i class="ico-pencil4"></i></span>
-									</a>
-								</div>
-								<a class="related_title" href="#">推荐文章一</a>
-								<span class="post_date">2015/04/12</span>
-							</div>
-							<div class="related_posts_slide">
-								<div class="related_img_con">
-									<a href="#" class="related_img">
-										<img alt="" src="assets/images/blog/blog_demo2.jpg">
-										<span><i class="ico-image4"></i></span>
-									</a>
-								</div>
-								<a class="related_title" href="#">推荐文章二</a>
-								<span class="post_date">2015年04年13日</span>
-							</div>
-							<div class="related_posts_slide">
-								<div class="related_img_con">
-									<a href="#" class="related_img">
-										<img alt="" src="assets/images/blog/blog_demo3.jpg">
-										<span><i class="ico-sound3"></i></span>
-									</a>
-								</div>
-								<a class="related_title" href="#">推荐文章三</a>
-								<span class="post_date">2015年04年13日</span>
-							</div>
-							<div class="related_posts_slide">
-								<div class="related_img_con">
-									<a href="#" class="related_img">
-										<img alt="" src="assets/images/blog/blog_demo4.jpg">
-										<span><i class="ico-quote-right"></i></span>
-									</a>
-								</div>
-								<a class="related_title" href="#">推荐文章四</a>
-								<span class="post_date">2015年04年13日</span>
-							</div>
-							<div class="related_posts_slide">
-								<div class="related_img_con">
-									<a href="#" class="related_img">
-										<img alt="" src="assets/images/blog/blog_demo5.jpg">
-										<span><i class="ico-gallery"></i></span>
-									</a>
-								</div>
-								<a class="related_title" href="#">推荐文章五</a>
-								<span class="post_date">2015年04年13日</span>
-							</div>
-							<div class="related_posts_slide">
-								<div class="related_img_con">
-									<a href="#" class="related_img">
-										<img alt="" src="assets/images/blog/blog_demo6.jpg">
-										<span><i class="ico-comment2"></i></span>
-									</a>
-								</div>
-								<a class="related_title" href="#">推荐文章六</a>
-								<span class="post_date">2015年04年13日</span>
-							</div>
-						</div>
-					</div>
-					<!-- End Related Posts -->
-
-					<!-- Comments Container -->
-					<div id="comments" class="comments-area">
-						<div class="small_title">
+                    <!-- Comments Container -->
+                    <div id="comments" class="comments-area">
+                        <div class="small_title">
 							<span class="small_title_con">
 								<span class="s_icon"><i class="ico-comment-o"></i></span>
 								<span class="s_text">留言</span>
 							</span>
-						</div>
+                        </div>
 
-						<!-- Comments Tree -->
-						<ol class="comments_list clearfix">
-							<li class="comment single_comment">
-								<!-- Comment -->
-								<div class="comment-container comment-box">
-									<div class="trees_number">1</div>
-									<a href="#" class="avatar">
-										<img width="75" height="75" src="assets/images/blog/cover2.jpeg" alt="John Doe">
-									</a>
-									<div class="comment_content">
-										<h4 class="author_name"><a href="#">郭志华</a></h4>
+                        <!-- Comments Tree -->
+                        <ol class="comments_list clearfix">
+                            <li class="comment single_comment">
+                                <!-- Comment -->
+                                <div class="comment-container comment-box">
+                                    <div class="trees_number">1</div>
+                                    <a href="#" class="avatar">
+                                        <img width="75" height="75" src="assets/images/blog/cover2.jpeg" alt="John Doe">
+                                    </a>
+                                    <div class="comment_content">
+                                        <h4 class="author_name"><a href="#">郭志华</a></h4>
 									<span class="comment_meta">
 										<a href="#">
-											<time datetime="2015-10-01T19:56:36+00:00">2015年12月01日 23:45</time>
-										</a>
+                                            <time datetime="2015-10-01T19:56:36+00:00">2015年12月01日 23:45</time>
+                                        </a>
 									</span>
-										<div class="comment_said_text">
-											<p>这是一个非常漂亮的个人博客,瞿龙俊对前端的理解已经突破了天际了,我辈应以此为楷模.</p>
-										</div>
-										<a href="#commentform" class="comment-reply-link">Reply</a>
-									</div>
-								</div>
-								<!-- End Comment -->
+                                        <div class="comment_said_text">
+                                            <p>这是一个非常漂亮的个人博客,瞿龙俊对前端的理解已经突破了天际了,我辈应以此为楷模.</p>
+                                        </div>
+                                        <a href="#commentform" class="comment-reply-link">Reply</a>
+                                    </div>
+                                </div>
+                                <!-- End Comment -->
 
-								<ol class="children">
-									<li class="comment single_comment">
-										<!-- Comment -->
-										<div class="comment-container comment-box">
-											<div class="trees_number">1.1</div>
-											<a href="#" class="avatar">
-												<img width="75" height="75" src="assets/images/blog/cover3.jpg" alt="Jane Smith">
-											</a>
-											<div class="comment_content">
-												<h4 class="author_name"><a href="#">陈莉莉</a></h4>
+                                <ol class="children">
+                                    <li class="comment single_comment">
+                                        <!-- Comment -->
+                                        <div class="comment-container comment-box">
+                                            <div class="trees_number">1.1</div>
+                                            <a href="#" class="avatar">
+                                                <img width="75" height="75" src="assets/images/blog/cover3.jpg"
+                                                     alt="Jane Smith">
+                                            </a>
+                                            <div class="comment_content">
+                                                <h4 class="author_name"><a href="#">陈莉莉</a></h4>
 											<span class="comment_meta">
 												<a href="#">
-													<time datetime="2015-10-01T19:56:36+00:00">2015年12月03日 23:45</time>
-												</a>
+                                                    <time datetime="2015-10-01T19:56:36+00:00">2015年12月03日 23:45</time>
+                                                </a>
 											</span>
-												<div class="comment_said_text">
-													<p>我同意楼上的观点,这是我见过的最好看的个人博客了,瞿龙俊的创造力和想象力,我远不及也.</p>
-												</div>
-												<a href="#commentform" class="comment-reply-link">Reply</a>
-											</div>
-										</div>
-										<!-- End Comment -->
+                                                <div class="comment_said_text">
+                                                    <p>我同意楼上的观点,这是我见过的最好看的个人博客了,瞿龙俊的创造力和想象力,我远不及也.</p>
+                                                </div>
+                                                <a href="#commentform" class="comment-reply-link">Reply</a>
+                                            </div>
+                                        </div>
+                                        <!-- End Comment -->
 
-										<ol class="children">
-											<li class="comment single_comment">
-												<!-- Comment -->
-												<div class="comment-container comment-box">
-													<div class="trees_number">1.1.1</div>
-													<a href="#" class="avatar">
-														<img width="75" height="75" src="assets/images/blog/cover4.jpg" alt="Tommy Horton">
-													</a>
-													<div class="comment_content">
-														<h4 class="author_name"><a href="#">王健</a></h4>
+                                        <ol class="children">
+                                            <li class="comment single_comment">
+                                                <!-- Comment -->
+                                                <div class="comment-container comment-box">
+                                                    <div class="trees_number">1.1.1</div>
+                                                    <a href="#" class="avatar">
+                                                        <img width="75" height="75" src="assets/images/blog/cover4.jpg"
+                                                             alt="Tommy Horton">
+                                                    </a>
+                                                    <div class="comment_content">
+                                                        <h4 class="author_name"><a href="#">王健</a></h4>
 													<span class="comment_meta">
 														<a href="#">
-															<time datetime="2015-10-01T19:56:36+00:00">2015年12月03日 23:45</time>
-														</a>
+                                                            <time datetime="2015-10-01T19:56:36+00:00">2015年12月03日
+                                                                23:45
+                                                            </time>
+                                                        </a>
 													</span>
-														<div class="comment_said_text">
-															<p>我同意楼上的观点,这是我见过的最好看的个人博客了,瞿龙俊的创造力和想象力,我远不及也.</p>
-														</div>
-														<a href="#commentform" class="comment-reply-link">Reply</a>
-													</div>
-												</div>
-												<!-- End Comment -->
+                                                        <div class="comment_said_text">
+                                                            <p>我同意楼上的观点,这是我见过的最好看的个人博客了,瞿龙俊的创造力和想象力,我远不及也.</p>
+                                                        </div>
+                                                        <a href="#commentform" class="comment-reply-link">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <!-- End Comment -->
 
-												<ol class="children">
-													<li class="comment single_comment">
-														<!-- Comment -->
-														<div class="comment-container comment-box">
-															<div class="trees_number">1.1.1.1</div>
-															<a href="#" class="avatar">
-																<img width="75" height="75" src="assets/images/blog/touxiang.jpg" alt="Alan Snow">
-															</a>
-															<div class="comment_content">
-																<h4 class="author_name"><a href="#">瞿龙俊</a></h4>
+                                                <ol class="children">
+                                                    <li class="comment single_comment">
+                                                        <!-- Comment -->
+                                                        <div class="comment-container comment-box">
+                                                            <div class="trees_number">1.1.1.1</div>
+                                                            <a href="#" class="avatar">
+                                                                <img width="75" height="75"
+                                                                     src="assets/images/blog/touxiang.jpg"
+                                                                     alt="Alan Snow">
+                                                            </a>
+                                                            <div class="comment_content">
+                                                                <h4 class="author_name"><a href="#">瞿龙俊</a></h4>
 															<span class="comment_meta">
 																<a href="#">
-																	<time datetime="2015-10-01T19:56:36+00:00">2015年12月03日 23:45</time>
-																</a>
+                                                                    <time datetime="2015-10-01T19:56:36+00:00">
+                                                                        2015年12月03日 23:45
+                                                                    </time>
+                                                                </a>
 															</span>
-																<div class="comment_said_text">
-																	<p>谢谢大家的厚爱,我也很喜欢我的博客呢.</p>
-																</div>
-																<a href="#commentform" class="comment-reply-link">Reply</a>
-															</div>
-														</div>
-														<!-- End Comment -->
-													</li>
-												</ol>
+                                                                <div class="comment_said_text">
+                                                                    <p>谢谢大家的厚爱,我也很喜欢我的博客呢.</p>
+                                                                </div>
+                                                                <a href="#commentform"
+                                                                   class="comment-reply-link">Reply</a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End Comment -->
+                                                    </li>
+                                                </ol>
 
-											</li>
-										</ol>
+                                            </li>
+                                        </ol>
 
-									</li>
-								</ol>
+                                    </li>
+                                </ol>
 
-							</li>
-							<li class="comment single_comment">
-								<!-- Comment -->
-								<div class="comment-container comment-box">
-									<div class="trees_number">2</div>
-									<a href="#" class="avatar">
-										<img width="75" height="75" src="assets/images/blog/cover4.jpg" alt="Harry John">
-									</a>
-									<div class="comment_content">
-										<h4 class="author_name"><a href="#">王健</a></h4>
+                            </li>
+                            <li class="comment single_comment">
+                                <!-- Comment -->
+                                <div class="comment-container comment-box">
+                                    <div class="trees_number">2</div>
+                                    <a href="#" class="avatar">
+                                        <img width="75" height="75" src="assets/images/blog/cover4.jpg"
+                                             alt="Harry John">
+                                    </a>
+                                    <div class="comment_content">
+                                        <h4 class="author_name"><a href="#">王健</a></h4>
 										<span class="comment_meta">
 											<a href="#">
-												<time datetime="2015-10-01T19:56:36+00:00">2015年12月05日 23:45</time>
-											</a>
+                                                <time datetime="2015-10-01T19:56:36+00:00">2015年12月05日 23:45</time>
+                                            </a>
 										</span>
-										<div class="comment_said_text">
-											<p>小伙子很有前途,跟我来干你爱干的事情.</p>
-										</div>
-										<a href="#commentform" class="comment-reply-link">Reply</a>
-									</div>
-								</div>
-								<!-- End Comment -->
-							</li>
-						</ol>
-						<!-- End Comments Tree -->
+                                        <div class="comment_said_text">
+                                            <p>小伙子很有前途,跟我来干你爱干的事情.</p>
+                                        </div>
+                                        <a href="#commentform" class="comment-reply-link">Reply</a>
+                                    </div>
+                                </div>
+                                <!-- End Comment -->
+                            </li>
+                        </ol>
+                        <!-- End Comments Tree -->
 
-						<!-- Comments Form -->
-						<div class="comments-form-area" id="comments-form">
-							<div class="comment-respond" id="respond">
+                        <!-- Comments Form -->
+                        <div class="comments-form-area" id="comments-form">
+                            <div class="comment-respond" id="respond">
 
-								<div class="small_title">
+                                <div class="small_title">
 									<span class="small_title_con">
 										<span class="s_icon"><i class="ico-pencil6"></i></span>
 										<span class="s_text">快速回复</span>
 									</span>
-								</div>
-								<form class="comment-form" id="commentform" method="post" action="">
-									<!-- <p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p> -->
-									<input type="text" aria-required="true" size="30" value="" placeholder="昵称 (必需)" name="author" id="author">
-									<input type="text" aria-required="true" size="30" value="" placeholder="电子邮件 (必需)" name="email" id="email">
-									<input type="text" size="30" value="" placeholder="网站" name="url" id="url">
-									<p class="comment-form-comment">
-										<textarea aria-required="true" rows="8" cols="45" name="comment" placeholder="发表评论..." id="comment"></textarea>
-									</p>
-									<p class="form-submit">
-										<input class="send_button" type="submit" value="发表评论" id="submit-comment" name="submit">
-									</p>
-								</form>
-							</div>
-						</div>
-						<!-- End Comments Form -->
-					</div>
-					<!-- End Comments Container -->
-				</div>
-				<!-- End blog List -->
-			</div>
-		</div>
-	</section>
-	<!-- End Our Blog Grids -->
+                                </div>
+                                <form class="comment-form" id="commentform" method="post" action="">
+                                    <!-- <p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p> -->
+                                    <input type="text" aria-required="true" size="30" value="" placeholder="昵称 (必需)"
+                                           name="author" id="author">
+                                    <input type="text" aria-required="true" size="30" value="" placeholder="电子邮件 (必需)"
+                                           name="email" id="email">
+                                    <input type="text" size="30" value="" placeholder="网站" name="url" id="url">
+                                    <p class="comment-form-comment">
+                                        <textarea aria-required="true" rows="8" cols="45" name="comment"
+                                                  placeholder="发表评论..." id="comment"></textarea>
+                                    </p>
+                                    <p class="form-submit">
+                                        <input class="send_button" type="submit" value="发表评论" id="submit-comment"
+                                               name="submit">
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Comments Form -->
+                    </div>
+                    <!-- End Comments Container -->
+                </div>
+                <!-- End blog List -->
+            </div>
+        </div>
+    </section>
+    <!-- End Our Blog Grids -->
 
 
-
-	<!-- footer -->
-	<footer id="footer">
-		<!--<div class="container row_spacer clearfix">-->
-		<!--<div class="rows_container clearfix">-->
-		<!--<div class="col-md-3">-->
-		<!--<div class="footer_row">-->
-		<!--<h6 class="footer_title">Company Info</h6>-->
-		<!--<img alt="Enar" src="assets/images/logo-light.png">-->
-		<!--<span class="footer_desc">-->
-		<!--There are many  Purchase Now There are many variations of passages of Lorem Ipsum available, but the majority.-->
-		<!--</span>-->
-		<!--<a href="#" class="black_button">-->
-		<!--<i class="ico-angle-right"></i><span>Read More</span>-->
-		<!--</a>-->
-		<!--</div>-->
-		<!--<div class="footer_row">-->
-		<!--<h6 class="footer_title">Newsletter Signup</h6>-->
-		<!--<span class="footer_desc">-->
-		<!--By subscribing to our mailing list you will always be update with the latest news :-->
-		<!--</span>-->
-		<!--<form id="newsletter_form" class="newsletter_form" action="php/mailchimp/subscribe.php" method="post">-->
-		<!--<div class="newsletter_con">-->
-		<!--<input class="subscribe-mail" name="subscribe-mail" id="subscribe-mail" type="email" placeholder="Your Email Here ..." required>-->
-		<!--<button type="submit" name="submit" class="newsletter_button">-->
-		<!--<i class="subscribe_true ico-check3"></i>-->
-		<!--<i class="subscribe_btn ico-send-o"></i>-->
-		<!--<i class="refresh_loader ico-refresh4"></i>-->
-		<!--</button>-->
-		<!--</div>-->
-		<!--<div id="subscribe_output"></div>-->
-		<!--</form>-->
-		<!--</div>-->
-		<!--</div>&lt;!&ndash; Grid &ndash;&gt;-->
-		<!---->
-		<!--<div class="col-md-3">-->
-		<!--<div class="footer_row">-->
-		<!--<h6 class="footer_title">Recent Posts</h6>-->
-		<!--<ul class="recent_posts_list">-->
-		<!--<li class="clearfix">-->
-		<!--<a href="#">-->
-		<!--<span class="recent_posts_img"><img src="assets/images/blog/thumb1.jpg" alt="Post Title"></span>-->
-		<!--<span>Best HTML5 Theme</span>-->
-		<!--</a>-->
-		<!--<span class="recent_post_detail">2016年03月21日</span>-->
-		<!--<span class="recent_post_detail">Tutorials, Videos</span> -->
-		<!--</li>-->
-		<!--<li class="clearfix">-->
-		<!--<a href="#">-->
-		<!--<span class="recent_posts_img"><img src="assets/images/blog/thumb2.jpg" alt="Post Title"></span>-->
-		<!--<span>Responseve Design</span>-->
-		<!--</a>-->
-		<!--<span class="recent_post_detail">2015/02/17</span>-->
-		<!--<span class="recent_post_detail">Audio, Videos</span> -->
-		<!--</li>-->
-		<!--<li class="clearfix">-->
-		<!--<a href="#">-->
-		<!--<span class="recent_posts_img"><img src="assets/images/blog/thumb3.jpg" alt="Post Title"></span>-->
-		<!--<span>Many Home Pages</span>-->
-		<!--</a>-->
-		<!--<span class="recent_post_detail">2015/02/17</span>-->
-		<!--<span class="recent_post_detail">Tutorials, Design</span> -->
-		<!--</li>-->
-		<!--<li class="clearfix">-->
-		<!--<a href="#">-->
-		<!--<span class="recent_posts_img"><img src="assets/images/blog/thumb4.jpg" alt="Post Title"></span>-->
-		<!--<span>Best HTML5 Theme</span>-->
-		<!--</a>-->
-		<!--<span class="recent_post_detail">2016年03月21日</span>-->
-		<!--<span class="recent_post_detail">Tutorials, Videos</span> -->
-		<!--</li>-->
-		<!--</ul>-->
-		<!--<a href="#" class="arrow_button full_width">-->
-		<!--<span>-->
-		<!--<i class="ico-arrow-forward"></i>-->
-		<!--<span>Read More Posts</span>-->
-		<!--<i class="ico-arrow-forward"></i>-->
-		<!--</span>-->
-		<!--</a>-->
-		<!--</div>-->
-		<!--</div>&lt;!&ndash; Grid &ndash;&gt;-->
-		<!---->
-		<!--<div class="col-md-3">-->
-		<!--<div class="footer_row">-->
-		<!--<h6 class="footer_title">Cloud Tags</h6>-->
-		<!--<div class="tagcloud clearfix">-->
-		<!--<a href="#"><span class="tag">Wordpress</span></a>-->
-		<!--<a href="#"><span class="tag">Creative</span></a>-->
-		<!--<a href="#"><span class="tag">CSS3</span></a>-->
-		<!--<a href="#"><span class="tag">Design</span></a>-->
-		<!--<a href="#"><span class="tag">Graphic</span></a>-->
-		<!--<a href="#"><span class="tag">HTML5</span></a>-->
-		<!--<a href="#"><span class="tag">SEO</span></a>-->
-		<!--<a href="#"><span class="tag">CSS3</span></a>-->
-		<!--<a href="#"><span class="tag">Web Design</span></a>-->
-		<!--</div>-->
-		<!--</div>-->
-		<!--<div class="footer_row">-->
-		<!--<h6 class="footer_title">Flicker Widget</h6>-->
-		<!--<div class="flickr_widget_block clearfix">-->
-		<!--<span class="flickr_badge_image">-->
-		<!--<a href="#">-->
-		<!--<img src="assets/images/flicker/flicker1.jpg" alt="Image Name" title="Flicker Image">-->
-		<!--</a>-->
-		<!--</span>-->
-		<!--<span class="flickr_badge_image">-->
-		<!--<a href="#">-->
-		<!--<img src="assets/images/flicker/flicker2.jpg" alt="Image Name" title="Flicker Image">-->
-		<!--</a>-->
-		<!--</span>-->
-		<!--<span class="flickr_badge_image">-->
-		<!--<a href="#">-->
-		<!--<img src="assets/images/flicker/flicker3.jpg" alt="Image Name" title="Flicker Image">-->
-		<!--</a>-->
-		<!--</span>-->
-		<!--<span class="flickr_badge_image">-->
-		<!--<a href="#">-->
-		<!--<img src="assets/images/flicker/flicker4.jpg" alt="Image Name" title="Flicker Image">-->
-		<!--</a>-->
-		<!--</span>-->
-		<!--<span class="flickr_badge_image">-->
-		<!--<a href="#">-->
-		<!--<img src="assets/images/flicker/flicker5.jpg" alt="Image Name" title="Flicker Image">-->
-		<!--</a>-->
-		<!--</span>-->
-		<!--<span class="flickr_badge_image">-->
-		<!--<a href="#">-->
-		<!--<img src="assets/images/flicker/flicker6.jpg" alt="Image Name" title="Flicker Image">-->
-		<!--</a>-->
-		<!--</span>-->
-		<!--</div>-->
-		<!--</div>-->
-		<!--</div>&lt;!&ndash; Grid &ndash;&gt;-->
-		<!---->
-		<!--<div class="col-md-3">-->
-		<!--<div class="footer_row">-->
-		<!--<h6 class="footer_title">Best Author</h6>-->
-		<!--<div class="about_author clearfix">-->
-		<!--<a href="#" class="about_author_link">-->
-		<!--<img src="assets/images/clients/team2-medium.jpg" alt="Author Name">-->
-		<!--<span>John Doe</span>-->
-		<!--</a>-->
-		<!--<div class="social_media clearfix">-->
-		<!--<a class="twitter" target="_blank" href="#">-->
-		<!--<i class="ico-twitter4"></i>-->
-		<!--</a>-->
-		<!--<a class="facebook" target="_blank" href="#">-->
-		<!--<i class="ico-facebook4"></i>-->
-		<!--</a>        -->
-		<!--<a class="googleplus" target="_blank" href="#">-->
-		<!--<i class="ico-google-plus"></i>-->
-		<!--</a>     -->
-		<!--<a class="linkedin" target="_blank" href="#">-->
-		<!--<i class="ico-linkedin3"></i>-->
-		<!--</a>-->
-		<!--</div>-->
-		<!--</div>-->
-		<!--</div>-->
-		<!---->
-		<!--<div class="footer_row">-->
-		<!--<h6 class="footer_title">Custom Video</h6>-->
-		<!--<a class="hm_vid_con popup-vimeo" href="http://vimeo.com/29193046">-->
-		<!--<span class="vid_icon"><i class="ico-play5"></i></span>-->
-		<!--<img alt="Video Title" src="assets/images/blog/blog5.jpg">-->
-		<!--</a>-->
-		<!--</div>-->
-		<!--</div>&lt;!&ndash; Grid &ndash;&gt;-->
-		<!--</div>-->
-		<!--</div>-->
-		<div class="footer_copyright">
-			<div class="container clearfix">
-				<div class="col-md-6">
-					<span class="footer_copy_text">Copyright &copy; 2016 Powered By <a href="#">瞿龙俊</a>  - All Rights Reserved</span>
-				</div>
-				<div class="col-md-6 clearfix">
-					<ul class="footer_menu clearfix">
-						<li><a href="#"><span>首页</span></a></li>
-						<li>/</li>
-						<li><a href="#"><span>关于我</span></a></li>
-						<li>/</li>
-						<li><a href="#"><span>帮助中心</span></a></li>
-						<li>/</li>
-						<li><a href="#"><span>联系方式</span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- End footer -->
-	<a href="#" class="hm_go_top">Top</a>
+    <!-- footer -->
+    <footer id="footer">
+    </footer>
+    <!-- End footer -->
+    <a href="#" class="hm_go_top">Top</a>
 </div>
 <!-- End wrapper -->
+<script type="text/javascript" src="assets/requiredJS/require.min.js"></script>
+<script type="text/javascript" src="assets/requiredJS/config.js"></script>
+<script>
+    require([
+        "template",
+        "jquery",
+        'underscore',
+        "renderUtils",
+        "plugins",
+        "mediaelement_and_player",
+        "isotope",
+        "utils",
+        "paging",
+        "loadHead"], function (template) {
+        $('#preloader').remove();
 
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-<script>window.jQuery || document.write('<script src="assets/js/jquery.js"><\/script>')</script>
-<script src="assets/js/plugins.js"></script>
+        $.ajax({
+            type: "GET",
+            url: "json/blog_detail.json",
+            success: function (data) {
+                renderUtils.renderFooter("footer");
+                renderUtils.renderBlogDetails(data,"post-1");
+                renderUtils.renderSocial(data.social,"social");
+                renderUtils.bindEvent();
 
-<script src="assets/js/mediaelement-and-player.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<!-- this is where we put our custom functions -->
-<script type="text/javascript" src="assets/js/functions.js"></script>
+            },
+            error: function () {
+                console.log("无法获取bolg_list.json");
+            }
+        });
+
+
+
+    });
+
+</script>
 </body>
 </html>

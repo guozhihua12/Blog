@@ -10,7 +10,8 @@ require(["template"
     , 'text!commonTpl/toggleList_item.tpl'
     , 'text!commonTpl/footer.tpl'
     , 'text!commonTpl/social.tpl'
-    , 'text!commonTpl/hot_blog.tpl'], function (template) {
+    , 'text!commonTpl/hot_blog.tpl'
+    ,'text!commonTpl/blog_detail.tpl'], function (template) {
     var renderUtils = {
         renderBlogList: function (data, idTag) {
             var itemTpl = require('text!commonTpl/blog_item.tpl'),
@@ -84,8 +85,12 @@ require(["template"
                 document.getElementById(idTag).innerHTML=htmlText;
             }
         },
-
-
+        renderBlogDetails:function(data,idTag){
+            var detailsTpl=require('text!commonTpl/blog_detail.tpl');
+            var render=template.compile(detailsTpl),
+                htmlText=render(data);
+            document.getElementById(idTag).innerHTML=htmlText;
+        },
         bindEvent: function () {
             "use strict";
             //----------> Site Preloader
