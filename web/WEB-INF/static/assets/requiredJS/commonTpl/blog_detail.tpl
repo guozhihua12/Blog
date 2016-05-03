@@ -29,8 +29,8 @@
 <div class="post_next_prev_con clearfix">
     <!-- Next and Prev Post-->
     <div class="post_next_prev clearfix">
-        <a href="#"><i class="ico-arrow-back"></i><span class="t">上一篇</span></a>
-        <a href="#"><span class="t">下一篇</span><i class="ico-arrow-forward"></i></a>
+        <a href="javascript:;" id="prevPage"><i class="ico-arrow-back"></i><span class="t">上一篇</span></a>
+        <a href="javascript:;" id="nextPage"><span class="t">下一篇</span><i class="ico-arrow-forward"></i></a>
     </div>
 </div>
 <div class="small_title">
@@ -41,7 +41,7 @@
 </div>
 <div class="tags_con">
     {{each tags as tag index}}
-    <a href="javascript:;" rel="tag">{{tag.name}}</a>
+    <a href="index.html?tag={{tag.id}}" target="_blank" rel="tag" data-id="{{tag.id}}">{{tag.name}}</a>
     {{/each}}
 </div>
 <div class="about_auther">

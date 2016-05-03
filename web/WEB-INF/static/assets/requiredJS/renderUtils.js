@@ -13,7 +13,7 @@ require(["template"
     , 'text!commonTpl/hot_blog.tpl'
     , 'text!commonTpl/blog_detail.tpl'
     , 'text!commonTpl/reply.tpl'
-    ,'text!commonTpl/comment.tpl'], function (template) {
+    , 'text!commonTpl/comment.tpl'], function (template) {
     var renderUtils = {
         renderBlogList: function (data, idTag) {
             var itemTpl = require('text!commonTpl/blog_item.tpl'),
@@ -97,13 +97,15 @@ require(["template"
             var commentList = data.comment,
                 replyTpl = require('text!commonTpl/reply.tpl'),
                 commentTpl = require('text!commonTpl/comment.tpl'),
-                htmlText="";
+                htmlText = "";
             _.each(commentList, function (comment, index) {
-                //htmlText += getChild(comment);
-                console.log(getChild(comment));
-
+                Jutils.extend(comment, {"child": getChild(comment)}, true);
+                var render = template.compile(commentTpl);
+                htmlText += render(comment);
             });
-           //$('#'+idTag).append(htmlText);
+            console.log(htmlText);
+            //$('#'+idTag).append(htmlText);
+            document.getElementById(idTag).innerHTML = htmlText;
             function getChild(item) {
                 var reply = item.reply,
                     value = "";
