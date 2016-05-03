@@ -69,44 +69,75 @@
       "id": 1,
       "name": "张三",
       "mail": "154256698@qq.com",
+      "cover":"assets/images/project/project_demo1.jpg",
       "reply": [
         {
           "id": 2,
           "name": "李四",
           "mail": "154256698@qq.com",
+          "cover":"assets/images/project/project_demo2.jpg",
           "reply": [
             {
               "id": 3,
               "name": "王五",
               "mail": "154256698@qq.com",
-              "date":"2015-03-21"
+              "cover":"assets/images/project/project_demo6.jpg",
+              "date": "2015-03-21",
+              "reply": [
+                {
+                  "id": 7,
+                  "name": "王五",
+                  "mail": "154256698@qq.com",
+                  "cover":"assets/images/project/project_demo3.jpg",
+                  "date": "2015-03-21",
+                  "content":"这是7号回复的内容"
+                }
+              ],
+              "content":"这是3号回复的内容"
             }
           ],
-          "date":"2015-03-21"
+          "content":"这是2号回复的内容",
+          "date": "2015-03-21"
         },
         {
           "id": 4,
           "name": "赵六",
           "mail": "154256698@qq.com",
+          "cover":"assets/images/project/project_demo4.jpg",
           "reply": [
             {
               "id": 5,
               "name": "测试",
               "mail": "154256698@qq.com",
-              "date":"2015-03-21"
+              "cover":"assets/images/project/project_demo5.jpg",
+              "date": "2015-03-21",
+              "content":"这是5号回复的内容"
             }
           ],
-          "date":"2015-03-21"
+          "date": "2015-03-21",
+          "content":"这是4号回复的内容"
         }
       ],
-      "date":"2015-03-21"
+      "content":"这是1号回复的内容",
+      "date": "2015-03-21"
     },
     {
       "id": 6,
       "name": "码子",
       "mail": "154256698@qq.com",
-      "reply": [],
-      "date":"2015-03-21"
+      "cover":"assets/images/project/project_demo6.jpg",
+      "reply": [
+        {
+          "id": 3,
+          "name": "王五",
+          "mail": "154256698@qq.com",
+          "cover":"assets/images/project/project_demo1.jpg",
+          "date": "2015-03-21",
+          "content":"这是3号回复的内容"
+        }
+      ],
+      "content":"这是6号回复的内容",
+      "date": "2015-03-21"
     }
   ]
 }
