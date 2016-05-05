@@ -4,6 +4,7 @@ require(["template"
     , 'underscore'
     , 'utils'
     , 'text'
+    , 'isotope'
     , 'text!commonTpl/blog_item.tpl'
     , 'text!commonTpl/tag_cloud.tpl'
     , 'text!commonTpl/category_item.tpl'
@@ -13,7 +14,8 @@ require(["template"
     , 'text!commonTpl/hot_blog.tpl'
     , 'text!commonTpl/blog_detail.tpl'
     , 'text!commonTpl/reply.tpl'
-    , 'text!commonTpl/comment.tpl'], function (template) {
+    , 'text!commonTpl/comment.tpl'
+    ,'text!commonTpl/project_list.tpl'], function (template) {
     var renderUtils = {
         renderBlogList: function (data, idTag) {
             var itemTpl = require('text!commonTpl/blog_item.tpl'),
@@ -121,6 +123,18 @@ require(["template"
                 return htmlText;
             }
 
+        },
+        renderProjectList: function (data,idTag) {
+            var projectListTpl=require('text!commonTpl/project_list.tpl'),
+                items=data.items,
+                render=template.compile(projectListTpl),
+                htmlText="";
+            if(items && items.length>0){
+                _.each(items,function(item){
+                        htmlText += render(item);
+                });
+                document.getElementById(idTag).innerHTML=htmlText;
+            }
         },
         bindEvent: function () {
             "use strict";

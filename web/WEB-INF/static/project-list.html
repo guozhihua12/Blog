@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="assets/css/icon-fonts.css" type="text/css" media="all"/>
 
+    <link rel="stylesheet" href="assets/css/sweet-alert.css" type="text/css" media="all">
 
     <link href='http://fonts.useso.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.useso.com/css?family=Lato:300,300italic,400italic,600,600italic,700,700italic,800,800italic'
@@ -66,146 +67,6 @@
 
 <div id="main_wrapper">
     <header id="site_header">
-        <div class="topbar"><!-- class ( topbar_colored  ) -->
-            <div class="content clearfix">
-
-                <div class="top_details clearfix f_left">
-                    <div class="languages-select languages-drop">
-                        <span><i class="ico-globe4"></i><span>欢迎您</span></span>
-                    </div>
-					<span class="top_login">
-						<i class="icon ico-key3"></i><a class="popup-with-move-anim" href="#login-popup">登录</a>
-					</span>
-                    <div class="zoom-anim-dialog small-dialog mfp-hide login_popup" id="login-popup">
-                        <form class="login_form_colored">
-                            <div class="lfc_user_row">
-                                <span class="lfc_header">登录</span>
-                            </div>
-                            <div class="lfc_user_row">
-                                <label for="login_user_name">
-                                    <span class="lfc_alert"></span>
-                                    <i class="lfc_icon ico-user5"></i>
-                                    <input type="text" name="login_user_name" id="login_user_name">
-                                </label>
-                            </div>
-                            <div class="lfc_user_row">
-                                <label for="login_password">
-                                    <span class="lfc_alert"></span>
-                                    <i class="lfc_icon ico-key3"></i>
-                                    <input type="password" name="login_password" id="login_password">
-                                </label>
-                            </div>
-                            <div class="lfc_user_row clearfix">
-                                <div class="my_col_half">
-                                    <label for="rememberme">
-										<span class="remember-box">
-											<input type="checkbox" id="rememberme" name="rememberme">
-											<span>记住密码</span>
-										</span>
-                                    </label>
-                                </div>
-                                <div class="my_col_half clearfix">
-                                    <button type="submit" name="login" class="send_button f_right upper">
-                                        Sign in
-                                    </button>
-                                </div>
-                            </div>
-                            <a class="lfc_forget_pass" href="#">忘记密码?</a>
-                        </form>
-                    </div>
-                </div>
-
-
-            </div>
-            <!-- End content -->
-			<span class="top_expande not_expanded">
-				<i class="no_exp ico-angle-double-down"></i>
-				<i class="exp ico-angle-double-up"></i>
-			</span>
-        </div>
-        <!-- End topbar -->
-
-        <div id="navigation_bar">
-            <div class="content">
-                <div id="logo">
-                    <a href="index.html">
-                        <img class="logo_dark" src="assets/images/logo-dark.png" alt="Enar Logo">
-                        <img class="logo_light" src="assets/images/logo-light.png" alt="Enar Logo">
-                    </a>
-                </div>
-                <!-- Top Search -->
-                <form class="top_search clearfix small_top_search">
-                    <div class="top_search_con">
-                        <input type="text" class="s" placeholder="搜索全部 ...">
-                        <span class="top_search_icon"><i class="ico-search4"></i></span>
-                        <input type="submit" class="top_search_submit">
-                    </div>
-                </form>
-                <!-- End Top Search -->
-                <nav id="main_nav">
-                    <div id="nav_menu">
-						<span class="mobile_menu_trigger">
-						    <a href="#" class="nav_trigger"><span></span></a>
-						</span>
-                        <ul id="navy" class="clearfix">
-                            <li class="normal_menu mobile_menu_toggle">
-                                <a href="coming-soon.html"><span>首页</span></a>
-                            </li>
-                            <li class="normal_menu mobile_menu_toggle ">
-                                <a href="index.html"><span>博客</span></a>
-                            </li>
-                            <li class="normal_menu mobile_menu_toggle">
-                                <a href="resume/resume.html" target="_blank"><span>简历</span></a>
-                            </li>
-                            <li class="normal_menu mobile_menu_toggle current_page_item">
-                                <a href="project-list.html"><span>项目</span></a>
-                                <ul>
-                                    <li class="normal_menu"><a href="project-list.html">全部项目</a></li>
-                                    <li class="normal_menu"><a href="project-list.html">前端开发</a>
-                                        <ul>
-                                            <li class="normal_menu"><a href="project-list.html">页面设计</a></li>
-                                            <li class="normal_menu"><a href="project-list.html">动态特效</a></li>
-                                            <li class="normal_menu"><a href="project-list.html">框架组件</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="normal_menu"><a href="project-list.html">后端开发</a>
-                                        <ul>
-                                            <li class="normal_menu"><a href="project-list.html">Java</a></li>
-                                            <li class="normal_menu"><a href="project-list.html">Python</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="normal_menu"><a href="index4.html">其他</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="normal_menu mobile_menu_toggle">
-                                <a href="media-photo-list.html"><span>相册</span></a>
-                            </li>
-                            <li class="normal_menu mobile_menu_toggle">
-                                <a href="contact-me.html"><span>联系方式</span></a>
-                            </li>
-                            <li class="normal_menu mobile_menu_toggle">
-                                <a href="about-me.html"><span>个人简介</span></a>
-                            </li>
-                            <!--<li class="normal_menu mobile_menu_toggle">-->
-                            <!--<a href="blog-standard-sidebar-right.html"><span>站点</span></a>-->
-                            <!--</li>-->
-                            <li class="normal_menu mobile_menu_toggle">
-                                <a href="blog-standard-sidebar-right.html"><span>其他页面</span></a>
-                                <ul>
-                                    <li class="normal_menu"><a href="404.html">404</a></li>
-                                    <li class="normal_menu"><a href="under-construction.html">升级公告</a></li>
-                                    <li class="normal_menu"><a href="coming-soon.html">即将到来</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- End Nav -->
-
-                <div class="clear"></div>
-            </div>
-        </div>
     </header>
 
     <!-- Our Blog Grids -->
@@ -217,343 +78,343 @@
 
             <!-- Filter Content -->
             <div class="hm_filter_wrapper timeline">
-                <ul class="hm_filter_wrapper_con timeline">
-                    <li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">
-                        <div class="timeline_block clearfix">
-                            <a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>
-                            <div class="blog_grid_block clearfix">
-                                <div class="feature_inner">
-                                    <div class="feature_inner_corners">
-                                        <div class="feature_inner_btns">
-                                            <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
-                                            <a href="#" class="icon_link"><i class="ico-link3"></i></a>
-                                        </div>
-                                        <div class="porto_galla">
-                                            <a href="assets/images/project/project_demo1.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo1.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo2.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo2.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo3.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo3.jpg" alt="Post Title">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h6 class="timeline_title"><a href="#">项目名称一</a></h6>
-							<span class="meta">
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-clock7"></i>
-                                        <span>2016年03月21日</span>
-                                    </a>
-								</span>
-								<span class="meta_part">
-									<i class="ico-folder-open-o"></i>
-									<span>
-										<a href="#">前端开发</a> , <a href="#">HTML5</a>
-									</span>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-comment-o"></i>
-                                        <span>23</span>
-                                    </a>
-								</span>
-							</span>
-                            <div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>
-                            <div class="clearfix">
-                                <a class="read_more_button" href="project-content.html" target="_blank">
-                                    <i class="ico-arrow-forward"></i>查看详情
-                                </a>
-                            </div>
-                        </div>
-                    </li><!-- Item -->
-                    <li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">
-                        <div class="timeline_block clearfix">
-                            <a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>
-                            <div class="blog_grid_block clearfix">
-                                <div class="feature_inner">
-                                    <div class="feature_inner_corners">
-                                        <div class="feature_inner_btns">
-                                            <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
-                                            <a href="#" class="icon_link"><i class="ico-link3"></i></a>
-                                        </div>
-                                        <div class="porto_galla">
-                                            <a href="assets/images/project/project_demo1.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo1.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo2.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo2.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo3.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo3.jpg" alt="Post Title">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h6 class="timeline_title"><a href="#">项目名称一</a></h6>
-							<span class="meta">
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-clock7"></i>
-                                        <span>2016年03月21日</span>
-                                    </a>
-								</span>
-								<span class="meta_part">
-									<i class="ico-folder-open-o"></i>
-									<span>
-										<a href="#">前端开发</a> , <a href="#">HTML5</a>
-									</span>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-comment-o"></i>
-                                        <span>23</span>
-                                    </a>
-								</span>
-							</span>
-                            <div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>
-                            <div class="clearfix">
-                                <a class="read_more_button" href="project-content.html" target="_blank">
-                                    <i class="ico-arrow-forward"></i>查看详情
-                                </a>
-                            </div>
-                        </div>
-                    </li><!-- Item -->
-                    <li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">
-                        <div class="timeline_block clearfix">
-                            <a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>
-                            <div class="blog_grid_block clearfix">
-                                <div class="feature_inner">
-                                    <div class="feature_inner_corners">
-                                        <div class="feature_inner_btns">
-                                            <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
-                                            <a href="#" class="icon_link"><i class="ico-link3"></i></a>
-                                        </div>
-                                        <div class="porto_galla">
-                                            <a href="assets/images/project/project_demo1.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo1.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo2.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo2.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo3.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo3.jpg" alt="Post Title">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h6 class="timeline_title"><a href="#">项目名称一</a></h6>
-							<span class="meta">
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-clock7"></i>
-                                        <span>2016年03月21日</span>
-                                    </a>
-								</span>
-								<span class="meta_part">
-									<i class="ico-folder-open-o"></i>
-									<span>
-										<a href="#">前端开发</a> , <a href="#">HTML5</a>
-									</span>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-comment-o"></i>
-                                        <span>23</span>
-                                    </a>
-								</span>
-							</span>
-                            <div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>
-                            <div class="clearfix">
-                                <a class="read_more_button" href="project-content.html" target="_blank">
-                                    <i class="ico-arrow-forward"></i>查看详情
-                                </a>
-                            </div>
-                        </div>
-                    </li><!-- Item -->
-                    <li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">
-                        <div class="timeline_block clearfix">
-                            <a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>
-                            <div class="blog_grid_block clearfix">
-                                <div class="feature_inner">
-                                    <div class="feature_inner_corners">
-                                        <div class="feature_inner_btns">
-                                            <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
-                                            <a href="#" class="icon_link"><i class="ico-link3"></i></a>
-                                        </div>
-                                        <div class="porto_galla">
-                                            <a href="assets/images/project/project_demo1.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo1.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo2.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo2.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo3.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo3.jpg" alt="Post Title">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h6 class="timeline_title"><a href="#">项目名称一</a></h6>
-							<span class="meta">
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-clock7"></i>
-                                        <span>2016年03月21日</span>
-                                    </a>
-								</span>
-								<span class="meta_part">
-									<i class="ico-folder-open-o"></i>
-									<span>
-										<a href="#">前端开发</a> , <a href="#">HTML5</a>
-									</span>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-comment-o"></i>
-                                        <span>23</span>
-                                    </a>
-								</span>
-							</span>
-                            <div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>
-                            <div class="clearfix">
-                                <a class="read_more_button" href="project-content.html" target="_blank">
-                                    <i class="ico-arrow-forward"></i>查看详情
-                                </a>
-                            </div>
-                        </div>
-                    </li><!-- Item -->
-                    <li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">
-                        <div class="timeline_block clearfix">
-                            <a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>
-                            <div class="blog_grid_block clearfix">
-                                <div class="feature_inner">
-                                    <div class="feature_inner_corners">
-                                        <div class="feature_inner_btns">
-                                            <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
-                                            <a href="#" class="icon_link"><i class="ico-link3"></i></a>
-                                        </div>
-                                        <div class="porto_galla">
-                                            <a href="assets/images/project/project_demo1.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo1.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo2.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo2.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo3.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo3.jpg" alt="Post Title">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h6 class="timeline_title"><a href="#">项目名称一</a></h6>
-							<span class="meta">
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-clock7"></i>
-                                        <span>2016年03月21日</span>
-                                    </a>
-								</span>
-								<span class="meta_part">
-									<i class="ico-folder-open-o"></i>
-									<span>
-										<a href="#">前端开发</a> , <a href="#">HTML5</a>
-									</span>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-comment-o"></i>
-                                        <span>23</span>
-                                    </a>
-								</span>
-							</span>
-                            <div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>
-                            <div class="clearfix">
-                                <a class="read_more_button" href="project-content.html" target="_blank">
-                                    <i class="ico-arrow-forward"></i>查看详情
-                                </a>
-                            </div>
-                        </div>
-                    </li><!-- Item -->
-                    <li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">
-                        <div class="timeline_block clearfix">
-                            <a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>
-                            <div class="blog_grid_block clearfix">
-                                <div class="feature_inner">
-                                    <div class="feature_inner_corners">
-                                        <div class="feature_inner_btns">
-                                            <a href="#" class="expand_image"><i class="ico-maximize"></i></a>
-                                            <a href="#" class="icon_link"><i class="ico-link3"></i></a>
-                                        </div>
-                                        <div class="porto_galla">
-                                            <a href="assets/images/project/project_demo1.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo1.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo2.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo2.jpg" alt="Post Title">
-                                            </a>
-                                            <a href="assets/images/project/project_demo3.jpg"
-                                               class="feature_inner_ling">
-                                                <img src="assets/images/project/project_demo3.jpg" alt="Post Title">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h6 class="timeline_title"><a href="#">项目名称一</a></h6>
-							<span class="meta">
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-clock7"></i>
-                                        <span>2016年03月21日</span>
-                                    </a>
-								</span>
-								<span class="meta_part">
-									<i class="ico-folder-open-o"></i>
-									<span>
-										<a href="#">前端开发</a> , <a href="#">HTML5</a>
-									</span>
-								</span>
-								<span class="meta_part">
-									<a href="#">
-                                        <i class="ico-comment-o"></i>
-                                        <span>23</span>
-                                    </a>
-								</span>
-							</span>
-                            <div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>
-                            <div class="clearfix">
-                                <a class="read_more_button" href="project-content.html" target="_blank">
-                                    <i class="ico-arrow-forward"></i>查看详情
-                                </a>
-                            </div>
-                        </div>
-                    </li><!-- Item -->
+                <ul class="hm_filter_wrapper_con timeline" id="project_list">
+                    <!--<li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">-->
+                        <!--<div class="timeline_block clearfix">-->
+                            <!--<a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>-->
+                            <!--<div class="blog_grid_block clearfix">-->
+                                <!--<div class="feature_inner">-->
+                                    <!--<div class="feature_inner_corners">-->
+                                        <!--<div class="feature_inner_btns">-->
+                                            <!--<a href="#" class="expand_image"><i class="ico-maximize"></i></a>-->
+                                            <!--<a href="#" class="icon_link"><i class="ico-link3"></i></a>-->
+                                        <!--</div>-->
+                                        <!--<div class="porto_galla">-->
+                                            <!--<a href="assets/images/project/project_demo1.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo1.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo2.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo2.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo3.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo3.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<h6 class="timeline_title"><a href="#">项目名称一</a></h6>-->
+							<!--<span class="meta">-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-clock7"></i>-->
+                                        <!--<span>2016年03月21日</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<i class="ico-folder-open-o"></i>-->
+									<!--<span>-->
+										<!--<a href="#">前端开发</a> , <a href="#">HTML5</a>-->
+									<!--</span>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-comment-o"></i>-->
+                                        <!--<span>23</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+							<!--</span>-->
+                            <!--<div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>-->
+                            <!--<div class="clearfix">-->
+                                <!--<a class="read_more_button" href="project-content.html" target="_blank">-->
+                                    <!--<i class="ico-arrow-forward"></i>查看详情-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>&lt;!&ndash; Item &ndash;&gt;-->
+                    <!--<li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">-->
+                        <!--<div class="timeline_block clearfix">-->
+                            <!--<a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>-->
+                            <!--<div class="blog_grid_block clearfix">-->
+                                <!--<div class="feature_inner">-->
+                                    <!--<div class="feature_inner_corners">-->
+                                        <!--<div class="feature_inner_btns">-->
+                                            <!--<a href="#" class="expand_image"><i class="ico-maximize"></i></a>-->
+                                            <!--<a href="#" class="icon_link"><i class="ico-link3"></i></a>-->
+                                        <!--</div>-->
+                                        <!--<div class="porto_galla">-->
+                                            <!--<a href="assets/images/project/project_demo1.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo1.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo2.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo2.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo3.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo3.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<h6 class="timeline_title"><a href="#">项目名称一</a></h6>-->
+							<!--<span class="meta">-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-clock7"></i>-->
+                                        <!--<span>2016年03月21日</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<i class="ico-folder-open-o"></i>-->
+									<!--<span>-->
+										<!--<a href="#">前端开发</a> , <a href="#">HTML5</a>-->
+									<!--</span>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-comment-o"></i>-->
+                                        <!--<span>23</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+							<!--</span>-->
+                            <!--<div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>-->
+                            <!--<div class="clearfix">-->
+                                <!--<a class="read_more_button" href="project-content.html" target="_blank">-->
+                                    <!--<i class="ico-arrow-forward"></i>查看详情-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>&lt;!&ndash; Item &ndash;&gt;-->
+                    <!--<li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">-->
+                        <!--<div class="timeline_block clearfix">-->
+                            <!--<a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>-->
+                            <!--<div class="blog_grid_block clearfix">-->
+                                <!--<div class="feature_inner">-->
+                                    <!--<div class="feature_inner_corners">-->
+                                        <!--<div class="feature_inner_btns">-->
+                                            <!--<a href="#" class="expand_image"><i class="ico-maximize"></i></a>-->
+                                            <!--<a href="#" class="icon_link"><i class="ico-link3"></i></a>-->
+                                        <!--</div>-->
+                                        <!--<div class="porto_galla">-->
+                                            <!--<a href="assets/images/project/project_demo1.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo1.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo2.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo2.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo3.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo3.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<h6 class="timeline_title"><a href="#">项目名称一</a></h6>-->
+							<!--<span class="meta">-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-clock7"></i>-->
+                                        <!--<span>2016年03月21日</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<i class="ico-folder-open-o"></i>-->
+									<!--<span>-->
+										<!--<a href="#">前端开发</a> , <a href="#">HTML5</a>-->
+									<!--</span>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-comment-o"></i>-->
+                                        <!--<span>23</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+							<!--</span>-->
+                            <!--<div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>-->
+                            <!--<div class="clearfix">-->
+                                <!--<a class="read_more_button" href="project-content.html" target="_blank">-->
+                                    <!--<i class="ico-arrow-forward"></i>查看详情-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>&lt;!&ndash; Item &ndash;&gt;-->
+                    <!--<li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">-->
+                        <!--<div class="timeline_block clearfix">-->
+                            <!--<a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>-->
+                            <!--<div class="blog_grid_block clearfix">-->
+                                <!--<div class="feature_inner">-->
+                                    <!--<div class="feature_inner_corners">-->
+                                        <!--<div class="feature_inner_btns">-->
+                                            <!--<a href="#" class="expand_image"><i class="ico-maximize"></i></a>-->
+                                            <!--<a href="#" class="icon_link"><i class="ico-link3"></i></a>-->
+                                        <!--</div>-->
+                                        <!--<div class="porto_galla">-->
+                                            <!--<a href="assets/images/project/project_demo1.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo1.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo2.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo2.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo3.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo3.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<h6 class="timeline_title"><a href="#">项目名称一</a></h6>-->
+							<!--<span class="meta">-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-clock7"></i>-->
+                                        <!--<span>2016年03月21日</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<i class="ico-folder-open-o"></i>-->
+									<!--<span>-->
+										<!--<a href="#">前端开发</a> , <a href="#">HTML5</a>-->
+									<!--</span>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-comment-o"></i>-->
+                                        <!--<span>23</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+							<!--</span>-->
+                            <!--<div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>-->
+                            <!--<div class="clearfix">-->
+                                <!--<a class="read_more_button" href="project-content.html" target="_blank">-->
+                                    <!--<i class="ico-arrow-forward"></i>查看详情-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>&lt;!&ndash; Item &ndash;&gt;-->
+                    <!--<li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">-->
+                        <!--<div class="timeline_block clearfix">-->
+                            <!--<a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>-->
+                            <!--<div class="blog_grid_block clearfix">-->
+                                <!--<div class="feature_inner">-->
+                                    <!--<div class="feature_inner_corners">-->
+                                        <!--<div class="feature_inner_btns">-->
+                                            <!--<a href="#" class="expand_image"><i class="ico-maximize"></i></a>-->
+                                            <!--<a href="#" class="icon_link"><i class="ico-link3"></i></a>-->
+                                        <!--</div>-->
+                                        <!--<div class="porto_galla">-->
+                                            <!--<a href="assets/images/project/project_demo1.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo1.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo2.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo2.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo3.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo3.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<h6 class="timeline_title"><a href="#">项目名称一</a></h6>-->
+							<!--<span class="meta">-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-clock7"></i>-->
+                                        <!--<span>2016年03月21日</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<i class="ico-folder-open-o"></i>-->
+									<!--<span>-->
+										<!--<a href="#">前端开发</a> , <a href="#">HTML5</a>-->
+									<!--</span>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-comment-o"></i>-->
+                                        <!--<span>23</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+							<!--</span>-->
+                            <!--<div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>-->
+                            <!--<div class="clearfix">-->
+                                <!--<a class="read_more_button" href="project-content.html" target="_blank">-->
+                                    <!--<i class="ico-arrow-forward"></i>查看详情-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>&lt;!&ndash; Item &ndash;&gt;-->
+                    <!--<li class="filter_item_block animated" data-animation-delay="600" data-animation="bounceInUp">-->
+                        <!--<div class="timeline_block clearfix">-->
+                            <!--<a href="#" class="timeline_post_format image"><i class="ico-gallery"></i></a>-->
+                            <!--<div class="blog_grid_block clearfix">-->
+                                <!--<div class="feature_inner">-->
+                                    <!--<div class="feature_inner_corners">-->
+                                        <!--<div class="feature_inner_btns">-->
+                                            <!--<a href="#" class="expand_image"><i class="ico-maximize"></i></a>-->
+                                            <!--<a href="#" class="icon_link"><i class="ico-link3"></i></a>-->
+                                        <!--</div>-->
+                                        <!--<div class="porto_galla">-->
+                                            <!--<a href="assets/images/project/project_demo1.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo1.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo2.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo2.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                            <!--<a href="assets/images/project/project_demo3.jpg"-->
+                                               <!--class="feature_inner_ling">-->
+                                                <!--<img src="assets/images/project/project_demo3.jpg" alt="Post Title">-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<h6 class="timeline_title"><a href="#">项目名称一</a></h6>-->
+							<!--<span class="meta">-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-clock7"></i>-->
+                                        <!--<span>2016年03月21日</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<i class="ico-folder-open-o"></i>-->
+									<!--<span>-->
+										<!--<a href="#">前端开发</a> , <a href="#">HTML5</a>-->
+									<!--</span>-->
+								<!--</span>-->
+								<!--<span class="meta_part">-->
+									<!--<a href="#">-->
+                                        <!--<i class="ico-comment-o"></i>-->
+                                        <!--<span>23</span>-->
+                                    <!--</a>-->
+								<!--</span>-->
+							<!--</span>-->
+                            <!--<div class="article">此处可以填写项目简介,简单介绍一下项目的主要内容,用到的核心技术,运行环境,以及项目现状等等 ...</div>-->
+                            <!--<div class="clearfix">-->
+                                <!--<a class="read_more_button" href="project-content.html" target="_blank">-->
+                                    <!--<i class="ico-arrow-forward"></i>查看详情-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>&lt;!&ndash; Item &ndash;&gt;-->
 
                 </ul>
                 <div class="centered">
@@ -596,13 +457,9 @@
 </div>
 <!-- End wrapper -->
 
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-<script>window.jQuery || document.write('<script src="assets/js/jquery.js"><\/script>')</script>
-<script src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/requiredJS/require.min.js"></script>
+<script type="text/javascript" src="assets/requiredJS/config.js"></script>
+<script type="text/javascript" src="assets/requiredJS/module/project_list.js"></script>
 
-<script src="assets/js/mediaelement-and-player.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<!-- this is where we put our custom functions -->
-<script type="text/javascript" src="assets/js/functions.js"></script>
 </body>
 </html>
