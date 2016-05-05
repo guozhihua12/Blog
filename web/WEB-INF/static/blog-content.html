@@ -108,7 +108,6 @@
 									</span>
                             </div>
                             <form class="comment-form" id="commentform" method="post" action="">
-                                <!-- <p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p> -->
                                 <input type="text" aria-required="true" size="30" value="" placeholder="昵称 (必需)"
                                        name="author" id="author">
                                 <input type="text" aria-required="true" size="30" value="" placeholder="电子邮件 (必需)"
@@ -119,7 +118,7 @@
                                                   placeholder="发表评论..." id="comment"></textarea>
                                 </p>
                                 <p class="form-submit">
-                                    <input class="send_button" type="submit" value="发表评论" id="submit-comment"
+                                    <input class="send_button" type="button" value="发表评论" id="submit-comment"
                                            name="submit">
                                 </p>
                             </form>
@@ -192,20 +191,19 @@
                         }
                     })
                 });
-//                $('.tags_con a').on('click',function(){
-//                    var id=$(this).data("id");
-//                    $.ajax({
-//                        type: "GET",
-//                        url: "json/blog_list.json?blog_tag=" + id,
-//                        success: function (data) {
-//                            renderUtils.renderBlogList(data.blog, "blogContent");
-//                        },
-//                        error: function () {
-//                            console.log("无法通过标签云渲染博客列表");
-//                        }
-//                    });
-//
-//                });
+                $('#submit-comment').on('click',function(){
+                    $.ajax({
+                        type:"POSt",
+                        url:"json/blog_detail.json?thisPage="+data.blog.id+"&func=nextPage",
+                        data:$('#commentform').serialize(),
+                        success:function(data){
+
+                        },
+                        error:function(){
+
+                        }
+                    })
+                });
             },
             error: function () {
                 console.log("无法获取bolg_list.json");
